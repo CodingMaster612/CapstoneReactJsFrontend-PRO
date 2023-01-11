@@ -1,38 +1,402 @@
-.App {
-  text-align: center;
+html, body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.register-container
+{
+
+ display: flex;
+ height: 78vh;
+ justify-content: center;
+ align-items: center;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.flex-row {
+  flex-direction: row;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.flex-col {
   flex-direction: column;
-  align-items: center;
+}
+.center {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.margin-center {
+  margin: auto;
+}
+.input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  font-size: 16px;
+  background-color: white;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transform:
+  perspective(75em)
+  rotateX(18deg);
+box-shadow:
+  rgba(22, 31, 39, 0.42) 0px 60px 123px -25px,
+  rgba(19, 26, 32, 0.08) 0px 35px 75px -35px;
+border-radius: 10px;
+border: 1px solid;
+border-color:
+  rgb(213, 220, 226)
+  rgb(213, 220, 226)
+  rgb(184, 194, 204);
+}
+.register-form
+{
+display: flex;
+min-width: 30vw;
+
+}
+
+
+
+input {
+
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+  padding-right: 0.9rem;
+  margin: 0.5rem;
+}
+
+.button
+{
+  background-color: black;
   color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  border: 1px solid white;
+  border-radius: 25px;
+  position: relative;
+  left: 7px; 
+  transform:
+  perspective(75em)
+  rotateX(18deg);
+box-shadow:
+  rgba(22, 31, 39, 0.42) 0px 60px 123px -25px,
+  rgba(19, 26, 32, 0.08) 0px 35px 75px -35px;
+border-radius: 10px;
+border: 1px solid;
+border-color:
+  rgb(213, 220, 226)
+  rgb(213, 220, 226)
+  rgb(184, 194, 204);
+
 }
 
-.App-link {
-  color: #61dafb;
+
+/* .icon{
+  
+  font-size: 3.75em;
+  background-image: url('/Users/timliner/Desktop/ReactJs-Frontend/frontend/src/img/lock-solid.svg');
+} */
+@keyframes gradient {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.wave {
+  background: rgb(255 255 255 / 25%);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 12em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+@keyframes wave {
+  2% {
+      transform: translateX(1);
   }
-  to {
-    transform: rotate(360deg);
+
+  25% {
+      transform: translateX(-25%);
+  }
+
+  50% {
+      transform: translateX(-50%);
+  }
+
+  75% {
+      transform: translateX(-25%);
+  }
+
+  100% {
+      transform: translateX(1);
   }
 }
+.header {
+  width: 100%;
+  height: 25%;
+  background-color: gray;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+  top: -45%;
+  opacity: 0.2;
+  
+  
+}
+
+.main-content {
+  width: 100%;
+  height: 92%;
+}
+
+/* .user-icon-wrapper{
+  position: absolute;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -350px;
+ 
+} */
+
+.user-icon-image{
+  border-radius: 50%;
+  max-width: 40%;
+  min-width: none;
+  overflow: hidden;
+  position: relative;
+  top: -100px;
+  left: 30%;
+  
+  
+  
+}
+  
+  
+
+.column{
+  width:  25%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7
+  
+}
+.row { width: 100%; position: relative; }
+.left { width: 20%; height: 100%; top: 0; left: 0; position: absolute; background: black; opacity: 0.3;}
+.container-left { width: 600px; margin: 0 auto;  }
+
+
+.row { width: 100%; position: relative; }
+.right { width: 20%; height: 100%; top: 0; left: 1350px; position: absolute; background: black; opacity: 0.3; }
+.container-left { width: 600px; margin: 0 auto;  }
+
+.icon-wrapper{
+  position: relative;
+  text-align: center;
+  top: 900px;
+  left: 20%;
+  
+  
+
+}
+
+.icon-wrapper-column{
+  position: relative;
+  left: -27px;
+  top: 50px;
+}
+
+.icon-bitcoin{
+  
+  font-size: 20px;
+  min-width: none;
+  overflow: hidden;
+  position: relative;
+  left: 15px;
+  color: white
+  
+  
+
+  
+}
+
+.icon-wallet{
+  color: brown;
+  font-size: 20px;
+  display: flex;
+  position: relative;
+  top: 200px;
+  left: 100px;
+  
+
+  
+}
+
+
+.icon-coins{
+  color: yellow;
+  font-size: 20px;
+  display: flex;
+  position: relative;
+  top: 275px;
+  left: 100px;
+  
+
+  
+}
+.icon-user{
+  color: white;
+  font-size: 20px;
+  display: flex;
+  position: relative;
+  top: 350px;
+  left: 100px;
+  
+
+  
+}
+.icon-bracket{
+  color: blue;
+  font-size: 20px;
+  display: flex;
+  position: relative;
+  top: 500px;
+  left: 100px;
+  
+
+  
+}
+
+
+.icon-reddit{
+  color: white;
+  font-size: 20px;
+  min-width: none;
+  overflow: hidden;
+  position: relative;
+  left: 30px;
+  
+  
+
+  
+}
+
+.icon-laptop{
+  
+  font-size: 20px;
+  min-width: none;
+  overflow: hidden;
+  position: relative;
+  left: 80px;
+  color: white;
+  
+
+  
+}
+
+.icon-instagram{
+  color: white;
+  font-size: 20px;
+  min-width: none;
+  overflow: hidden;
+  position: relative;
+  left: 20px;
+  color: white;
+  
+
+  
+}
+
+.user-info h1{
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  font-family:'Courier New', Courier, monospace;
+  position: relative;
+  top: 40px;
+}
+.user-info h2{
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  font-family:'Courier New', Courier, monospace;
+  position: relative;
+  top: 103px;
+}
+.user-info h3{
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  font-family:'Courier New', Courier, monospace;
+  position: relative;
+  top: 190px;
+}
+.user-info h4{
+  color: white;
+  font-size: 15px;
+  
+  font-family:'Courier New', Courier, monospace;
+  position: relative;
+  top: 278px;
+  
+  
+  
+  
+}
+.user-info-wrapper{
+  position: relative;
+  left: 130px;
+  
+}
+.section {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://media.istockphoto.com/id/1336661359/vector/abstract-modern-white-background-design-futuristic-wallpaper.jpg?s=612x612&w=0&k=20&c=5cJGRwsthrLcLAgGE-hv5XpYlmfosKFe_aegQyXtMkg=');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.revealUp {
+  opacity: 0;
+  visibility: hidden;
+}
+/* .spacer {
+  height: 50vh;
+  background-color: #000;
+} */
