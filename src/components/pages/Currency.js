@@ -14,7 +14,8 @@ function Currency() {
   const [rates, setRates] = useState([]);
 
   useEffect(() => {
-    axios.get('https://api.apilayer.com/fixer/latest?base=')
+    axios.get('https://api.apilayer.com/fixer/latest?base=USD&apikey=8El09v1tgPaDSKNR0TGCUrzqXBE6AdDI')
+
       .then(response => {
         setRates(response.data.rates);
       })
