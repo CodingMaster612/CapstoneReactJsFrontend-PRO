@@ -2,7 +2,7 @@
 
 import '../../App.css';
 import CurrencyInput from "../../components/pages/CurrencyInput.js";
-import {useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 
 function Currency() {
@@ -13,13 +13,13 @@ function Currency() {
   const [currency2, setCurrency2] = useState('EUR');
   const [rates, setRates] = useState([]);
 
-  useEffect(() => {
-    axios.get('https://api.apilayer.com/fixer/latest?base=USD&apikey=8El09v1tgPaDSKNR0TGCUrzqXBE6AdDI')
+  // useEffect(() => {
+  //   axios.get('https://api.apilayer.com/fixer/latest?base=USD&apikey=8El09v1tgPaDSKNR0TGCUrzqXBE6AdDI')
 
-      .then(response => {
-        setRates(response.data.rates);
-      })
-  }, []);
+  //     .then(response => {
+  //       setRates(response.data.rates);
+  //     })
+  // }, []);
 
   useEffect(() => {
     if (!!rates) {
@@ -58,22 +58,61 @@ function Currency() {
 
 
   return (
-    <div>
-      <h1>Currency Converter</h1>
-      <CurrencyInput
-        onAmountChange={handleAmount1Change}
-        onCurrencyChange={handleCurrency1Change}
-        currencies={Object.keys(rates)}
-        amount={amount1}
-        currency={currency1} />
-      <CurrencyInput
-        onAmountChange={handleAmount2Change}
-        onCurrencyChange={handleCurrency2Change}
-        currencies={Object.keys(rates)}
-        amount={amount2}
-        currency={currency2} />
-    </div>
+    <header style={HeaderStyle}>
+      <div>
+        <div className="h1-tag">
+          <h1>Currency Converter</h1>
+          <div className="h2-tag">
+            {/* <h2>Popular Currencies</h2> */}
+          </div>
+          <div className="USD">
+            {/* <h3>United States Dollar: - USD</h3> */}
+          </div>
+          <div className="YEN">
+            {/* <h4>Japanese Yen:- Yen</h4> */}
+          </div>
+          <div className="EURO">
+            {/* <h5>The EURO: -EURO</h5> */}
+          </div>
+        </div>
+        <div className="navbar-wrapper">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" className="dropbtn">Dropdown</a>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <CurrencyInput
+          onAmountChange={handleAmount1Change}
+          onCurrencyChange={handleCurrency1Change}
+          currencies={Object.keys(rates)}
+          amount={amount1}
+          currency={currency1} />
+        <CurrencyInput
+          onAmountChange={handleAmount2Change}
+          onCurrencyChange={handleCurrency2Change}
+          currencies={Object.keys(rates)}
+          amount={amount2}
+          currency={currency2} />
+      </div>
+    </header>
   );
 }
+const HeaderStyle = {
+  width: "100%",
+  height: "100vh",
+  backgroundColor: "gray",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
 
+}
 export default Currency;

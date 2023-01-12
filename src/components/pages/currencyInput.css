@@ -5,6 +5,8 @@
     display: grid;
     grid-template-columns: 100px 80px;
     border-radius: 15px;
+    position: relative;
+    top: 250px;
 }
 input,select{
     background: none;
@@ -17,3 +19,91 @@ input{
 select{
     padding: 15px;
 }
+
+.h1-tag h1{
+    font-size: 40px;
+    position: relative;
+    left: 39%;
+    top: 200px;
+}
+.h2-tag h2{
+    font-size: 30px;
+    position: relative;
+    left: 12%;
+    top: 100px;
+}
+
+.USD h3{
+    font-size: 20px;
+    position: relative;
+    left: 12%;
+    top: 150px;
+}
+
+.YEN h4{
+    font-size: 20px;
+    position: relative;
+    left: 12%;
+    top: 150px;
+}
+.EURO h5{
+    font-size: 20px;
+    position: relative;
+    left: 12%;
+    top: 150px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #38444d;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .navbar-wrapper{
+    position: relative;
+    top: -100px;
+  }
