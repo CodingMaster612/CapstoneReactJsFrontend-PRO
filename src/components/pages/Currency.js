@@ -4,6 +4,10 @@ import '../../App.css';
 import CurrencyInput from "../../components/pages/CurrencyInput.js";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+import { faFlagUsa , faYenSign, faEuroSign, faSterlingSign} from '@fortawesome/free-solid-svg-icons'
 
 function Currency() {
 
@@ -77,14 +81,19 @@ function Currency() {
         </div>
         <div className="navbar-wrapper">
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#news">News</a></li>
+            <Link to= "/">
+            <li><a>Home</a></li>
+            </Link>
+            
             <li class="dropdown">
-              <a href="javascript:void(0)" className="dropbtn">Dropdown</a>
-              <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+              <a className="dropbtn">Top Currency</a>
+              <div className="dropdown-content">
+                
+              <a><FontAwesomeIcon className="" icon={faFlagUsa} />United States Dollar: USD</a>
+              <a><FontAwesomeIcon className="" icon={faYenSign} />Japan YEN: JPY</a>
+              <a><FontAwesomeIcon className="" icon={faEuroSign} />EU Countries: EUR</a>
+              <a><FontAwesomeIcon className="" icon={faSterlingSign} />British Pound Sterling: GBP</a>
+             
               </div>
             </li>
           </ul>
