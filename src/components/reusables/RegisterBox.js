@@ -39,7 +39,7 @@ return (
             <div className="container">
                 <div className="screen">
                     <div className="screen__content">
-                        <form className="login">
+                        <div className="login">
                             <div className="login__field">
                                 <i className="login__icon fas fa-user"></i>
                                 <input placeholder="email" type="text" className="login__input" onChange={changeHandler} name="email" value={user.email} />
@@ -55,7 +55,7 @@ return (
                                 <span className="button__text">Sign Up Now</span>
                                 <i className="button__icon fas fa-chevron-right"></i>
                             </button>
-                        </form>
+                        </div>
                         <div className="social-login">
                             <h3>Sign Up</h3>
                             <div className="social-icons">

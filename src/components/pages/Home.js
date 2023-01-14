@@ -31,9 +31,7 @@ return (
             <Link to="/currency">
             <FontAwesomeIcon className="icon-coins" icon={faCoins} />
             </Link>
-            <Link to="/signIn">
-            <FontAwesomeIcon className="icon-bracket" icon={faRightToBracket} />
-            </Link>
+            
             <Link to="/profile">
             <FontAwesomeIcon className="icon-user" icon={faUser} />
             </Link>
@@ -51,9 +49,7 @@ return (
             <div className="user-info">
                <h3>View profile?</h3>
             </div>
-            <div className="user-info">
-               <h4>login?</h4>
-            </div>
+            
          </div>
       </div>
       <div className="section">

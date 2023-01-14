@@ -1,6 +1,6 @@
 
 
-import '../../App.css';
+
 import CurrencyInput from "../../components/pages/CurrencyInput.js";
 import { useState, useEffect } from "react";
 import axios from "axios";
@@ -18,7 +18,7 @@ function Currency() {
   const [rates, setRates] = useState([]);
 
   // useEffect(() => {
-  //   axios.get('https://api.apilayer.com/fixer/latest?base=USD&apikey=8El09v1tgPaDSKNR0TGCUrzqXBE6AdDI')
+  //   axios.get('https://api.apilayer.com/fixer/latest?base=USD&apikey=yGb0LW5AcvHAYRPD5MS5l0kA9HjBr8Uf')
 
   //     .then(response => {
   //       setRates(response.data.rates);
@@ -118,7 +118,7 @@ function Currency() {
 const HeaderStyle = {
   width: "100%",
   height: "100vh",
-  backgroundColor: "gray",
+  backgroundColor: "white",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
