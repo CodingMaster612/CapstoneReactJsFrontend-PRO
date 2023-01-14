@@ -25,16 +25,16 @@ return (
             </Link>
          </div>
          <div className="flex-column icon-wrapper-column">
-            <Link to="/">
+            <Link to="/wallet">
             <FontAwesomeIcon className="icon-wallet" icon={faWallet} />
             </Link>
-            <Link to="/">
+            <Link to="/currency">
             <FontAwesomeIcon className="icon-coins" icon={faCoins} />
             </Link>
-            <Link to="/register">
+            <Link to="/signIn">
             <FontAwesomeIcon className="icon-bracket" icon={faRightToBracket} />
             </Link>
-            <Link to="/">
+            <Link to="/profile">
             <FontAwesomeIcon className="icon-user" icon={faUser} />
             </Link>
          </div>

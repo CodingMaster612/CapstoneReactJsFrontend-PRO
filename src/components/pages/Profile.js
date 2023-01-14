@@ -1,0 +1,1 @@
+// get user data from cookie after signIn then display the user info on teh home page 

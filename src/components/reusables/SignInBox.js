@@ -1,65 +1,106 @@
 import axios from "axios";
 import { useState } from "react";
-import "../../App.css"
-import BackgroundImage from '../../img/rain.png'
+import '../../css/signIn.css';
+
+// import { useNavigate } from 'react-router'
+
 function SignInBox() {
-const [email, setEmail] = useState("");
-const [password, setPassword] = useState("");
-async function handleSubmit(event) {
-event.preventDefault();
-try {
-await axios.post("http://localhost:8081/user/signIn",
-//use `` to have a path variable  ${propertyId}
-{
-email: email,
-password: password,
-});
-alert("User sign in Successfully");
-setEmail("");
-setPassword("");
-}
-catch (err) {
-alert("User login Failed");
-}
-}
+   //  const navigator = useNavigate()
+
+    const [user, setUser] = useState({
+       email:"",
+       password:""
+    })
+
+
+    const changeHandler = (event) => {
+        const name = event.target.name
+        const value = event.target.value
+        const tempUser = { ...user }
+        tempUser[name] = value
+        setUser(tempUser)
+    }
+
+    const submitHandler = () => {
+
+        
+
+        axios.post("http://localhost:8081/user/signIn", user)
+        .then((response) => {
+            
+            console.log(response.data)
+            // navigator("/home")
+            localStorage.setItem("email", response.data.email)
+
+        }).catch((e) => {
+            console.log(e.response)
+            
+        })
+
+    }
 return (
 <header style={HeaderStyle}>
-   <div className="register-container">
-      <form className="register-form flex-col" onSubmit={handleSubmit}>
-         <input className="input  " type="text"
-            name="email"
-            placeholder="Enter email"
-            onChange={(event) => {
-         setEmail(event.target.value);
-         }}
-         />
-         <input className="input  " type="text"
-            name="password"
-            placeholder=" Enter your password..."
-            onChange={(event) => {
-         setPassword(event.target.value);
-         }}
-         />
-         <button className="button" type="submit">sign in</button>
-      </form>
-      <div className="left">
-         <div className="container-left">
-         </div>
-      </div>
-      <div className="right">
-         <div className="container-right">
-         </div>
-      </div>
-   </div>
-</header >
-)
+            <div className="container">
+                <div className="screen">
+                    <div className="screen__content">
+                        <form className="login">
+                            <div className="login__field">
+                                <i className="login__icon fas fa-user"></i>
+                                <input placeholder="email" type="text" className="login__input" onChange={changeHandler} name="email" value={user.email} />
+                            </div>
+                            <div className="login__field">
+                                <i className="login__icon fas fa-lock"></i>
+                                <input placeholder="Password" type="password" className="login__input" onChange={changeHandler} name="password" value={user.password} />
+
+                            </div>
+                            
+                            <button  className="button login__submit"onClick={submitHandler}>
+
+                                <span className="button__text">Sign In Now</span>
+                                <i className="button__icon fas fa-chevron-right"></i>
+                            </button>
+                        </form>
+                        <div className="social-login">
+                            <h3>Sign In</h3>
+                            <div className="social-icons">
+                                <a href="#" className="social-login__icon fab fa-instagram"></a>
+                                <a href="#" className="social-login__icon fab fa-facebook"></a>
+                                <a href="#" className="social-login__icon fab fa-twitter"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="screen__background">
+                        <span className="screen__background__shape screen__background__shape4"></span>
+                        <span className="screen__background__shape screen__background__shape3"></span>
+                        <span className="screen__background__shape screen__background__shape2"></span>
+                        <span className="screen__background__shape screen__background__shape1"></span>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+            
+
+
+
+
+
+
+        </header>
+    )
 }
 const HeaderStyle = {
-width: "100%",
-height: "100vh",
-background: `url(${BackgroundImage})`,
-backgroundPosition: "center",
-backgroundRepeat: "no-repeat",
-backgroundSize: "cover",
+    width: "100%",
+    height: "100vh",
+    // background: `url(${BackgroundImage})`,
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    backgroundColor: "white"
 }
-export default SignInBox;
+export default SignInBox
