@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import '../../components/pages/currencyInput.css';
+import '../../css/currencyInput.css';
 
 function CurrencyInput(props) {
   return (
