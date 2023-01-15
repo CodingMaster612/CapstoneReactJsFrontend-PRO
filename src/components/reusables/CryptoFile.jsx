@@ -1,10 +1,13 @@
 import React from 'react';
 
 
-const CryptoTitle = ({data}) => {
+const CryptoTitle = ({data,selected, titlesClicked}) => {
     const {id, title , rate , icon }= data
+
+    const handleClick= () => titlesClicked(data)
     return (
-        <div className="card selected">
+       
+       <div onClick={handleClick} className={`card ${selected && 'selected'}`}>
             <div className="card-body">
                 <div className="coin-icon mb-3">{icon}</div>
                     <div>{title}</div>
