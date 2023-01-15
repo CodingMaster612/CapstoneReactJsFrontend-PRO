@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import HomeCrypto from "../reusables/Home";
 import '../../css/Crypto.css'
 import CryptoTitle from "../reusables/CryptoFile";
+import BuyForm from '../reusables/BuyForm';
 
 function Crypto() {
     const titles = [
@@ -31,6 +32,7 @@ function Crypto() {
                                 } />
                         ))}
                     </div>
+                       <BuyForm data= {selectedTitle}/>         
                 </div>
                 <div className="col-6">
 

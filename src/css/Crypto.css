@@ -21,4 +21,17 @@ font-size: calc(10px + 2vmin);
 }
 .coin-icon .fa-bitcoin{color: #f2a900;}
 .coin-icon .fa-ethereum{color: #5477bb;}
-.coin-icon .fa-fa-code{color: #Da5752;}
+.coin-icon .fa-code{color: #Da5752;}
+
+.form {
+    max-width: 500px;
+    margin: 50px auto;
+}
+.form .fa-exchange-alt{
+    line-height: unset;
+    padding: 0 10px;
+    position: relative;
+    top: 15px;
+    
+    
+}
