@@ -1,11 +1,9 @@
 import React from 'react';
-
+import CryptoTitle from './CryptoFile';
 
 const HomeCrypto= () =>{
     return(
-        <div> 
-            Hello
-        </div>
+        <CryptoTitle/>
     );
 };
 export default HomeCrypto
