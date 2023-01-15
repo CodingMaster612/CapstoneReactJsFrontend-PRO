@@ -67,36 +67,19 @@ function Currency() {
         <div className="h1-tag">
           <h1>Currency Converter</h1>
           <div className="h2-tag">
-            {/* <h2>Popular Currencies</h2> */}
+            <h2>Popular Currencies</h2>
           </div>
           <div className="USD">
-            {/* <h3>United States Dollar: - USD</h3> */}
+            <h3>United States Dollar: - USD</h3>
           </div>
           <div className="YEN">
-            {/* <h4>Japanese Yen:- Yen</h4> */}
+            <h4>Japanese Yen:- Yen</h4>
           </div>
           <div className="EURO">
-            {/* <h5>The EURO: -EURO</h5> */}
+            <h5>The EURO: -EURO</h5>
           </div>
         </div>
-        <div className="navbar-wrapper">
-          <ul>
-            <Link to= "/">
-            <li><a>Home</a></li>
-            </Link>
-            
-            <li class="dropdown">
-              <a className="dropbtn">Top Currency</a>
-              <div className="dropdown-content">
-                
-              <a><FontAwesomeIcon className="" icon={faFlagUsa} />United States Dollar: USD</a>
-              <a><FontAwesomeIcon className="" icon={faYenSign} />Japan YEN: JPY</a>
-              <a><FontAwesomeIcon className="" icon={faEuroSign} />EU Countries: EUR</a>
-              <a><FontAwesomeIcon className="" icon={faSterlingSign} />British Pound Sterling: GBP</a>
-             
-              </div>
-            </li>
-          </ul>
+        
         </div>
 
         <CurrencyInput
@@ -111,7 +94,7 @@ function Currency() {
           currencies={Object.keys(rates)}
           amount={amount2}
           currency={currency2} />
-      </div>
+      
     </header>
   );
 }
