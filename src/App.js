@@ -35,7 +35,7 @@ import SignIn from "./components/pages/signIn.js";
 import Home from "./components/pages/Home.js";
 import Currency from "./components/pages/Currency.js";
 import HomeCrypto from "./components/pages/HomeCurrency";
-import Wallet from '@mui/icons-material/Wallet.js';
+import Wallet from "./components/pages/Wallet.js";
 import './App.css';
 
 import { theme as customTheme } from './theme';
