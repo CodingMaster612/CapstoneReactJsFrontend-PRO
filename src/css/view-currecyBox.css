@@ -2,11 +2,18 @@
 
 
 .currency-box {
-    border: 1px solid black;
-    border-radius: 5px;
-    height: 200px;
-    width: 300px;
-    position: relative;
-    top: 100px;
     
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+   
+    
+}
+
+.currency-img img {
+    border-radius:  500px;
+    width: 600px;
 }

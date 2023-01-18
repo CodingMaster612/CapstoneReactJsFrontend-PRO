@@ -9,7 +9,7 @@ function WalletInfoBox(props) {
             <div>{props.currency.crypto}</div>
             <div>{props.currency.payment}</div>
             
-            <div><img src={props.currency.image} /></div>
+            <div className="currency-img" ><img src={props.currency.image} /></div>
             
         </div>
     )
