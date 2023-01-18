@@ -4,10 +4,7 @@
 import CurrencyInput from "../../components/pages/CurrencyInput.js";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import { faFlagUsa , faYenSign, faEuroSign, faSterlingSign} from '@fortawesome/free-solid-svg-icons'
 
 function Currency() {
 

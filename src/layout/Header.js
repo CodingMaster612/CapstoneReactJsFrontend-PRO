@@ -22,10 +22,12 @@ import EmailIcon from '@mui/icons-material/EmailOutlined';
 import HelpIcon from '@mui/icons-material/HelpOutlineOutlined';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import MenuIcon from '@mui/icons-material/Menu';
+import WalletIcon from '@mui/icons-material/Wallet';
 import SettingsIcon from '@mui/icons-material/Settings';
 import UserIcon from '@mui/icons-material/Person';
 import { alpha, useTheme } from '@mui/material/styles';
 import { deepPurple } from '@mui/material/colors';
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 
 // Font Awesome Icon
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -134,14 +136,14 @@ const Header = ({ onSidebarOpen }) => {
                             text='Dashboard'
                         />
                         <CustomButton 
-                            href='#'
-                            icon={<HelpIcon />}
-                            text='About'
+                            href='/wallet'
+                            icon={<WalletIcon/>}
+                            text='Wallet'
                         />
                         <CustomButton 
                             href='#'
-                            icon={<EmailIcon />}
-                            text='Contact'
+                            icon={<AttachMoneyIcon />}
+                            text='Currency Converter'
                         />
                     </Box>
                     <Divider
@@ -214,13 +216,12 @@ const Header = ({ onSidebarOpen }) => {
                                     color={theme.palette.text.primary}
                                     variant='subtitle2'
                                 >
-                                    Bob
+                                    
                                 </Typography>
                                 <Typography
                                     color={theme.palette.text.secondary}
                                     variant='subtitle2'
                                 >
-                                    Your plan: Free
                                 </Typography>
                             </Box>
                             <Divider />
@@ -248,7 +249,7 @@ const Header = ({ onSidebarOpen }) => {
                                     to='#'
                                 >
                                     <ListItemIcon>
-                                        <SettingsIcon fontSize='small' />
+                                        {/* <SettingsIcon fontSize='small' /> */}
                                     </ListItemIcon>
                                     <ListItemText
                                         primary={(
@@ -256,7 +257,7 @@ const Header = ({ onSidebarOpen }) => {
                                                 color={theme.palette.text.primary}
                                                 variant='subtitle2'
                                             >
-                                                Settings
+                                                
                                             </Typography>
                                         )}
                                     />

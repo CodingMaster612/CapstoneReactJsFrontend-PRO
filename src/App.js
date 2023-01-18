@@ -35,6 +35,7 @@ import SignIn from "./components/pages/signIn.js";
 import Home from "./components/pages/Home.js";
 import Currency from "./components/pages/Currency.js";
 import HomeCrypto from "./components/pages/HomeCurrency";
+import Wallet from '@mui/icons-material/Wallet.js';
 import './App.css';
 
 import { theme as customTheme } from './theme';
@@ -80,9 +81,9 @@ const App = () => {
                 <Route exact path='/' element={<Dashboard />} />
                 <Route path="/register" element={<Register />} />
                 <Route path="/signIn" element={<SignIn />} />
-                <Route path="/Home" element={<Home />} />
+                {/* <Route path="/Home" element={<Home />} /> */}
                 <Route path="/currency" element={<Currency />} />           <Route path="/crypto" element={<HomeCrypto />} />
-
+                <Route path="/wallet" element= {<Wallet/>} />
               </Routes>
             </Layout>
           </BrowserRouter>
