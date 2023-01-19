@@ -28,7 +28,7 @@ import UserIcon from '@mui/icons-material/Person';
 import { alpha, useTheme } from '@mui/material/styles';
 import { deepPurple } from '@mui/material/colors';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
-
+import LockOpenIcon from '@mui/icons-material/LockOpen';
 // Font Awesome Icon
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCoins } from '@fortawesome/free-solid-svg-icons';
@@ -141,9 +141,14 @@ const Header = ({ onSidebarOpen }) => {
                             text='Wallet'
                         />
                         <CustomButton 
-                            href='#'
+                            href='/currency'
                             icon={<AttachMoneyIcon />}
                             text='Currency Converter'
+                        />
+                        <CustomButton 
+                            href='/signIn'
+                            icon={<LockOpenIcon/>}
+                            text='signIn'
                         />
                     </Box>
                     <Divider
