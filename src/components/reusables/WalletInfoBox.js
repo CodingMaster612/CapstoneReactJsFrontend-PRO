@@ -4,7 +4,7 @@ import "../../css/view-currecyBox.css"
 
 function WalletInfoBox(props) {
     return (
-        <div className='currency-box'>
+        <div className=' flex-row currency-box'>
             <div>{props.currency.cost}</div>
             <div>{props.currency.crypto}</div>
             <div>{props.currency.payment}</div>

@@ -1,7 +1,35 @@
-import React from 'react'
-import WalletBox from '../reusables/WalletBox'
+import React,{useState} from 'react';
+import WalletBox from '../reusables/WalletBox';
+import Modal from '../reusables/Modal';
 export default function Wallet() {
+
+
+  const [modalOpen, setModalOpen] = useState(false);
+
   return (
-    <WalletBox/>
+    <>
+
+      <div className="modal-wrapper">
+      <button
+        className="openModalBtn"
+        onClick={() => {
+          setModalOpen(true);
+        }}
+      >
+        Open
+      </button>
+
+      {modalOpen && <Modal setOpenModal={setModalOpen} />}
+      </div>
+    
+  );
+      
+      
+      <WalletBox />
+
+
+    </>
+
+
   )
 }
