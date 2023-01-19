@@ -1,1 +1,1 @@
-1. add backend for add to cart make enitity and controller for
+1. backend: add AddTcart function in cartService and foreign key
