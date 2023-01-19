@@ -32,7 +32,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import Register from "./components/pages/registration.js";
 import SignIn from "./components/pages/signIn.js";
-import Home from "./components/pages/Home.js";
+import Profile from "./components/pages/Profile.js";
 import Currency from "./components/pages/Currency.js";
 import HomeCrypto from "./components/pages/HomeCurrency";
 import Wallet from "./components/pages/Wallet.js";
@@ -81,7 +81,7 @@ const App = () => {
                 <Route exact path='/' element={<Dashboard />} />
                 <Route path="/register" element={<Register />} />
                 <Route path="/signIn" element={<SignIn />} />
-                {/* <Route path="/Home" element={<Home />} /> */}
+                <Route path="/profile" element={<Profile />} />
                 <Route path="/currency" element={<Currency />} />           <Route path="/crypto" element={<HomeCrypto />} />
                 <Route path="/wallet" element= {<Wallet/>} />
               </Routes>
