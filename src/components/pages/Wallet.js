@@ -16,7 +16,7 @@ export default function Wallet() {
           setModalOpen(true);
         }}
       >
-        Open
+        Make a Transaction
       </button>
 
       {modalOpen && <Modal setOpenModal={setModalOpen} />}

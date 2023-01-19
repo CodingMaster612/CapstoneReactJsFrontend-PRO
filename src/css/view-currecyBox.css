@@ -3,17 +3,39 @@
 
 .currency-box {
     
+    position: relative;
+    left: 85%;
     
     
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 20vh;
+    
    
     
 }
 
 .currency-img img {
     border-radius:  100px;
-    width:100px;
+    width:200px;
+    position: relative;
+    top: 10px;
+    left: -30%;
+}
+
+.text h5{
+    font-size: 30px;
+    color: red;
+    position: relative;
+    left: -40%;
+}
+
+.text h6{
+    font-size: 30px;
+    color: white;
+    position: relative;
+    left: -40%;
+}
+.text h7{
+    font-size: 30px; 
+    color: yellow;
+    position: relative;
+    left: -40%;
 }

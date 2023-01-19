@@ -76,3 +76,8 @@
 #cancelBtn {
   background-color: crimson;
 }
+button{
+  border-radius: 2px;
+  color: white;
+  background-color: black
+}
