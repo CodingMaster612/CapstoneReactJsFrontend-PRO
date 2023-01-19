@@ -18,6 +18,9 @@
     position: relative;
     top: 10px;
     left: -30%;
+    -moz-box-shadow: 0 0 5px #fff;
+    -webkit-box-shadow: 0 0 5px #fff;
+    box-shadow: 0px 0px 5px #fff;
 }
 
 .text h5{
@@ -25,6 +28,9 @@
     color: White;
     position: relative;
     left: -40%;
+    text-shadow: 0 6px 4px black,
+		     -3px -5px 4px #fe2192,
+		     3px -5px 4px #f7c200;
 }
 
 .text h6{
@@ -32,10 +38,16 @@
     color: white;
     position: relative;
     left: -40%;
+    text-shadow: 0 6px 4px black,
+		     -3px -5px 4px red,
+		     3px -5px 4px #f7c200;
 }
 .text h7{
     font-size: 30px; 
-    color: yellow;
+    color: white;
     position: relative;
     left: -40%;
+    text-shadow: 0 6px 4px black,
+		     -3px -5px 4px #fe2192,
+		     3px -5px 4px #f7c200;
 }

@@ -29,6 +29,7 @@ import { alpha, useTheme } from '@mui/material/styles';
 import { deepPurple } from '@mui/material/colors';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import LockOpenIcon from '@mui/icons-material/LockOpen';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 // Font Awesome Icon
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCoins } from '@fortawesome/free-solid-svg-icons';
@@ -150,6 +151,11 @@ const Header = ({ onSidebarOpen }) => {
                             icon={<LockOpenIcon/>}
                             text='signIn'
                         />
+                        <CustomButton 
+                            href='/Cart'
+                            icon={<ShoppingCartIcon/>}
+                            text='Add to Cart'
+                        />
                     </Box>
                     <Divider
                         orientation='vertical'
@@ -233,15 +239,18 @@ const Header = ({ onSidebarOpen }) => {
                             <Box sx={{ mt: 2 }}>
                                 <MenuItem
                                     component={Link}
-                                    to='#'
+                                    to='/profile'
                                 >
                                     <ListItemIcon>
-                                        <UserIcon fontSize='small' />
+                                    
+                                        <UserIcon fontSize='small'/>
+                                        
                                     </ListItemIcon>
                                     <ListItemText
                                         primary={(
                                             <Typography
-                                                color={theme.palette.text.primary}
+                                                
+                                            color={theme.palette.text.primary}
                                                 variant='subtitle2'
                                             >
                                                 Profile
@@ -251,7 +260,7 @@ const Header = ({ onSidebarOpen }) => {
                                 </MenuItem>
                                 <MenuItem
                                     component={Link}
-                                    to='#'
+                                    to=''
                                 >
                                     <ListItemIcon>
                                         {/* <SettingsIcon fontSize='small' /> */}
@@ -273,7 +282,7 @@ const Header = ({ onSidebarOpen }) => {
                                     color='primary'
                                     fullWidth
                                     variant='outlined'
-                                    href='#'
+                                    href='/'
                                 >
                                     Logout
                                 </Button>

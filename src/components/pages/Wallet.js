@@ -9,7 +9,7 @@ export default function Wallet() {
   return (
     <>
 
-      <div className="modal-wrapper">
+      {/* <div className="modal-wrapper">
       <button
         className="openModalBtn"
         onClick={() => {
@@ -20,7 +20,7 @@ export default function Wallet() {
       </button>
 
       {modalOpen && <Modal setOpenModal={setModalOpen} />}
-      </div>
+      </div> */}
     
   );
       

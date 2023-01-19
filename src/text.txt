@@ -1,2 +1,1 @@
-1. do css for modal button and currency images and information
-2. add links to header an icons
+1. add backend for add to cart make enitity and controller for

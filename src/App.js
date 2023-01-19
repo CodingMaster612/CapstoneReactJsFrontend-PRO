@@ -36,6 +36,8 @@ import Profile from "./components/pages/Profile.js";
 import Currency from "./components/pages/Currency.js";
 import HomeCrypto from "./components/pages/HomeCurrency";
 import Wallet from "./components/pages/Wallet.js";
+import Cart from "./components/pages/cart.js";
+
 import './App.css';
 
 import { theme as customTheme } from './theme';
@@ -84,6 +86,7 @@ const App = () => {
                 <Route path="/profile" element={<Profile />} />
                 <Route path="/currency" element={<Currency />} />           <Route path="/crypto" element={<HomeCrypto />} />
                 <Route path="/wallet" element= {<Wallet/>} />
+                <Route path='/cart' element = {<Cart/>} />
               </Routes>
             </Layout>
           </BrowserRouter>
