@@ -1,7 +1,7 @@
 import axios from "axios";
    import { useState } from "react";
    import '../../css/ShellCity.css'
-import BackgroundImage from "../../img/shellcity.png"
+import BackgroundImage from "../../img/com.png"
 
    
    
