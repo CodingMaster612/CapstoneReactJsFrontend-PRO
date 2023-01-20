@@ -1,0 +1,12 @@
+.soon h1{
+    position: relative;
+    top: 10px;
+    color: black;
+    font-size: bold;
+    font-family:'Times New Roman', Times, serif;
+    text-shadow: 1px 2px;
+    top: -200px;
+    left: 42%;
+
+
+}

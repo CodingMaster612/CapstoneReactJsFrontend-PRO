@@ -1,12 +1,16 @@
 import axios from "axios";
    import { useState } from "react";
    import '../../css/ShellCity.css'
-import BackgroundImage from "../../img/com.png"
+   import { useNavigate } from 'react-router'
+
+// import BackgroundImage from "../../img/color.png"
 
    
    
    
    function ShellCityBox() {
+     
+      const navigator = useNavigate()
       const [bank, setBank] = useState({
          email: "",
          password: ""
@@ -31,6 +35,7 @@ import BackgroundImage from "../../img/com.png"
                console.log(response.data)
                localStorage.setItem("Credentials-bank", response.data.email)
                alert("successful signIn, Welcome to ShellCityBank")
+               navigator('/Bank')
             }).catch((e) => {
                console.log(e.response)
    
@@ -89,10 +94,11 @@ import BackgroundImage from "../../img/com.png"
 const HeaderStyle = {
     width: "100%",
     height: "100vh",
-    background: `url(${BackgroundImage})`,
+   //  background: `url(${BackgroundImage})`,
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
+    backgroundColor: "white"
     
     
  }

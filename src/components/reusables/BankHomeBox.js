@@ -1,8 +1,11 @@
-function BankHomeBox(){
+import '../../css/BankHome.css'
+
+
+function BankHomeBox() {
 
     return (
-        <div>
-            
+        <div className="soon">
+            <h1>:Coming Soon:</h1>
         </div>
     )
 }

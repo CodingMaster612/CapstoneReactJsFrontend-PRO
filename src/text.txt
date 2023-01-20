@@ -1,6 +1,4 @@
 
 2. add bank backend 
-3. add bank front end login 
-4. bank by user id to access thier bank Account
+
 5. profile front end access by user id displays hello{name of person who logged in}
-6. code teh front end of cart,bank, wallet, bank login;
