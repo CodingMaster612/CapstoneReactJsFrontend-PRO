@@ -37,6 +37,7 @@ import Currency from "./components/pages/Currency.js";
 import HomeCrypto from "./components/pages/HomeCurrency";
 import Wallet from "./components/pages/Wallet.js";
 import Cart from "./components/pages/cart.js";
+import Shell from './components/pages/ShellCityBank.js';
 
 import './App.css';
 
@@ -87,6 +88,7 @@ const App = () => {
                 <Route path="/currency" element={<Currency />} />           <Route path="/crypto" element={<HomeCrypto />} />
                 <Route path="/wallet" element= {<Wallet/>} />
                 <Route path='/cart' element = {<Cart/>} />
+                <Route path="/bank" element={<Shell/>}/>
               </Routes>
             </Layout>
           </BrowserRouter>

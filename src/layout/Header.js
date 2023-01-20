@@ -30,7 +30,7 @@ import { deepPurple } from '@mui/material/colors';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import LockOpenIcon from '@mui/icons-material/LockOpen';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-// Font Awesome Icon
+import SavingsIcon from '@mui/icons-material/Savings';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCoins } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -155,6 +155,11 @@ const Header = ({ onSidebarOpen }) => {
                             href='/Cart'
                             icon={<ShoppingCartIcon/>}
                             text='Add to Cart'
+                        />
+                        <CustomButton 
+                            href='/bank'
+                            icon={<SavingsIcon/>}
+                            text='Shell'
                         />
                     </Box>
                     <Divider

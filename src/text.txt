@@ -1,4 +1,4 @@
-1. front end addto cart page with axios support;
+
 2. add bank backend 
 3. add bank front end login 
 4. bank by user id to access thier bank Account
