@@ -1,0 +1,54 @@
+.input-wrapper{
+    position: relative;
+    left: 39%;
+    top: 300px;
+}
+.input-group input[type=text] {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    height: 45px;
+    border-radius: 15px;
+    background-color: white;
+  }
+  .btn-position{
+    /* position: relative;
+    left: 4%;
+    top: 50px; */
+    margin: auto;
+
+display: block;
+
+    
+  }
+
+  .btn-size{
+    background-color: black; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 25px;;
+
+  }
+.currency-input input{
+    /* position: relative;
+    top: 100px; */
+    margin: auto;
+
+display: block;
+color: black
+}
+.amount-input input{
+    /* position: relative;
+    top: 200px;
+    left: -99%; */
+    margin: auto;
+
+display: block;
+color:black
+}
