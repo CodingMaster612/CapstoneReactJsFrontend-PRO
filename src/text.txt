@@ -1,4 +1,5 @@
 
-2. add bank backend 
+
 
 5. profile front end access by user id displays hello{name of person who logged in}
+6. add a user signup in navbar 

@@ -23,6 +23,7 @@ import HelpIcon from '@mui/icons-material/HelpOutlineOutlined';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import MenuIcon from '@mui/icons-material/Menu';
 import WalletIcon from '@mui/icons-material/Wallet';
+import VpnKeyIcon from '@mui/icons-material/VpnKey';
 import SettingsIcon from '@mui/icons-material/Settings';
 import UserIcon from '@mui/icons-material/Person';
 import { alpha, useTheme } from '@mui/material/styles';
@@ -160,6 +161,11 @@ const Header = ({ onSidebarOpen }) => {
                             href='/bankLogin'
                             icon={<SavingsIcon/>}
                             text='Shell'
+                        />
+                         <CustomButton 
+                            href='/register'
+                            icon={<VpnKeyIcon/>}
+                            text='SignUp'
                         />
                     </Box>
                     <Divider

@@ -1,13 +1,13 @@
 import ShellCityBox from "../reusables/ShellCityBox";
 
-
 function Bank() {
     
    
    
    
     return (
-        <div> 
+        <div>
+           
             <ShellCityBox/>
         </div>
     )

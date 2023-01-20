@@ -1,53 +1,55 @@
 import axios from "axios";
-   import { useState } from "react";
-   import '../../css/ShellCity.css'
-   import { useNavigate } from 'react-router'
+import { useState } from "react";
+import '../../css/ShellCity.css'
+import { useNavigate } from 'react-router'
 
 // import BackgroundImage from "../../img/color.png"
 
-   
-   
-   
-   function ShellCityBox() {
-     
-      const navigator = useNavigate()
-      const [bank, setBank] = useState({
-         email: "",
-         password: ""
-      })
-   
-   
-      const changeHandler = (event) => {
-         const name = event.target.name
-         const value = event.target.value
-         const tempBank = { ...bank }
-         tempBank[name] = value
-         setBank(tempBank)
-      }
-   
-      const submitHandler = () => {
-   
-   
-   
-         axios.post("http://localhost:8081/bank/signIn", bank)
-            .then((response) => {
-   
-               console.log(response.data)
-               localStorage.setItem("Credentials-bank", response.data.email)
-               alert("successful signIn, Welcome to ShellCityBank")
-               navigator('/Bank')
-            }).catch((e) => {
-               console.log(e.response)
-   
-            })
-   
-      }
-   
-   
+
+
+
+function ShellCityBox() {
+
+   const navigator = useNavigate()
+   const [bank, setBank] = useState({
+      email: "",
+      password: ""
+   })
+
+
+   const changeHandler = (event) => {
+      const name = event.target.name
+      const value = event.target.value
+      const tempBank = { ...bank }
+      tempBank[name] = value
+      setBank(tempBank)
+   }
+
+   const submitHandler = () => {
+
+
+
+      axios.post("http://localhost:8081/bank/signIn", bank)
+         .then((response) => {
+
+            console.log(response.data)
+            localStorage.setItem("Credentials-bank", response.data.email)
+            alert("successful signIn, Welcome to ShellCityBank")
+            navigator('/Bank')
+         }).catch((e) => {
+            console.log(e.response)
+
+         })
+
+   }
+
+
    return (
-        <header style={HeaderStyle}>
-        
-        <div className="container">
+      <header style={HeaderStyle}>
+
+
+
+         <div className="container">
             <div className="screen">
                <div className="screen__content">
                   <div className="login">
@@ -85,21 +87,26 @@ import axios from "axios";
 
             </div>
 
+            <div class="typewriter">
+               <h1>Hello</h1>
+            </div>
 
          </div>
 
-</header>
-    )
+
+
+      </header>
+   )
 }
 const HeaderStyle = {
-    width: "100%",
-    height: "100vh",
+   width: "100%",
+   height: "100vh",
    //  background: `url(${BackgroundImage})`,
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    backgroundColor: "white"
-    
-    
- }
+   backgroundPosition: "center",
+   backgroundRepeat: "no-repeat",
+   backgroundSize: "cover",
+   backgroundColor: "white"
+
+
+}
 export default ShellCityBox
