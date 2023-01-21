@@ -6,6 +6,7 @@ import '../../css/Cart.css'
 
 function Cart() {
     const [cart, setCart] = useState({
+      
       currency: "",
       amount: ""
   
@@ -59,6 +60,9 @@ function Cart() {
             </div>
             <div className="amount-input">
                <input placeholder="Amount: " type="text" onChange={changeHandler} name="amount" value={cart.amount} />
+            </div>
+            <div className="id-input"> 
+               <input placeholder="ID: " type="text" onChange={changeHandler} name="id" value={cart.id} />
             </div>
             
             <div className="btn-position">

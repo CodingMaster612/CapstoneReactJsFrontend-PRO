@@ -2,6 +2,7 @@ import WalletInfoBox from './WalletInfoBox'
 import axios from 'axios'
 import React, { useState , useEffect} from 'react'
 import LoadingSpinner from '../reusables/Loadingspinner'
+
 function ViewCurrency() {
 
   const [currency, setCurrency] = useState([])
@@ -32,7 +33,9 @@ function ViewCurrency() {
           return (
               currency.map((currency) => {
                   return (
+                    
                       <WalletInfoBox currency={currency} />
+                      
                   )
               })
           )

@@ -52,3 +52,13 @@ color: black
 display: block;
 color:black
 }
+
+.id-input input{
+  /* position: relative;
+  top: 200px;
+  left: -99%; */
+  margin: auto;
+
+display: block;
+color:black
+}
