@@ -1,5 +1,5 @@
 
 
 
-5. profile front end access by user id displays hello{name of person who logged in}
-6. add a user signup in navbar 
+make a seperate page for buying after linking teh submit button on cart to the buy page 
+2. let the buy button buy the item that was just in the cart in teh next page give option to cnacel with button 

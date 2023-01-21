@@ -26,7 +26,13 @@ function Cart() {
   
   
         axios.post("http://localhost:8081/cart/addToCart", cart)
-           .then((response) => {
+           
+        
+        
+        
+        
+        
+        .then((response) => {
   
   
   
