@@ -4,9 +4,9 @@ import '../../css/BuyBox.css'
 
 function BuyCurrencyBox() {
 
-   
+
     const [user, setUser] = useState({
-       
+
     })
 
 
@@ -19,30 +19,32 @@ function BuyCurrencyBox() {
     }
 
     const submitHandler = (cartId, userId) => {
-       
+
         axios.post(`http://localhost:8081/user/purchase/${cartId}/${userId}`, user)({
             cartId: cartId,
             userId: userId,
 
         })
-        .then((response) => {
-            console.log(response.data)
-           
-        }).catch((e) => {
-            console.log(e.response)
-        })
+            .then((response) => {
+                console.log(response.data)
+
+            }).catch((e) => {
+                console.log(e.response)
+            })
 
     }
 
     return (
-        <div>
+       
 
-        <button className="btn"onClick={submitHandler}/>
-        </div>
-        )
+            <div className="btn-position-1">
+                <button className="btn" onClick={submitHandler}>Buy</button>
+            </div>
+        
+    )
 }
 
-    
+
 
 
 export default BuyCurrencyBox

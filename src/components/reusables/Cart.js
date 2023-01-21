@@ -74,6 +74,7 @@ function Cart() {
             <div className="btn-position">
                <button className="btn-size" onClick={submitHandler}>Submit</button>
             </div>
+            
          </div>
       </div>
   

@@ -39,6 +39,7 @@ import Wallet from "./components/pages/Wallet.js";
 import Cart from "./components/pages/cart.js";
 import Shell from './components/pages/ShellCityBank.js';
 import Bank from "./components/pages/BankHomePage.js";
+import Buy from "./components/pages/Buy.js";
 import './App.css';
 
 import { theme as customTheme } from './theme';
@@ -90,6 +91,7 @@ const App = () => {
                 <Route path='/cart' element = {<Cart/>} />
                 <Route path="/bankLogin" element={<Shell/>}/>
                 <Route path='/Bank' element={<Bank/>} />
+                <Route path="/buy" element={<Buy/>} />
               </Routes>
             </Layout>
           </BrowserRouter>

@@ -3,3 +3,7 @@
 
 make a seperate page for buying after linking teh submit button on cart to the buy page 
 2. let the buy button buy the item that was just in the cart in teh next page give option to cnacel with button 
+
+
+display cart items on screen give button to buy items on screen in add to cart 
+make backend for display cart items

@@ -1,12 +1,11 @@
 import React from 'react'
-import Cart from '../../components/reusables/Cart'
 import BuyCurrencyBox from '../reusables/BuyBox'
-export default function cart() {
+export default function Buy() {
     return (
         <div>
             <header style={HeaderStyle}>
-            <Cart/>
-        <BuyCurrencyBox/>
+            <BuyCurrencyBox/>
+        
             
             </header>
         </div>
@@ -20,6 +19,7 @@ const HeaderStyle = {
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
+    backgroundColor: "white"
 
 
 }
