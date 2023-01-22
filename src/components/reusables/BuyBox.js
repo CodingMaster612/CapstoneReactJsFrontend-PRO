@@ -1,28 +1,20 @@
 import axios from 'axios'
-import React, { useState } from 'react'
 import '../../css/BuyBox.css'
 
 function BuyCurrencyBox() {
 
-
-    const [user, setUser] = useState({
-
-    })
+    
 
 
-    const changeHandler = (event) => {
-        const name = event.target.name
-        const value = event.target.value
-        const tempUser = { ...user }
-        tempUser[name] = value
-        setUser(tempUser)
-    }
+
+
+
 
     const submitHandler = (cartId) => {
 
-        axios.post(`http://localhost:8081/user/purchase/${cartId}`, user)({
-            
-            
+        axios.post(`http://localhost:8081/user/purchase/${cartId}`, )({
+
+
 
         })
             .then((response) => {
@@ -34,15 +26,23 @@ function BuyCurrencyBox() {
 
     }
 
+    
     return (
-       
-
-            <div className="btn-position-1">
-                <button className="btn" onClick={submitHandler}>Buy</button>
-            </div>
+        
+                
+                    <button className="btn" onClick={submitHandler} />
+                
         
     )
-}
+  }
+  
+
+
+
+
+
+
+
 
 
 

@@ -7,7 +7,7 @@ export default function cart() {
         <div>
             <header style={HeaderStyle}>
                 <Cart />
-                <BuyCurrencyBox />
+                
                 <ViewAllCart />
 
             </header>
