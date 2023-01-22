@@ -1,14 +1,15 @@
 import React from 'react'
 import Cart from '../../components/reusables/Cart'
 import BuyCurrencyBox from '../reusables/BuyBox'
-import ViewAllCart from '../reusables/CartBox'
+// import ViewAllCart from '../reusables/CartBox'
+import TestBuyBox from '../../components/reusables/TestBuyBox'
 export default function cart() {
     return (
         <div>
             <header style={HeaderStyle}>
                 <Cart />
-                
-                <ViewAllCart />
+                <TestBuyBox/>
+                {/* <ViewAllCart /> */}
 
             </header>
         </div>
@@ -22,6 +23,7 @@ const HeaderStyle = {
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
+    backgroundColor: "white"
 
 
 }

@@ -23,3 +23,12 @@
 		     -3px -5px 4px red,
 		     3px -5px 4px #f7c200;
 }
+.btn{
+    font-size:100px;
+    background-color: black;
+    color: black;
+    width: 20%;
+    border-radius: 25px;
+  }
+
+  
