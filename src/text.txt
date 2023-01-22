@@ -7,3 +7,5 @@ make a seperate page for buying after linking teh submit button on cart to the b
 
 display cart items on screen give button to buy items on screen in add to cart 
 make backend for display cart items
+
+2. diffrenct loading spinner 

@@ -1,0 +1,25 @@
+.cart-box {
+    
+    position: relative;
+    left: 85%;
+}
+
+.text-Amount h5{
+    font-size: 30px;
+    color: White;
+    position: relative;
+    left: -40%;
+    text-shadow: 0 6px 4px black,
+		     -3px -5px 4px #fe2192,
+		     3px -5px 4px #f7c200;
+}
+
+.text-Currency h6{
+    font-size: 30px;
+    color: white;
+    position: relative;
+    left: -40%;
+    text-shadow: 0 6px 4px black,
+		     -3px -5px 4px red,
+		     3px -5px 4px #f7c200;
+}

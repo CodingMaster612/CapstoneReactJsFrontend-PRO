@@ -1,16 +1,18 @@
 import React from 'react'
 import Cart from '../../components/reusables/Cart'
 import BuyCurrencyBox from '../reusables/BuyBox'
+import ViewAllCart from '../reusables/CartBox'
 export default function cart() {
     return (
         <div>
             <header style={HeaderStyle}>
-            <Cart/>
-        <BuyCurrencyBox/>
-            
+                <Cart />
+                <BuyCurrencyBox />
+                <ViewAllCart />
+
             </header>
         </div>
-        
+
     )
 }
 const HeaderStyle = {

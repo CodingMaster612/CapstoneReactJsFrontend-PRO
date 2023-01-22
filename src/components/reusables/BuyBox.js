@@ -18,11 +18,11 @@ function BuyCurrencyBox() {
         setUser(tempUser)
     }
 
-    const submitHandler = (cartId, userId) => {
+    const submitHandler = (cartId) => {
 
-        axios.post(`http://localhost:8081/user/purchase/${cartId}/${userId}`, user)({
-            cartId: cartId,
-            userId: userId,
+        axios.post(`http://localhost:8081/user/purchase/${cartId}`, user)({
+            
+            
 
         })
             .then((response) => {
