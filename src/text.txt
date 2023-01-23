@@ -12,3 +12,9 @@ make backend for display cart items
 
 
 make a backed for chatgtp aoios call to test if it works
+
+
+put buyList on cart 
+
+
+make prop  file for buy item and put button in it with key import it in buyBox

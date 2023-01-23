@@ -1,12 +1,12 @@
 import React from 'react'
 import BuyCurrencyBox from '../reusables/BuyBox'
+
 export default function Buy() {
     return (
         <div>
             <header style={HeaderStyle}>
             <BuyCurrencyBox/>
-        
-            
+
             </header>
         </div>
         

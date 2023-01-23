@@ -23,12 +23,34 @@
 		     -3px -5px 4px red,
 		     3px -5px 4px #f7c200;
 }
-.btn{
+.btn {
     font-size:100px;
-    background-color: black;
+    background-color: red;
     color: black;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    
+  }
+
+  .Product-name-container {
+    display:flex;
+    flex-direction: horizontal;
+    justify-content: space-between;
+  }
+  .App-button {
+    margin: 10px;
+    background-color: white;
+    outline: solid 2px black;
+    border-radius: 5px;
+    width: 50px;
+    padding: 3px;
+  }
+
+  .btn{
+    font-size:20px;
+    background-color: black;
+    color: white;
     width: 20%;
     border-radius: 25px;
   }
-
-  
