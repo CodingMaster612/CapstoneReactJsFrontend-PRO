@@ -1,7 +1,7 @@
 import React from 'react'
 import Cart from '../../components/reusables/Cart'
 import BuyCurrencyBox from '../reusables/BuyBox'
-// import ViewAllCart from '../reusables/CartBox'
+import ViewAllCart from '../reusables/CartBox'
 import TestBuyBox from '../../components/reusables/TestBuyBox'
 export default function cart() {
     return (
@@ -9,7 +9,7 @@ export default function cart() {
             <header style={HeaderStyle}>
                 <Cart />
                 <TestBuyBox/>
-                {/* <ViewAllCart /> */}
+                <ViewAllCart />
 
             </header>
         </div>

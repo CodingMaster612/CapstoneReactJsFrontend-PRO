@@ -3,7 +3,7 @@ import '../../css/BuyBox.css'
 
 function BuyCurrencyBox() {
 
-    
+
 
 
 
@@ -11,12 +11,12 @@ function BuyCurrencyBox() {
 
 
     const submitHandler = (cartId) => {
+//user object make axios call to get data from backend use effect get user user.this on Valute button  do it in the app js
+        axios.post(`http://localhost:8081/user/purchase/${cartId}`,)
 
-        axios.post(`http://localhost:8081/user/purchase/${cartId}`, )({
 
 
-
-        })
+    
             .then((response) => {
                 console.log(response.data)
 
@@ -26,16 +26,16 @@ function BuyCurrencyBox() {
 
     }
 
-    
+
     return (
-        
-                
-                    <button className="btn" onClick={submitHandler} />
-                
-        
+
+
+        <button className="btn" onClick={submitHandler} />
+
+
     )
-  }
-  
+}
+
 
 
 

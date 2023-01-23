@@ -50,7 +50,14 @@
   .btn{
     font-size:20px;
     background-color: black;
-    color: white;
+    color: black;
     width: 20%;
     border-radius: 25px;
+    position: relative;
+    left: -300px
+  }
+
+  .currency-box{
+    position: relative;
+    
   }
