@@ -6,10 +6,7 @@ import '../../css/signIn.css';
 
 function PostDataMain() {
    //  const navigator = useNavigate()
-   const [user, setUser] = useState({
-   
-
-   })
+   const [user, setUser] = useState({})
 
 
    const changeHandler = (event) => {
@@ -23,12 +20,15 @@ function PostDataMain() {
    const submitHandler = () => {
 
 
-
-      axios.post(`http://localhost:8081/user/getItemsInCart`, user)
+      const Id = 1;
+      //get id using get mapping 
+      //backend call getById
+      axios.post(`http://localhost:8081/user/getItemsInCart/${Id}`, user)
          .then((response) => {
 
             console.log(response.data)
-            localStorage.setItem("Credentials", JSON.stringify(user))
+            localStorage.setItem("Credentials", response.data.id)
+            setUser(response.data)
 
 
             

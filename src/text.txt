@@ -30,3 +30,7 @@ map function and props.user.boughtcurrrency
 2. get the cart id in backend using code use a use effect to get the cookie 
 
 2. user.getcart().getid
+
+
+
+1.get call in appjs to get the props.user.id
