@@ -2,10 +2,12 @@ import CartInfoBox from "../../components/reusables/CartInfoBox"
 import axios from 'axios'
 import React, { useState , useEffect} from 'react'
 import LoadingSpinner from '../reusables/Loadingspinner'
+import CartPurchase from '../Questionables/CartPurchase'
 
 function ViewAllCart() {
 
   const [cart, setCart] = useState([])
+  const [user, setUser] = useState([])
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
@@ -33,9 +35,10 @@ function ViewAllCart() {
           return (
               cart.map((cart) => {
                   return (
-                    
+                    <>
                       <CartInfoBox cart={cart} />
-                      
+                      <CartPurchase user={user}/>
+                      </>
                   )
               })
           )

@@ -3,15 +3,14 @@ import React from 'react'
 import '../../css/view-cartBox.css'
 import CartPurchase from '../Questionables/CartPurchase'
 
-function CartInfoBox(props) {
+function PurchaseBox(props) {
     return (
         <div>
 
 
             <div className='currency-box'>
-                <div key= {props.cart.id}>
-                <div className="text"><h5>Amount:  {props.cart.amount}</h5></div>
-                <div className="text"><h6>Currency:  {props.cart.currency}</h6></div>
+                <div key= {props.user.id}>
+                <div className="text"><h5>boughtCurrency:  {props.user.boughtCurrency}</h5></div>
                 {/* <BuyCurrencyBox/> */}
                 <CartPurchase/>
                 </div>
@@ -21,4 +20,4 @@ function CartInfoBox(props) {
     )
 }
 
-export default CartInfoBox
+export default PurchaseBox

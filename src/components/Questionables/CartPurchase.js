@@ -3,16 +3,15 @@ import { useState, useEffect } from "react";
 
 import '../../css/view-cartBox.css'
 
-function CartPurchase({userId}) {
+function CartPurchase() {
     
-  const [user, setUser] = useState([])
+  const [user, setUser] = useState({})
 
-    
-    const handleClick = (cartId) => {
-        axios.post('http://localhost:8081/user/purchaseCart', { cartId: cartId, userId: userId }, user)
+    const cartId = localStorage.getItem("Credentials")
+    const handleClick = () => {
+        axios.post(`http://localhost:8081/user/purchase/${cartId}`, user)
             .then((response) => {
                 console.log(response);
-                localStorage.setItem("Credentials", JSON.stringify(user))
                 alert("Project successfully generated Cookie")
             })
             .catch((error) => {
@@ -22,7 +21,7 @@ function CartPurchase({userId}) {
 
     return (
     <div>
-        
+        //make a use effect to get a cartId set the cart id to the cart
       
         <div key={user.id}>
           <button className="btn-name"onClick={() => handleClick(user.id)}>Buy</button>

@@ -35,7 +35,7 @@ const BuyForm = ({ data }) => {
 
 
 
-        console.log()
+        
 
     }
     return (

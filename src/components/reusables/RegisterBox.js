@@ -26,7 +26,6 @@ function RegisterBox() {
            
            console.log(response.data)
            // navigator("/home")
-           localStorage.setItem("email", response.data.email)
 
        }).catch((e) => {
            console.log(e.response)
