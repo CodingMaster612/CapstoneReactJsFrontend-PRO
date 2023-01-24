@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 import '../../css/view-cartBox.css'
 
-function BuyList({ userId, items= []}) {
+function TestBuyBox({ userId, items= []}) {
     
     
 
@@ -47,4 +47,4 @@ function BuyList({ userId, items= []}) {
 
   
 
-export default BuyList
+export default TestBuyBox

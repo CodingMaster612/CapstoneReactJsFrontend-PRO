@@ -26,6 +26,7 @@
 // export default App;
 
 import React, { useState, useEffect, useMemo } from 'react';
+import axios from 'axios';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { HelmetProvider, Helmet } from 'react-helmet-async';
 import { ThemeProvider } from '@mui/material/styles';
@@ -68,12 +69,13 @@ const App = () => {
     }
   }, []);
 
+
   return (
     <HelmetProvider>
       <Helmet
         titleTemplate="%s | Timothy Currency Converter"
         defaultTitle="Tim's Currency Converter"
-        
+
       />
 
       <ColorModeContext.Provider value={colorMode}>
@@ -87,11 +89,11 @@ const App = () => {
                 <Route path="/signIn" element={<SignIn />} />
                 <Route path="/profile" element={<Profile />} />
                 <Route path="/currency" element={<Currency />} />           <Route path="/crypto" element={<HomeCrypto />} />
-                <Route path="/wallet" element= {<Wallet/>} />
-                <Route path='/cart' element = {<Cart/>} />
-                <Route path="/bankLogin" element={<Shell/>}/>
-                <Route path='/Bank' element={<Bank/>} />
-                <Route path="/buy" element={<Buy/>} />
+                <Route path="/wallet" element={<Wallet />} />
+                <Route path='/cart' element={<Cart />} />
+                <Route path="/bankLogin" element={<Shell />} />
+                <Route path='/Bank' element={<Bank />} />
+                <Route path="/buy" element={<Buy />} />
               </Routes>
             </Layout>
           </BrowserRouter>

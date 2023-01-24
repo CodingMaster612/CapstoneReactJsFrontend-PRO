@@ -1,5 +1,5 @@
 import React from 'react'
-import BuyCurrencyBox from '../../components/reusables/BuyBox'
+// import BuyCurrencyBox from '../../components/reusables/BuyBox'
 import '../../css/view-cartBox.css'
 
 function CartInfoBox(props) {
@@ -11,7 +11,7 @@ function CartInfoBox(props) {
                 <div key= {props.cart.id}>
                 <div className="text"><h5>Amount:  {props.cart.amount}</h5></div>
                 <div className="text"><h6>Currency:  {props.cart.currency}</h6></div>
-                <BuyCurrencyBox/>
+                {/* <BuyCurrencyBox/> */}
                 </div>
 
             </div>

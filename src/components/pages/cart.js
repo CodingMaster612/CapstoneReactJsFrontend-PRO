@@ -2,7 +2,7 @@ import React from 'react'
 import Cart from '../../components/reusables/Cart'
 import BuyCurrencyBox from '../reusables/BuyBox'
 import ViewAllCart from '../reusables/CartBox'
-import TestBuyBox from '../../components/reusables/TestBuyBox'
+import TestBuyBox from '../Questionables/TestBuyBox'
 export default function cart() {
     return (
         <div>

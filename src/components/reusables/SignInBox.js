@@ -9,8 +9,9 @@ function SignInBox() {
    //  const navigator = useNavigate()
    const navigator = useNavigate()
    const [user, setUser] = useState({
+      
       email: "",
-      password: ""
+      password: "",
    })
 
 
@@ -30,7 +31,8 @@ function SignInBox() {
          .then((response) => {
 
             console.log(response.data)
-            localStorage.setItem("Credentials", response.data.email)
+            // localStorage.setItem("Credentials", JSON.stringify(user))
+
             navigator('/Home')
 
          }).catch((e) => {
