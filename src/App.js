@@ -68,8 +68,18 @@ const App = () => {
       setMode('dark');
     }
   }, []);
+  // const [cartId, setCartId] = useState(null);
 
-
+  // useEffect(() => {
+  //   const cookies = document.cookie.split(';');
+  //   for (const cookie of cookies) {
+  //     if (cookie.startsWith('cartId=')) {
+  //       setCartId(cookie.split('=')[1]);
+  //       break;
+  //     }
+  //   }
+  // }, []);
+//use effect to get the cookie 
   return (
     <HelmetProvider>
       <Helmet

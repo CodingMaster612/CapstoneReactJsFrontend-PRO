@@ -1,12 +1,10 @@
 import React from 'react'
-import BuyCurrencyBox from '../reusables/BuyBox'
-
+import CartPurchase from '../Questionables/CartPurchase'
 export default function Buy() {
     return (
         <div>
             <header style={HeaderStyle}>
-            <BuyCurrencyBox/>
-
+<CartPurchase/>
             </header>
         </div>
         
