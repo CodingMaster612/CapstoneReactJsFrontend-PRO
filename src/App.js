@@ -41,6 +41,7 @@ import Cart from "./components/pages/cart.js";
 import Shell from './components/pages/ShellCityBank.js';
 import Bank from "./components/pages/BankHomePage.js";
 import Buy from "./components/pages/Buy.js";
+import Post from './components/pages/PostData.js';
 import './App.css';
 
 import { theme as customTheme } from './theme';
@@ -68,18 +69,9 @@ const App = () => {
       setMode('dark');
     }
   }, []);
-  // const [cartId, setCartId] = useState(null);
 
-  // useEffect(() => {
-  //   const cookies = document.cookie.split(';');
-  //   for (const cookie of cookies) {
-  //     if (cookie.startsWith('cartId=')) {
-  //       setCartId(cookie.split('=')[1]);
-  //       break;
-  //     }
-  //   }
-  // }, []);
-//use effect to get the cookie 
+  
+  
   return (
     <HelmetProvider>
       <Helmet
@@ -104,6 +96,7 @@ const App = () => {
                 <Route path="/bankLogin" element={<Shell />} />
                 <Route path='/Bank' element={<Bank />} />
                 <Route path="/buy" element={<Buy />} />
+                <Route path="/postData" element={<Post/>} />
               </Routes>
             </Layout>
           </BrowserRouter>

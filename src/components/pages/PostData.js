@@ -1,18 +1,13 @@
 import React from 'react'
-import Cart from '../../components/reusables/Cart'
-import BuyCurrencyBox from '../reusables/BuyBox'
-import ViewAllCart from '../reusables/CartBox'
-
-export default function cart() {
+import PostDataMain from '../reusables/PostData'
+export default function PostData() {
     return (
         <div>
             <header style={HeaderStyle}>
-                <Cart />
-                {/* <ViewAllCart /> */}
-
+                <PostDataMain/>
             </header>
         </div>
-
+        
     )
 }
 const HeaderStyle = {

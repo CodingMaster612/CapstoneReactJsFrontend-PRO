@@ -1,0 +1,28 @@
+.footer {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    background-color: black;
+    opacity: 0.3
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .footer-left, .footer-right {
+    flex: 1;
+    text-align: center;
+  }
+  
+  @media (max-width: 600px) {
+    .footer-container {
+      flex-wrap: wrap;
+    }
+    .footer-left, .footer-right {
+      flex: 100%;
+    }
+  }

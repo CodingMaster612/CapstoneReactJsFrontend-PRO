@@ -7,8 +7,7 @@ import '../../css/Cart.css'
 function Cart() {
     const [cart, setCart] = useState({
       
-      currency: "",
-      amount: ""
+      
   
      })
   
