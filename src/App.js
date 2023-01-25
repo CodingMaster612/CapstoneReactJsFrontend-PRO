@@ -42,6 +42,11 @@ import Shell from './components/pages/ShellCityBank.js';
 import Bank from "./components/pages/BankHomePage.js";
 import Buy from "./components/pages/Buy.js";
 import Post from './components/pages/PostData.js';
+import CoinDetailPage from "./components/pages/CoinDetailPage"
+import CoinSummaryPage from "./components/pages/CoinSummaryPage";
+
+import { WatchListContextProvider } from "./context/watchListContext";
+
 import './App.css';
 
 import { theme as customTheme } from './theme';
@@ -99,6 +104,7 @@ const [user, setUser]= useState(null)
       <ColorModeContext.Provider value={colorMode}>
         <ThemeProvider theme={customTheme[mode]}>
           <CssBaseline />
+          <WatchListContextProvider>
           <BrowserRouter>
             <Layout>
               <Routes>
@@ -113,9 +119,12 @@ const [user, setUser]= useState(null)
                 <Route path='/Bank' element={<Bank />} />
                 <Route path="/buy" element={<Buy />} />
                 <Route path="/postData" element={<Post/>} />
+                <Route path="/coin" element={<CoinSummaryPage/>} />
+                <Route path="/coins/:id" element={<CoinDetailPage/>} />
               </Routes>
             </Layout>
           </BrowserRouter>
+          </WatchListContextProvider>
         </ThemeProvider>
       </ColorModeContext.Provider>
     </HelmetProvider>
