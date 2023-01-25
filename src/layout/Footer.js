@@ -8,11 +8,11 @@ const Footer = () => {
     
 
     return (
-        <div className="footer">
-        <p>post all the data use getBoughtCurrency in backend and select id from all given data</p>
-      </div>
+      //   <div className="footer">
+      //   <p>post all the data use getBoughtCurrency in backend and select id from all given data</p>
+      // </div>
                 
-                                   
+               <div></div>                    
     );
 };
 
