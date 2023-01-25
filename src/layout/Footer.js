@@ -9,7 +9,7 @@ const Footer = () => {
 
     return (
         <div className="footer">
-        <p>post the data then get teh data</p>
+        <p>post all the data use getBoughtCurrency in backend and select id from all given data</p>
       </div>
                 
                                    

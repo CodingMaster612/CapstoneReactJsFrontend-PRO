@@ -23,7 +23,7 @@ function PostDataMain() {
       const Id = 1;
       //get id using get mapping 
       //backend call getById
-      axios.post(`http://localhost:8081/user/getItemsInCart/${Id}`, user)
+      axios.post(`http://localhost:8081/user/postItemsInCart/${Id}`, user)
          .then((response) => {
 
             console.log(response.data)
