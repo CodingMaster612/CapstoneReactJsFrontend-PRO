@@ -68,6 +68,8 @@ const CoinDetailPage = () => {
       return <div>Loading....</div>;
     }
     return (
+      
+      
       <div className="coinlist">
         <HistoryChart data={coinData} />
         <CoinData data={coinData.detail} />

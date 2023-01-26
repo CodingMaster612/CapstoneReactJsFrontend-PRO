@@ -26,6 +26,7 @@ import WalletIcon from '@mui/icons-material/Wallet';
 import VpnKeyIcon from '@mui/icons-material/VpnKey';
 import SettingsIcon from '@mui/icons-material/Settings';
 import UserIcon from '@mui/icons-material/Person';
+import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 import { alpha, useTheme } from '@mui/material/styles';
 import { deepPurple } from '@mui/material/colors';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
@@ -169,7 +170,7 @@ const Header = ({ onSidebarOpen }) => {
                         />
                         <CustomButton 
                             href='/coin'
-                            icon={<VpnKeyIcon/>}
+                            icon={<MonetizationOnIcon/>}
                             text='Coin'
                         />
                     </Box>

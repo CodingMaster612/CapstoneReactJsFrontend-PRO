@@ -1,36 +1,4 @@
-
-
-
-make a seperate page for buying after linking teh submit button on cart to the buy page 
-2. let the buy button buy the item that was just in the cart in teh next page give option to cnacel with button 
-
-
-display cart items on screen give button to buy items on screen in add to cart 
-make backend for display cart items
-
-2. diffrenct loading spinner 
-
-
-make a backed for chatgtp aoios call to test if it works
-
-
-put buyList on cart 
-
-
-make prop  file for buy item and put button in it with key import it in buyBox
-
-
-check view all currency in psotman 
-
-
-map function and props.user.boughtcurrrency
-
-
-
-2. get the cart id in backend using code use a use effect to get the cookie 
-
-2. user.getcart().getid
-
-
-
-1.get call in appjs to get the props.user.id
+1. fix coin graph id undefined
+2. fix css on button coin
+3. add admin and user privliges
+4. add text  and css to signin and sign up page 
