@@ -138,11 +138,11 @@ const Header = ({ onSidebarOpen }) => {
                             icon={<DashboardIcon />}
                             text='Dashboard'
                         />
-                        {/* <CustomButton 
+                        <CustomButton 
                             href='/wallet'
                             icon={<WalletIcon/>}
                             text='Wallet'
-                        /> */}
+                        />
                         <CustomButton 
                             href='/currency'
                             icon={<AttachMoneyIcon />}
@@ -168,11 +168,11 @@ const Header = ({ onSidebarOpen }) => {
                             icon={<VpnKeyIcon/>}
                             text='SignUp'
                         />
-                        <CustomButton 
+                        {/* <CustomButton 
                             href='/coin'
                             icon={<MonetizationOnIcon/>}
                             text='Coin'
-                        />
+                        /> */}
                     </Box>
                     <Divider
                         orientation='vertical'

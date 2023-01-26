@@ -4,3 +4,5 @@
 5. leaded to homepage
 3. add admin and user privliges
 4. add text  and css to signin and sign up page 
+
+6. card component like apple pay walllet
