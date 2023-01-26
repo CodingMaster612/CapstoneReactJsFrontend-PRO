@@ -138,11 +138,11 @@ const Header = ({ onSidebarOpen }) => {
                             icon={<DashboardIcon />}
                             text='Dashboard'
                         />
-                        <CustomButton 
+                        {/* <CustomButton 
                             href='/wallet'
                             icon={<WalletIcon/>}
                             text='Wallet'
-                        />
+                        /> */}
                         <CustomButton 
                             href='/currency'
                             icon={<AttachMoneyIcon />}
@@ -153,16 +153,16 @@ const Header = ({ onSidebarOpen }) => {
                             icon={<LockOpenIcon/>}
                             text='signIn'
                         />
-                        <CustomButton 
+                        {/* <CustomButton 
                             href='/Cart'
                             icon={<ShoppingCartIcon/>}
                             text='Add to Cart'
-                        />
-                        <CustomButton 
+                        /> */}
+                        {/* <CustomButton 
                             href='/bankLogin'
                             icon={<SavingsIcon/>}
                             text='Shell'
-                        />
+                        /> */}
                          <CustomButton 
                             href='/register'
                             icon={<VpnKeyIcon/>}

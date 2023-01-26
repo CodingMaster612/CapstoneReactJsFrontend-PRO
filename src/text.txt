@@ -1,4 +1,6 @@
 1. fix coin graph id undefined
-2. fix css on button coin
+2. scrap sign in page for bank login
+4. sign in lead to dashbaord
+5. leaded to homepage
 3. add admin and user privliges
 4. add text  and css to signin and sign up page 
