@@ -12,14 +12,30 @@ function WalletInfoBox(props) {
         axios.get(`http://localhost:8081/card/getCardById/${event.target.id}`)
             .then((response) => {
                 setCard(response.data)
+                localStorage.setItem("Cred", response.data.id)
                 alert("you are complete")
+                console.log(event.target.id)
             }).catch((e) => {
                 console.log(e)
             })
 
 
     }
+//get teh id then buy with post
 
+const submitHandler = (event) => {
+ const id = localStorage.getItem("Cred")
+    axios.post(`http://localhost:8081/card/Transactions/${id}`, card)
+        .then((response) => {
+            setCard(response.data)
+            
+            alert("you are completed teh test")
+        }).catch((e) => {
+            console.log(e)
+        })
+
+
+}
 
 
     return (
@@ -31,7 +47,7 @@ function WalletInfoBox(props) {
                             <img src={props.cards.image} />
                         </div>
                         <div className="card__name">
-                            <p className="clickable-text" >{props.cards.name}</p>
+                            <p className="" >{props.cards.name}</p>
                         </div>
                         <div className="card__number">
                             <div className="card__number--stars">{props.cards.firstNumbers}</div>
@@ -44,9 +60,13 @@ function WalletInfoBox(props) {
                     </div>
                 </div>
                 <Button id={props.cards.id} className="result-button" onClick={onClicky} />
+                <Button id={props.cards.id} className="result-button-2" onClick={submitHandler} />
 
+                
             </div>
         </section>
+
+
 
     )
 }
