@@ -3,13 +3,18 @@ import "../../css/CreditCard.css"
 
 
 function WalletInfoBox(props) {
+    
+    
+    
+    
     return (
         <section>
             <div className="container">
                 <div className="cardWrapper">
                     <div className="card">
                         <div className="bg">
-                            <img src="https://www.logo.wine/a/logo/Mastercard/Mastercard-Logo.wine.svg" alt="" />
+                            {/* <img src="https://www.logo.wine/a/logo/Mastercard/Mastercard-Logo.wine.svg" alt="" /> */}
+                            <img src={props.cards.image} />
                         </div>
                         <div className="card__name">
                             <p>{props.cards.name}</p>
