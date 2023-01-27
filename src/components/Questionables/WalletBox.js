@@ -3,17 +3,17 @@ import axios from 'axios'
 import React, { useState, useEffect } from 'react'
 import LoadingSpinner from '../reusables/Loadingspinner'
 
-function ViewCurrency() {
+function ViewCreditCards() {
 
-    const [currency, setCurrency] = useState([])
+    const [cards, setCards] = useState([])
     const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
 
-        axios.get('http://localhost:8081/currency/viewAllCurrency')
+        axios.get('http://localhost:8081/card/viewAllCreditCards')
             .then((response) => {
                 setTimeout(() => {
-                    setCurrency(response.data)
+                    setCards(response.data)
                     setIsLoading(false)
                 }, 3000)
             })
@@ -31,10 +31,12 @@ function ViewCurrency() {
             )
         } else {
             return (
-                currency.map((currency) => {
+                cards.map((cards) => {
                     return (
 
-                        <WalletInfoBox currency={currency} />
+                        <WalletInfoBox cards={cards} />
+                       
+                        
 
                     )
                 })
@@ -52,4 +54,4 @@ function ViewCurrency() {
 }
 
 {/* */ }
-export default ViewCurrency
+export default ViewCreditCards

@@ -48,24 +48,24 @@ const App = () => {
       setMode('dark');
     }
   }, []);
-const [user, setUser]= useState(null)
-  useEffect(() => {
-    const Id = localStorage.getItem("Credentials")
-    axios.get(`http://localhost:8081/user/getItemsInCart/${Id}`)
-        .then((response) => {
+// const [user, setUser]= useState(null)
+//   useEffect(() => {
+//     const Id = localStorage.getItem("Credentials")
+//     axios.get(`http://localhost:8081/user/getItemsInCart/${Id}`)
+//         .then((response) => {
             
-                setUser(response.data)
-                if(Id !== null){
-                  console.log("Function Successfully rendered")
-                }else{
-                  alert("Function in app.js is null, please add a Value")
-                }
+//                 setUser(response.data)
+//                 if(Id !== null){
+//                   console.log("Function Successfully rendered")
+//                 }else{
+//                   alert("Function in app.js is null, please add a Value")
+//                 }
             
-        })
-        .catch((e) => {
-            console.log(e)
-        })
-}, [])
+//         })
+//         .catch((e) => {
+//             console.log(e)
+//         })
+// }, [])
   
   return (
     <HelmetProvider>
