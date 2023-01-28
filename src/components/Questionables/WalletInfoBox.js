@@ -8,7 +8,6 @@ function WalletInfoBox(props) {
     const [cart, setCart] = useState([])
 
     const onClicky = (event) => {
-        //add useEffect to fix not registering issue
         axios.get(`http://localhost:8081/card/getCardById/${event.target.id}`)
             .then((response) => {
                 setCard(response.data)
@@ -68,6 +67,7 @@ function WalletInfoBox(props) {
                 <div className="cardWrapper">
                     <div className="card">
                         <div className="bg">
+                            
                             <img src={props.cards.image} alt="" />
                         </div>
                         <div className="card__name">
@@ -86,7 +86,6 @@ function WalletInfoBox(props) {
                 <Button id={props.cards.id} className="result-button" onClick={onClicky} text={"Get Card Id"} />
                 <Button id={props.cards.id} className="result-button" onClick={submitHandler} text={"Add Card"} />
                 <Button id={props.cards.id} className="result-button" onClick={handleClick} text={"Transaction"} />
-
 
             </div>
             <div>
