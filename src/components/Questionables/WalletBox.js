@@ -35,13 +35,20 @@ function ViewCreditCards() {
                     return (
 
                         <WalletInfoBox cards={cards} />
-                       
+                    
                         
 
                     )
+                    
+                    
                 })
+
+                
             )
+            
         }
+
+       
     }
 
     return (
