@@ -7,7 +7,7 @@ function WalletInfoBox(props) {
     const [cart, setCart] = useState({})
 
     const onClicky = (event) => {
-
+//add useEffect to fix not registering issue
         axios.get(`http://localhost:8081/card/getCardById/${event.target.id}`)
             .then((response) => {
                 setCard(response.data)
@@ -37,22 +37,27 @@ const submitHandler = (event) => {
 }
 
 const handleClick = (event) => {
-       
-   const currency = prompt("Enter The Currency You want to Buy")
-   axios.post(`http://localhost:8081/cart/buyWithCreditCard/${currency}`, cart)
-        .then((response) => {
-            setCart(response.data)
-            
-            alert("Cart Successfully added currency")
-        }).catch((e) => {
-            console.log(e)
+       //view all currency in cart on page with a buy button attached to it on click
+       useEffect(function() {
+
+
+        axios.get(`http://localhost:8080/viewAllStudents`)
+        .then(function(response) {
+            setAllUsers(response.data)
         })
+        .catch((e) => {
+          console.log(e)
+        }) 
+    
+      }, [])
 
    
    
    
    
    //put crditcard forign key registerd to cart to use credit card to buy currency
+
+   //make a add to cart page with display of currency and crypto when transaction is clicked it goes to another page for add to cart and has the current prices of currency and has a buy button registerd to teh props 
 
    
    }
