@@ -63,3 +63,10 @@
     position: relative;
     
   }
+
+  .img {
+    border-radius: 50%;
+    position: relative;
+    width: 20%;
+    
+  }
