@@ -8,10 +8,7 @@ import { useNavigate } from 'react-router'
 function SignInBox() {
    //  const navigator = useNavigate()
    const navigator = useNavigate()
-   const [user, setUser] = useState({
-   
-
-   })
+   const [user, setUser] = useState({})
 
 
    const changeHandler = (event) => {
@@ -28,9 +25,9 @@ function SignInBox() {
 
       axios.post("http://localhost:8081/user/signIn", user)
          .then((response) => {
-
+            
             console.log(response.data)
-            localStorage.setItem("email", response.data.email)
+            localStorage.setItem("Credentials", response.data.email)
             
 
             navigator('/')
@@ -87,7 +84,6 @@ function SignInBox() {
 
 
 
-//add html and content here 
 
 
 

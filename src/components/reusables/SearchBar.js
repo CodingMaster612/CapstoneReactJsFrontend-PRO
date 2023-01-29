@@ -30,6 +30,8 @@ const SearchBar = () => {
         Search
       </button>
     </form>
+
+    
     </div>
   );
 };

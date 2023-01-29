@@ -41,7 +41,7 @@ library.add(faCoins)
 import ColorModeContext from '../components/ColorModeContext';
 import CustomButton from '../components/CustomButton';
 
-const Header = ({ onSidebarOpen }) => {
+const Header = ({ onSidebarOpen}) => {
     const [open, setOpen] = useState(false);
     const theme = useTheme();
     const anchorRef = useRef(null);
@@ -49,8 +49,8 @@ const Header = ({ onSidebarOpen }) => {
     const [isSignedIn, setIsSignedIn] = useState(false);
 
   useEffect(() => {
-    const email = localStorage.getItem('email');
-    if (email === `${email}`) {
+    const email = localStorage.getItem('Credentials');
+    if (email === (`${email}`)) {
       setIsSignedIn(true);
     }
   }, []);
@@ -326,7 +326,7 @@ const Header = ({ onSidebarOpen }) => {
         
         </React.Fragment>
 ):(
-    <h1>Please sign in to access header.</h1>
+    <h1>Please Sign In To Access Header.</h1>
 )}
         </div>
 
