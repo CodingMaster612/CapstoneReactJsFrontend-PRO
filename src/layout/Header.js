@@ -1,5 +1,5 @@
 /* eslint-disable import/first */
-import React, { useState, useRef, useContext } from 'react';
+import React, { useState, useRef, useContext, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
@@ -46,7 +46,15 @@ const Header = ({ onSidebarOpen }) => {
     const theme = useTheme();
     const anchorRef = useRef(null);
     const colorMode = useContext(ColorModeContext);
-  
+    const [isSignedIn, setIsSignedIn] = useState(false);
+
+  useEffect(() => {
+    const email = localStorage.getItem('email');
+    if (email === `${email}`) {
+      setIsSignedIn(true);
+    }
+  }, []);
+    
     const handleOpen = () => {
       setOpen(true);
     };
@@ -56,8 +64,13 @@ const Header = ({ onSidebarOpen }) => {
     };
   
     return (
+        <div>
+{isSignedIn ? (
+        
+            
         <React.Fragment>
             <AppBar
+             
                 elevation={5}
                 sx={{
                     top: 0,
@@ -308,13 +321,26 @@ const Header = ({ onSidebarOpen }) => {
                     </Box>
                     {theme.palette.mode === 'dark' && <Divider />}
                 </Toolbar>
+           
             </AppBar>
+        
         </React.Fragment>
+):(
+    <h1>Please sign in to access header.</h1>
+)}
+        </div>
+
     );
+    
+                                      
 };
 
+
+
+
+    
 Header.propTypes = {
     onSidebarOpen: PropTypes.func,
 };
-
+  
 export default Header;
