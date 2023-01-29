@@ -17,6 +17,7 @@ import Shell from './components/pages/ShellCityBank.js';
 import Bank from "./components/pages/BankHomePage.js";
 import Buy from "./components/pages/Buy.js";
 import Post from './components/pages/PostData.js';
+import HomePage from './components/pages/HomePage.js'
 import CoinDetailPage from "./components/pages/CoinDetailPage"
 import CoinSummaryPage from "./components/pages/CoinSummaryPage";
 import { WatchListContextProvider } from "./context/watchListContext";
@@ -82,7 +83,7 @@ const App = () => {
           <BrowserRouter>
             <Layout>
               <Routes>
-                <Route exact path='/' element={<Dashboard />} />
+                <Route path='/dash' element={<Dashboard />} />
                 <Route path="/register" element={<Register />} />
                 <Route path="/signIn" element={<SignIn />} />
                 <Route path="/profile" element={<Profile />} />
@@ -95,6 +96,7 @@ const App = () => {
                 {/* <Route path="/postData" element={<Post/>} /> */}
                 <Route path="/coin" element={<CoinSummaryPage/>} />
                 <Route path="/coins/:id" element={<CoinDetailPage/>} />
+                <Route exact path="/" element={<HomePage />} />
               </Routes>
             </Layout>
           </BrowserRouter>

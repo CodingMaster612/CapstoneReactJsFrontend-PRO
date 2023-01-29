@@ -134,7 +134,7 @@ const Header = ({ onSidebarOpen }) => {
                         }}
                     >
                         <CustomButton 
-                            href='/'
+                            href='/dash'
                             icon={<DashboardIcon />}
                             text='Dashboard'
                         />

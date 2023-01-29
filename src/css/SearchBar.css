@@ -1,0 +1,36 @@
+.box-1{
+    width: 100%;
+    text-align:center;
+    position: relative;
+    top: 300px;
+}
+
+.search-form {
+    
+    align-items: center;
+    margin-bottom: 1rem;
+    
+  }
+  
+  .search-input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 5px 0 0 5px;
+    width: 30%;
+    border-radius: 25px;
+    border-width: 2px;
+  }
+  
+  .search-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    border-radius: 25px;
+    border-width: 2px;
+  }
+  
+  
+  
