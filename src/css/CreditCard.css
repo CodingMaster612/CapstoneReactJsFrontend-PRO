@@ -65,6 +65,7 @@ section {
   height: 60%;
   width: 60%;
   object-fit: cover;
+
 }
 .cardWrapper * {
   pointer-events: none;

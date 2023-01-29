@@ -1,5 +1,6 @@
 import React from 'react'
 import SearchBar from '../../components/reusables/SearchBar'
+import DropDownButton from '../../components/reusables/SideDropDown'
 // import BackgroundImage from '../../img/white.png'
 
 

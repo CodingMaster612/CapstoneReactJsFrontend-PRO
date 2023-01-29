@@ -97,13 +97,8 @@ function WalletInfoBox(props) {
                 
             </div>
         </section>
-
-
-
-
-    )
  
-    
+    )
 }
 
 

@@ -23,7 +23,7 @@ const SearchBar = () => {
         type="text"
         value={searchTerm}
         onChange={handleChange}
-        placeholder="Search..."
+        placeholder="Enter Desired Location..."
         className="search-input"
       />
       <button type="submit" className="search-button">
