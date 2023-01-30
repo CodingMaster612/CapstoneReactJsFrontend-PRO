@@ -1,5 +1,5 @@
 .sign-in-button {
-    background: linear-gradient(to right, #0072ff, #00c6ff);
+    background: linear-gradient(to right, blue, pink);
     color: white;
     padding: 10px 20px;
     border-radius: 20px;
@@ -9,5 +9,18 @@
 
     position: absolute;
     left: 1535px;
-    top: 145px;
+    top: 80px;
+  }
+  .sign-Up-button {
+    background: linear-gradient(to right, blue, pink);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+
+    position: absolute;
+    left:1400px;
+    top: 80px;
   }

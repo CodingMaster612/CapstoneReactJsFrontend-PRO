@@ -7,6 +7,7 @@ import ImageComponent from '../reusables/ImageComponent'
 import TypeWriter from '../../components/reusables/TypeWriter.js'
 import SideBar from '../reusables/SideBar.js'
 import SignInButton from '../reusables/SignInButton'
+import SignUpButton from '../reusables/SignUpButton'
 function HomePage() {
     return (
         <header style={HeaderStyle}>
@@ -18,10 +19,10 @@ function HomePage() {
                     imageClass={"image"}
                 />
 
-                <TypeWriter/>
+                {/* <TypeWriter/> */}
                 
                 <SignInButton/>
-
+                <SignUpButton/>
                 <div> 
                 <SideBar/>
                 </div>

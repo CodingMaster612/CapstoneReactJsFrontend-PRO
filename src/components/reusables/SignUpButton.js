@@ -2,18 +2,18 @@ import React from 'react';
 import '../../css/SignInButton.css';
 import { useNavigate } from "react-router-dom";
 
-const SignInButton = () => {
+const SignUpButton = () => {
   const navigate = useNavigate(); 
   
   
   const RouteChange= () =>{
-    navigate("/signIn");
+    navigate("/register");
   }
   
   
   
   return (
-    <button className="sign-in-button" onClick={RouteChange}>Sign In</button>
+    <button className="sign-Up-button" onClick={RouteChange}>Sign Up</button>
   );
 };
-export default SignInButton;
+export default SignUpButton;

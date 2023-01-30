@@ -6,11 +6,12 @@
     left: 50px;
     top: 30px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black
 }
 .box-first p:first-letter{
-    font-size: 250%;
-    color: red;
-    box-shadow: 10px 10px 70px rgba(0, 0, 0, 0.9);
+    font-size: 400%;
+    color: black;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 10);
     border-radius: 5px;
     
 

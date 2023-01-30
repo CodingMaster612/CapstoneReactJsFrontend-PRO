@@ -6,3 +6,7 @@
 4. add text  and css to signin and sign up page 
 
 6. card component like apple pay walllet
+
+
+log out backend delete id cookie form teh session
+make modal

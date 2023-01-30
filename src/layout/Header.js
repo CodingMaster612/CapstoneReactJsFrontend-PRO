@@ -48,7 +48,17 @@ const Header = ({ onSidebarOpen}) => {
     const colorMode = useContext(ColorModeContext);
     const [isSignedIn, setIsSignedIn] = useState(false);
 
-  useEffect(() => {
+  
+  const submitChange= () =>{
+    localStorage.clear(); 
+
+  }
+  
+  
+  
+  
+  
+    useEffect(() => {
     const email = localStorage.getItem('Credentials');
     if (email === (`${email}`)) {
       setIsSignedIn(true);
@@ -313,7 +323,10 @@ const Header = ({ onSidebarOpen}) => {
                                     fullWidth
                                     variant='outlined'
                                     href='/'
+                                    onClick={submitChange}
+                                    
                                 >
+                                    
                                     Logout
                                 </Button>
                             </Box>
