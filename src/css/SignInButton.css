@@ -1,24 +1,24 @@
 .sign-in-button {
-    background: linear-gradient(to right, blue, pink);
+    background: linear-gradient(to right, white);
     color: white;
     padding: 10px 20px;
     border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
 
     position: absolute;
     left: 1535px;
     top: 80px;
   }
   .sign-Up-button {
-    background: linear-gradient(to right, blue, pink);
+    background: linear-gradient(to right, black);
     color: white;
     padding: 10px 20px;
     border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
 
     position: absolute;
     left:1400px;

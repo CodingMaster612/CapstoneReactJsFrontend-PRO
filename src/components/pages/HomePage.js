@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import SearchBar from '../../components/reusables/SearchBar'
 import DropDownButton from '../../components/reusables/SideDropDown'
 // import BackgroundImage from '../../img/white.png'
@@ -8,7 +8,13 @@ import TypeWriter from '../../components/reusables/TypeWriter.js'
 import SideBar from '../reusables/SideBar.js'
 import SignInButton from '../reusables/SignInButton'
 import SignUpButton from '../reusables/SignUpButton'
-function HomePage() {
+import Modal from '../Questionables/Modal'
+function HomePage(props) {
+    
+    
+    
+    
+    
     return (
         <header style={HeaderStyle}>
             <div>
@@ -26,11 +32,14 @@ function HomePage() {
                 <div> 
                 <SideBar/>
                 </div>
+                <Modal/>
             </div>
+           
         </header>
+        
 
     )
-}
+    }
 const HeaderStyle = {
     width: "100%",
     height: "100vh",

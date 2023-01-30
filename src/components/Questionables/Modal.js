@@ -1,40 +1,37 @@
-import React from "react";
-import "../../css/Modal.css";
+import React, { useState } from "react";
+import Modal from "react-modal";
+import '../../css/Modal.css'
+const customStyles = {
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+    backgroundColor: "white",
+    
+    color: "black",
+  },
+};
 
-function Modal({ setOpenModal }) {
+function Modals() {
+  const [modalOpen, setModalOpen] = useState(false);
+
   return (
-    <div className="modalBackground">
-      <div className="modalContainer">
-        <div className="titleCloseBtn">
-          <button
-            onClick={() => {
-              setOpenModal(false);
-            }}
-          >
-            X
-          </button>
-        </div>
-        <div className="title">
-        
-          
-        </div>
-        <div className="body">
-          
-        </div>
-        <div className="footer">
-          <button
-            onClick={() => {
-              setOpenModal(false);
-            }}
-            id="cancelBtn"
-          >
-            Cancel
-          </button>
-          <button>Continue</button>
-        </div>
-      </div>
+    <div className="modal-wrapper">
+      <button className="button-style"onClick={setModalOpen}>View</button>
+      <Modal
+        isOpen={modalOpen}
+        onRequestClose={() => setModalOpen(false)}
+        style={customStyles}
+      >
+       <p style={customStyles}>Navigate: Dash: Register </p>
+
+        <button className="button-style"onClick={() => setModalOpen(false)}>Close</button>
+      </Modal>
     </div>
   );
 }
 
-export default Modal;
+export default Modals;

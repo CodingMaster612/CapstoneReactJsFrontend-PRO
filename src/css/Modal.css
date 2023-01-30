@@ -1,9 +1,15 @@
 .modal-wrapper{
   position: relative;
   top:20px;
-  left: 0%;
+  left: 60px;
+  
 }
-
+.button-style{
+  width:60px;
+  border-radius: 20px;
+  background-color: white;
+  color: black
+}
 
 .modalBackground {
   width: 100vw;
