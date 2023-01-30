@@ -2,6 +2,8 @@ import React from 'react'
 import SearchBar from '../../components/reusables/SearchBar'
 import DropDownButton from '../../components/reusables/SideDropDown'
 // import BackgroundImage from '../../img/white.png'
+import pillow from '../../img/pillowLogo.png'
+import ImageComponent from '../reusables/ImageComponent'
 
 
 function HomePage() {
@@ -9,6 +11,12 @@ function HomePage() {
         <header style={HeaderStyle}>
             <div>
                 <SearchBar />
+                <ImageComponent 
+          imageUrl={pillow}
+        
+          imageClass={"image"}
+        />
+                
             </div>
         </header>
 

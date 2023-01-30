@@ -3,12 +3,14 @@
     text-align:center;
     position: relative;
     top: 300px;
+    
 }
 
 .search-form {
     
     align-items: center;
     margin-bottom: 1rem;
+    
     
   }
   
@@ -20,7 +22,8 @@
     width: 30%;
     border-radius: 25px;
     border-width: 2px;
-    color: black
+    color: black;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
   }
   
   .search-button {
@@ -31,6 +34,7 @@
     cursor: pointer;
     border-radius: 25px;
     border-width: 2px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
   }
   
   

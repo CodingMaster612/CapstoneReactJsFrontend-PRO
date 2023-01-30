@@ -1,0 +1,11 @@
+.image {
+    height: 200px;
+    width: 200px;
+    position: fixed;
+  top: 15%;
+  left:48%;
+  margin-top: -50px;
+  margin-left: -100px;
+    border-radius:50%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}

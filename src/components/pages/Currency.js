@@ -60,7 +60,7 @@ function Currency() {
 
   return (
     <header style={HeaderStyle}>
-      <div>
+      {/* <div>
         <div className="h1-tag">
           <h1>Currency Converter</h1>
           <div className="h2-tag">
@@ -77,7 +77,7 @@ function Currency() {
           </div>
         </div>
         
-        </div>
+        </div> */}
 
         <CurrencyInput
           onAmountChange={handleAmount1Change}
