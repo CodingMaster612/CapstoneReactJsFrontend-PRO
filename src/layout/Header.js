@@ -326,7 +326,7 @@ const Header = ({ onSidebarOpen}) => {
         
         </React.Fragment>
 ):(
-    <h1>Please Sign In To Access Header.</h1>
+    <h1>Please Sign In To Access Navigation Bar.</h1>
 )}
         </div>
 
