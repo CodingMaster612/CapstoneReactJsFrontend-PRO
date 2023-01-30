@@ -5,7 +5,8 @@ import DropDownButton from '../../components/reusables/SideDropDown'
 import pillow from '../../img/pillowLogo.png'
 import ImageComponent from '../reusables/ImageComponent'
 import TypeWriter from '../../components/reusables/TypeWriter.js'
-
+import SideBar from '../reusables/SideBar.js'
+import SignInButton from '../reusables/SignInButton'
 function HomePage() {
     return (
         <header style={HeaderStyle}>
@@ -18,6 +19,12 @@ function HomePage() {
                 />
 
                 <TypeWriter/>
+                
+                <SignInButton/>
+
+                <div> 
+                <SideBar/>
+                </div>
             </div>
         </header>
 
