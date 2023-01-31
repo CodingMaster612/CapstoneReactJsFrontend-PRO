@@ -36,6 +36,7 @@ import SavingsIcon from '@mui/icons-material/Savings';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCoins } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
 library.add(faCoins)
 
 import ColorModeContext from '../components/ColorModeContext';
@@ -176,11 +177,11 @@ const Header = ({ onSidebarOpen}) => {
                             icon={<LockOpenIcon/>}
                             text='signIn'
                         />
-                        {/* <CustomButton 
-                            href='/Cart'
-                            icon={<ShoppingCartIcon/>}
-                            text='Add to Cart'
-                        /> */}
+                        <CustomButton 
+                            href='/Admin'
+                            icon={<AdminPanelSettingsIcon/>}
+                            text='Admin'
+                        />
                         <CustomButton 
                             href='/Rates'
                             icon={<SavingsIcon/>}

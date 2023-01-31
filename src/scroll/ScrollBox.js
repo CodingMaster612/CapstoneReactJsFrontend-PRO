@@ -21,27 +21,18 @@ function ScrollBox() {
 
     return (
         <div className="App">
-            {/* <ScrollToTop /> */}
             <div className="hero">
                 
-                    {/* <li onClick={() => scrollToSection(services)} className="link">
-            How it Works
-          </li>
-          <li onClick={() => scrollToSection(blog)} className="link">
-            What is Pillow?
-          </li>
-          <li onClick={() => scrollToSection(contact)} className="link">
-            Goal 
-          </li> */}
-                          <img className="image-1"src={pillow} />
-
-                          <SideBar/>
-
-                
+          
+            
+            
+            <img src="https://img.freepik.com/free-vector/technology-bitcoin-background-with-holographic-effect_1017-31521.jpg?w=2000" />
+            <div className="img-2"><img src="https://m.media-amazon.com/images/I/5170r5wKmtL._AC_SY580_.jpg"/></div>
+            <div className="img-3"><img src="https://atlas-content1-cdn.pixelsquid.com/assets_v2/252/2522000106618623430/jpeg-600/G03.jpg"/></div>
             </div>
             <div ref={services} className="services">
                 <div>
-                    
+                   
                 </div>
                 <div ref={blog} className="blog">
 

@@ -2,9 +2,43 @@
     text-align: center;
   }
   
-  .hero {
+  .hero{
     height: 800px;
     background-color: white;
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20201101/pngtree-3d-rendering-for-display-product-banner-on-website-image_453005.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    
+  }
+  .hero img{
+    border-radius: 50%;
+    width: 200px;
+    position: relative;
+    top: 200px;
+    left: -50px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
+
+  }
+  .img-2 img{
+    border-radius: 50%;
+    width: 200px;
+    position: relative;
+    top: 100px;
+    left: -450px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
+
+  }
+  .img-3 img{
+    border-radius: 50%;
+    width: 400px;
+    position: relative;
+    top: -300px;
+    left: 550px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
+
   }
   .services {
     height: 800px;
@@ -62,3 +96,4 @@
     color: #fff;
     border: 2px solid #fff;
   }
+

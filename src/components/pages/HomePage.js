@@ -18,7 +18,7 @@ function HomePage(props) {
     
     return (
         <header style={HeaderStyle}>
-                <div>
+                 {/* <div>
                 <SearchBar />
                 </div>
                 <div>
@@ -27,7 +27,7 @@ function HomePage(props) {
                 </div>
                 <div> 
                     <Modal/>
-                </div>
+                </div> */}
 
                 
                 
@@ -37,7 +37,7 @@ function HomePage(props) {
             
             <div>
                 <ScrollBox/>
-            </div>
+            </div> 
            
         </header>
         
