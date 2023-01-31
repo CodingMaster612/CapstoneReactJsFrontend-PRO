@@ -22,6 +22,7 @@ import HomePage from './components/pages/HomePage.js'
 import CoinDetailPage from "./components/pages/CoinDetailPage"
 import CoinSummaryPage from "./components/pages/CoinSummaryPage";
 import { WatchListContextProvider } from "./context/watchListContext";
+import Admin from './components/pages/AdminConfig'
 
 import './App.css';
 
@@ -99,6 +100,7 @@ const App = () => {
                 <Route path="/coins/:id" element={<CoinDetailPage/>} />
                 <Route exact path="/" element={<HomePage />} />
                 <Route path="/Rates" element={<Rates/>}/>
+                <Route path="/Admin" element={<Admin/>} />
               </Routes>
             </Layout>
           </BrowserRouter>
