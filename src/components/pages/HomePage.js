@@ -9,6 +9,7 @@ import SideBar from '../reusables/SideBar.js'
 import SignInButton from '../reusables/SignInButton'
 import SignUpButton from '../reusables/SignUpButton'
 import Modal from '../Questionables/Modal'
+import ScrollBox from '../../scroll/ScrollBox'
 function HomePage(props) {
     
     
@@ -17,7 +18,7 @@ function HomePage(props) {
     
     return (
         <header style={HeaderStyle}>
-            <div>
+            {/* <div>
                 <SearchBar />
                 <ImageComponent
                     imageUrl={pillow}
@@ -25,7 +26,6 @@ function HomePage(props) {
                     imageClass={"image"}
                 />
 
-                {/* <TypeWriter/> */}
                 
                 <SignInButton/>
                 <SignUpButton/>
@@ -33,6 +33,9 @@ function HomePage(props) {
                 <SideBar/>
                 </div>
                 <Modal/>
+            </div> */}
+            <div>
+                <ScrollBox/>
             </div>
            
         </header>

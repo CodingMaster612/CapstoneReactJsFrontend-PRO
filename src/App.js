@@ -17,6 +17,7 @@ import Shell from './components/pages/ShellCityBank.js';
 import Bank from "./components/pages/BankHomePage.js";
 import Buy from "./components/pages/Buy.js";
 import Post from './components/pages/PostData.js';
+import Rates from './components/pages/Rates.js';
 import HomePage from './components/pages/HomePage.js'
 import CoinDetailPage from "./components/pages/CoinDetailPage"
 import CoinSummaryPage from "./components/pages/CoinSummaryPage";
@@ -97,6 +98,7 @@ const App = () => {
                 <Route path="/coin" element={<CoinSummaryPage/>} />
                 <Route path="/coins/:id" element={<CoinDetailPage/>} />
                 <Route exact path="/" element={<HomePage />} />
+                <Route path="/Rates" element={<Rates/>}/>
               </Routes>
             </Layout>
           </BrowserRouter>

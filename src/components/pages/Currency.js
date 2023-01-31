@@ -60,24 +60,9 @@ function Currency() {
 
   return (
     <header style={HeaderStyle}>
-      {/* <div>
-        <div className="h1-tag">
-          <h1>Currency Converter</h1>
-          <div className="h2-tag">
-            <h2>Popular Currencies</h2>
-          </div>
-          <div className="USD">
-            <h3>United States Dollar: - USD</h3>
-          </div>
-          <div className="YEN">
-            <h4>Japanese Yen:- Yen</h4>
-          </div>
-          <div className="EURO">
-            <h5>The EURO: -EURO</h5>
-          </div>
-        </div>
+      
         
-        </div> */}
+      
 
         <CurrencyInput
           onAmountChange={handleAmount1Change}

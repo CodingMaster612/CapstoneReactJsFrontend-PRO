@@ -1,0 +1,52 @@
+.App {
+    text-align: center;
+  }
+  
+  .hero {
+    height: 800px;
+    background-color: black;
+  }
+  .services {
+    height: 800px;
+    background-color: white
+  }
+  .blog {
+    height: 800px;
+    background-color: black
+  }
+  .contact {
+    height: 800px;
+    background-color: white
+  }
+  
+  /* .link {
+    text-decoration: none;
+    display: inline;
+    padding: 20px 20px;
+    font-weight: 700;
+    font-size: large;
+    cursor: pointer;
+  } */
+  
+  /* scroll to top button */
+  .top-btn-position {
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+  }
+  
+  .top-btn-style {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .top-btn-style:hover {
+    animation: none;
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #fff;
+  }
