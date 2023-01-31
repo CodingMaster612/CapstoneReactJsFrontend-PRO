@@ -4,21 +4,28 @@
   
   .hero {
     height: 800px;
-    background-color: black;
+    background-color: red;
   }
   .services {
     height: 800px;
-    background-color: white
+    background-color: brown
   }
   .blog {
     height: 800px;
-    background-color: black
+    background-color: yellow
   }
   .contact {
     height: 800px;
-    background-color: white
+    background-color: blue
   }
   
+  .image-1{
+ border-radius: 100%;
+ width: 300px;
+ position: relative;
+ left: -300px;
+ top: 20%;
+  }
   /* .link {
     text-decoration: none;
     display: inline;
