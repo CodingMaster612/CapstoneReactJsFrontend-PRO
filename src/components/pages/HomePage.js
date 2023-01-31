@@ -20,12 +20,12 @@ function HomePage(props) {
         <header style={HeaderStyle}>
                  {/* <div>
                 <SearchBar />
-                </div>
+                </div> */}
                 <div>
                     <SignInButton/>
                     <SignUpButton/>
                 </div>
-                <div> 
+                {/* <div> 
                     <Modal/>
                 </div> */}
 

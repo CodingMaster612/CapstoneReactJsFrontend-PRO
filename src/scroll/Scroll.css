@@ -40,13 +40,23 @@
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
 
   }
+  .text h1{
+    position: relative;
+    left: -600px;
+    top: 200px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    color: black
+
+  }
   .services {
     height: 800px;
     background-color: brown
   }
   .blog {
     height: 800px;
-    background-color: yellow
+    background-color: white
   }
   .contact {
     height: 800px;

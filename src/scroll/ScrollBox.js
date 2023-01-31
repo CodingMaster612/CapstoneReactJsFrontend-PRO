@@ -22,7 +22,9 @@ function ScrollBox() {
     return (
         <div className="App">
             <div className="hero">
-                
+                <div className="text">
+                    {/* <h1>Currency Converter</h1> */}
+                </div>
           
             
             
