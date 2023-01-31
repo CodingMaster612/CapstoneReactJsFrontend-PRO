@@ -4,7 +4,7 @@
   
   .hero {
     height: 800px;
-    background-color: red;
+    background-color: white;
   }
   .services {
     height: 800px;
@@ -20,11 +20,16 @@
   }
   
   .image-1{
- border-radius: 100%;
- width: 300px;
- position: relative;
- left: -300px;
- top: 20%;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    top: 50px;
+ 
+  margin-top: -50px;
+  margin-left: -100px;
+    border-radius:50%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+
   }
   /* .link {
     text-decoration: none;

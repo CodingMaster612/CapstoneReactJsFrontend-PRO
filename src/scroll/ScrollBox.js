@@ -2,6 +2,8 @@ import { useRef } from "react";
 import '../scroll/Scroll.css';
 import pillow from '../img/pillowLogo.png'
 import ImageComponent from '../components/reusables/ImageComponent'
+import SideBar from '../components/reusables/SideBar'
+
 
 import ScrollToTop from "../scroll/ScrollToTop";
 
@@ -33,8 +35,7 @@ function ScrollBox() {
           </li> */}
                           <img className="image-1"src={pillow} />
 
-                          <h1>What is Pillow</h1>
-                          <p>Pillow is a well known Currency Converter, which provides information in real time. Pillow uses a least 6 different api's to provide information to the user. Pillow is designed to be used at borders or personal use.  </p>
+                          <SideBar/>
 
                 
             </div>

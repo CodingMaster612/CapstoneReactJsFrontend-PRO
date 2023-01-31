@@ -8,7 +8,7 @@ const Sidebar = () => {
       <p>Welcome To Pillow: use Pillow You Need to Sign in to Access The Search Bar and Navigation Bar. When signed in you can use the search bar to navigate to certain pages:</p>
       </div>
       <div className="box-first">
-      <p>Searchable Content:</p>
+      <p>What is Pillow?</p>
       </div>
     </div>
   );

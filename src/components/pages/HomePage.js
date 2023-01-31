@@ -18,22 +18,23 @@ function HomePage(props) {
     
     return (
         <header style={HeaderStyle}>
-            {/* <div>
+                <div>
                 <SearchBar />
-                <ImageComponent
-                    imageUrl={pillow}
-
-                    imageClass={"image"}
-                />
+                </div>
+                <div>
+                    <SignInButton/>
+                    <SignUpButton/>
+                </div>
+                <div> 
+                    <Modal/>
+                </div>
 
                 
-                <SignInButton/>
-                <SignUpButton/>
-                <div> 
-                <SideBar/>
-                </div>
-                <Modal/>
-            </div> */}
+                
+                
+                
+                
+            
             <div>
                 <ScrollBox/>
             </div>
