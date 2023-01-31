@@ -181,11 +181,11 @@ const Header = ({ onSidebarOpen}) => {
                             icon={<ShoppingCartIcon/>}
                             text='Add to Cart'
                         /> */}
-                        {/* <CustomButton 
-                            href='/bankLogin'
+                        <CustomButton 
+                            href='/Rates'
                             icon={<SavingsIcon/>}
-                            text='Shell'
-                        /> */}
+                            text="Tracker"
+                        />
                          <CustomButton 
                             href='/register'
                             icon={<VpnKeyIcon/>}
