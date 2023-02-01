@@ -1,8 +1,10 @@
 import React from 'react'
-
+import CreatorBox from '../../Creator/CreatorBox'
 function CreatorAdmin() {
   return (
-    <div>CreatorAdmin</div>
+    <div>
+      <CreatorBox/>
+    </div>
   )
 }
 

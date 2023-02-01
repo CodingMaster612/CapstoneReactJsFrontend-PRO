@@ -10,3 +10,5 @@
 
 log out backend delete id cookie form teh session
 make modal
+
+admin page shows bought currency by user id and shows user image registed to that person
