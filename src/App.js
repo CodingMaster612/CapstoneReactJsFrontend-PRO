@@ -30,7 +30,7 @@ import NewUser from './AdminPages/newUser/NewUser';
 import ProductList from './AdminPages/productList/ProductList';
 import Product from './AdminPages/product/Product';
 import NewProduct from './AdminPages/newProduct/NewProduct';
-
+import AdminLogin from './components/pages/AdminLoginPage'
 import Home from "./AdminPages/home/Home"
 
 import './App.css';
@@ -111,7 +111,7 @@ const App = () => {
                   <Route path="/Rates" element={<Rates />} />
                   <Route path="/Admin" element={<Admin />} />
                   <Route path="/Creator" element={<CreatorAdmin />} />
-                  
+                  <Route path="/AdminLogin" element= {<AdminLogin/>}/>
                   
                     
                     {/* <Route path="/Home" element={<Home />} />
