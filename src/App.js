@@ -23,6 +23,15 @@ import CoinDetailPage from "./components/pages/CoinDetailPage"
 import CoinSummaryPage from "./components/pages/CoinSummaryPage";
 import { WatchListContextProvider } from "./context/watchListContext";
 import Admin from './components/pages/AdminConfig'
+import CreatorAdmin from './components/pages/CreatorAdmin.js';
+import UserList from './AdminPages/userList/UserList';
+import User from './AdminPages/user/User';
+import NewUser from './AdminPages/newUser/NewUser';
+import ProductList from './AdminPages/productList/ProductList';
+import Product from './AdminPages/product/Product';
+import NewProduct from './AdminPages/newProduct/NewProduct';
+
+import Home from "./AdminPages/home/Home"
 
 import './App.css';
 
@@ -51,25 +60,25 @@ const App = () => {
       setMode('dark');
     }
   }, []);
-// const [user, setUser]= useState(null)
-//   useEffect(() => {
-//     const Id = localStorage.getItem("Credentials")
-//     axios.get(`http://localhost:8081/user/getItemsInCart/${Id}`)
-//         .then((response) => {
-            
-//                 setUser(response.data)
-//                 if(Id !== null){
-//                   console.log("Function Successfully rendered")
-//                 }else{
-//                   alert("Function in app.js is null, please add a Value")
-//                 }
-            
-//         })
-//         .catch((e) => {
-//             console.log(e)
-//         })
-// }, [])
-  
+  // const [user, setUser]= useState(null)
+  //   useEffect(() => {
+  //     const Id = localStorage.getItem("Credentials")
+  //     axios.get(`http://localhost:8081/user/getItemsInCart/${Id}`)
+  //         .then((response) => {
+
+  //                 setUser(response.data)
+  //                 if(Id !== null){
+  //                   console.log("Function Successfully rendered")
+  //                 }else{
+  //                   alert("Function in app.js is null, please add a Value")
+  //                 }
+
+  //         })
+  //         .catch((e) => {
+  //             console.log(e)
+  //         })
+  // }, [])
+
   return (
     <HelmetProvider>
       <Helmet
@@ -82,28 +91,40 @@ const App = () => {
         <ThemeProvider theme={customTheme[mode]}>
           <CssBaseline />
           <WatchListContextProvider>
-          <BrowserRouter>
-            <Layout>
-              <Routes>
-                <Route path='/dash' element={<Dashboard />} />
-                <Route path="/register" element={<Register />} />
-                <Route path="/signIn" element={<SignIn />} />
-                <Route path="/profile" element={<Profile />} />
-                <Route path="/currency" element={<Currency />} />           <Route path="/crypto" element={<HomeCrypto />} />
-                <Route path="/wallet" element={<Wallet />} />
-                <Route path='/cart' element={<Cart />} />
-                {/* <Route path="/bankLogin" element={<Shell />} /> */}
-                {/* <Route path='/Bank' element={<Bank />} /> */}
-                {/* <Route path="/buy" element={<Buy />} /> */}
-                {/* <Route path="/postData" element={<Post/>} /> */}
-                <Route path="/coin" element={<CoinSummaryPage/>} />
-                <Route path="/coins/:id" element={<CoinDetailPage/>} />
-                <Route exact path="/" element={<HomePage />} />
-                <Route path="/Rates" element={<Rates/>}/>
-                <Route path="/Admin" element={<Admin/>} />
-              </Routes>
-            </Layout>
-          </BrowserRouter>
+            <BrowserRouter>
+              <Layout>
+                <Routes>
+                  <Route path='/dash' element={<Dashboard />} />
+                  <Route path="/register" element={<Register />} />
+                  <Route path="/signIn" element={<SignIn />} />
+                  <Route path="/profile" element={<Profile />} />
+                  <Route path="/currency" element={<Currency />} />           <Route path="/crypto" element={<HomeCrypto />} />
+                  <Route path="/wallet" element={<Wallet />} />
+                  <Route path='/cart' element={<Cart />} />
+                  {/* <Route path="/bankLogin" element={<Shell />} /> */}
+                  {/* <Route path='/Bank' element={<Bank />} /> */}
+                  {/* <Route path="/buy" element={<Buy />} /> */}
+                  {/* <Route path="/postData" element={<Post/>} /> */}
+                  <Route path="/coin" element={<CoinSummaryPage />} />
+                  <Route path="/coins/:id" element={<CoinDetailPage />} />
+                  <Route exact path="/" element={<HomePage />} />
+                  <Route path="/Rates" element={<Rates />} />
+                  <Route path="/Admin" element={<Admin />} />
+                  <Route path="/Creator" element={<CreatorAdmin />} />
+                  
+                  
+                    
+                    <Route path="/Home" element={<Home />} />
+                    <Route path="/users" element={<UserList />} />
+                    <Route path="/user/:userId" element={<User />} />
+                    <Route path="/newUser" element={<NewUser />} />
+                    <Route path="/products" element={<ProductList />} />
+                    <Route path="/product/:productId" element={<Product />} />
+                    <Route path="/newProduct" element={<NewProduct />} />
+                  
+                </Routes>
+              </Layout>
+            </BrowserRouter>
           </WatchListContextProvider>
         </ThemeProvider>
       </ColorModeContext.Provider>
