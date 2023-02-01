@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import { SidebarData } from './SidebarData';
 import './Sidebar.css';
 import { IconContext } from 'react-icons';
+import Image from '../AdminImage/Image'
+
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
@@ -18,6 +20,7 @@ function Navbar() {
           <Link to='#' className='menu-bars'>
             <FaIcons.FaBars onClick={showSidebar} />
           </Link>
+
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           <ul className='nav-menu-items' onClick={showSidebar}>
@@ -25,6 +28,9 @@ function Navbar() {
               <Link to='#' className='menu-bars'>
                 <AiIcons.AiOutlineClose />
               </Link>
+              <div>
+                <Image />
+              </div>
             </li>
             {SidebarData.map((item, index) => {
               return (

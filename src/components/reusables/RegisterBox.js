@@ -5,7 +5,8 @@ import '../../css/signUp.css';
 function RegisterBox() {
    const [user, setUser] = useState({
       email:"",
-      password:""
+      password:"",
+      storedUrl:""
    })
 
 
@@ -48,7 +49,11 @@ return (
                                 <input placeholder="Password" type="password" className="login__input" onChange={changeHandler} name="password" value={user.password} />
 
                             </div>
-                            
+                            <div className="login__field">
+                                <i className="login__icon fas fa-lock"></i>
+                                <input placeholder="Profile Image" type="text" className="login__input" onChange={changeHandler} name="storedUrl" value={user.storedUrl} />
+
+                            </div>
                             <button  className="button login__submit"onClick={submitHandler}>
 
                                 <span className="button__text">Sign Up Now</span>

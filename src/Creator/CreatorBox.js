@@ -1,11 +1,13 @@
 import React from 'react'
 import Sidebar from './SideBar/Side'
+import Image from './AdminImage/Image'
 function CreatorBox() {
   return (
     <header style={HeaderStyle}>
     
     <div>
     <Sidebar/>
+    
     </div>
     </header>
   )

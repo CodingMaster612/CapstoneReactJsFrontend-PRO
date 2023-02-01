@@ -29,6 +29,7 @@ function AdminLogin() {
             console.log(response.data)
             localStorage.setItem("Admin", response.data.email)
             
+            
 
             navigator('/Creator')
 

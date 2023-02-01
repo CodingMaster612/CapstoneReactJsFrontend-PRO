@@ -28,7 +28,7 @@ function SignInBox() {
             
             console.log(response.data)
             localStorage.setItem("Credentials", response.data.email)
-            
+            localStorage.setItem ("imageUrl", response.data.storedUrl)
 
             navigator('/')
 
