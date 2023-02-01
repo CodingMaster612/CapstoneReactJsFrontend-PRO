@@ -3,6 +3,7 @@ import '../scroll/Scroll.css';
 import pillow from '../img/pillowLogo.png'
 import ImageComponent from '../components/reusables/ImageComponent'
 import SideBar from '../components/reusables/SideBar'
+import SearchBar from '../components/reusables/SearchBar'
 
 
 import ScrollToTop from "../scroll/ScrollToTop";
@@ -23,18 +24,20 @@ function ScrollBox() {
         <div className="App">
             <div className="hero">
                 <div className="text">
-                    {/* <h1>Currency Converter</h1> */}
+
+                    {/* <h1>:Currency Converter:</h1> */}
+
                 </div>
-          
-            
-            
-            <img src="https://img.freepik.com/free-vector/technology-bitcoin-background-with-holographic-effect_1017-31521.jpg?w=2000" />
-            <div className="img-2"><img src="https://m.media-amazon.com/images/I/5170r5wKmtL._AC_SY580_.jpg"/></div>
-            <div className="img-3"><img src="https://atlas-content1-cdn.pixelsquid.com/assets_v2/252/2522000106618623430/jpeg-600/G03.jpg"/></div>
+
+
+
+                <img src="https://img.freepik.com/free-vector/technology-bitcoin-background-with-holographic-effect_1017-31521.jpg?w=2000" />
+                <div className="img-2"><img src="https://img.freepik.com/free-vector/technology-bitcoin-background-with-holographic-effect_1017-31521.jpg?w=2000" /></div>
+                <div className="img-3"><img src="https://img.freepik.com/free-vector/technology-bitcoin-background-with-holographic-effect_1017-31521.jpg?w=2000" /></div>
             </div>
             <div ref={services} className="services">
                 <div>
-                   
+                        <SearchBar/>
                 </div>
                 <div ref={blog} className="blog">
 
@@ -43,8 +46,8 @@ function ScrollBox() {
 
                 </div>
             </div>
-            </div>
-            );
+        </div>
+    );
 }
 
-            export default ScrollBox;
+export default ScrollBox;

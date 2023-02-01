@@ -12,6 +12,7 @@
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
     
+    
   }
   .hero img{
     border-radius: 50%;
@@ -43,17 +44,18 @@
   .text h1{
     position: relative;
     left: -600px;
-    top: 200px;
-    font-size: 30px;
+    top: 100px;
+    font-size: 50px;
     font-weight: bold;
-    font-family:'Times New Roman', Times, serif;
-    color: black
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    box-shadow:  rgba(0, 0, 0, 0.9);
+    text-shadow: -1px 1px 10px rgba(0, 0, 0, 0.75)
+
+
 
   }
-  .services {
-    height: 800px;
-    background-color: brown
-  }
+
   .blog {
     height: 800px;
     background-color: white
