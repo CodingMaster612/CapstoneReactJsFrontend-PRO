@@ -1,21 +1,20 @@
-import WalletInfoBox from './WalletInfoBox'
+import '../Rectangle/Rectangle.css'
 import axios from 'axios'
 import React, { useState, useEffect } from 'react'
-import LoadingSpinner from '../reusables/Loadingspinner'
+import LoadingSpinner from '../../components/reusables/Loadingspinner'
+import AdminInfoBox from '../AdminInfo/AdminInfoBox'
+const Rectangle = (props) => {
 
-function ViewCreditCards() {
-
-    const [cards, setCards] = useState([])
+    const [cart, setCart] = useState([])
     const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
-
-        axios.get('http://localhost:8081/card/viewAllCreditCards')
+        const email = localStorage.getItem('Credentials')
+        axios.get(`http://localhost:8081/cart/viewAllOwned/${email}`)
             .then((response) => {
                 setTimeout(() => {
-                    setCards(response.data)
+                    setCart(response.data)
                     setIsLoading(false)
-                    
                 }, 3000)
             })
             .catch((e) => {
@@ -32,10 +31,10 @@ function ViewCreditCards() {
             )
         } else {
             return (
-                cards.map((cards) => {
+                cart.map((carts) => {
                     return (
 
-                        <WalletInfoBox cards={cards} />
+                        <AdminInfoBox cart={carts} />
                     
                         
 
@@ -62,4 +61,15 @@ function ViewCreditCards() {
 }
 
 {/* */ }
-export default ViewCreditCards
+    
+    
+    
+  
+    
+
+
+export default Rectangle;
+
+
+
+//1. Create a Rectangle 2. make props in rectangle to show information inside teh rectangle show credit card owners and currency owners

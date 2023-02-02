@@ -8,7 +8,9 @@ import { useNavigate } from 'react-router'
 function SignInBox() {
    //  const navigator = useNavigate()
    const navigator = useNavigate()
-   const [user, setUser] = useState({})
+   const [user, setUser] = useState({
+
+   })
 
 
    const changeHandler = (event) => {
@@ -27,9 +29,8 @@ function SignInBox() {
          .then((response) => {
             
             console.log(response.data)
-            localStorage.setItem("Credentials", response.data.email)
-            localStorage.setItem ("imageUrl", response.data.storedUrl)
-
+            localStorage.setItem("Credentials", response.data.email);
+            localStorage.setItem ("imageUrl", response.data.storedUrl);
             navigator('/')
 
          }).catch((e) => {

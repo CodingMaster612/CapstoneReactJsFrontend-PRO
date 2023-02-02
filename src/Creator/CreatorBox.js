@@ -1,13 +1,14 @@
 import React from 'react'
 import Sidebar from './SideBar/Side'
 import Image from './AdminImage/Image'
+import Rectangle from './Rectangle/Rectangle'
 function CreatorBox() {
   return (
     <header style={HeaderStyle}>
     
     <div>
     <Sidebar/>
-    
+    <Rectangle/>
     </div>
     </header>
   )

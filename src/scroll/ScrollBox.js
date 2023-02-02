@@ -32,8 +32,8 @@ function ScrollBox() {
 
 
                 <img src="https://img.freepik.com/free-vector/technology-bitcoin-background-with-holographic-effect_1017-31521.jpg?w=2000" />
-                <div className="img-2"><img src="https://img.freepik.com/free-vector/technology-bitcoin-background-with-holographic-effect_1017-31521.jpg?w=2000" /></div>
-                <div className="img-3"><img src="https://img.freepik.com/free-vector/technology-bitcoin-background-with-holographic-effect_1017-31521.jpg?w=2000" /></div>
+                <div className="img-2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREFXVxICau5sODgKOeemerwGqorkVUGG8ZPe2vTpGzKL4V0Hi0JFdXoqDFOASVsvErT5Y&usqp=CAU" /></div>
+                <div className="img-3"><img src="https://i.iheart.com/v3/re/new_assets/5e7273670266b01cbb1ec735?ops=contain(1480,0)" /></div>
             </div>
             <div ref={services} className="services">
                 <div>
