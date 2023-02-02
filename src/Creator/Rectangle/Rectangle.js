@@ -3,6 +3,10 @@ import axios from 'axios'
 import React, { useState, useEffect } from 'react'
 import LoadingSpinner from '../../components/reusables/Loadingspinner'
 import AdminInfoBox from '../AdminInfo/AdminInfoBox'
+import MoveableChart from '../Graph/MovableChart'
+import Sidebar from '../SideBar/Side'
+
+
 const Rectangle = (props) => {
 
     const [cart, setCart] = useState([])
@@ -55,6 +59,12 @@ const Rectangle = (props) => {
 
         <div>
             {renderContent()}
+            <div className="MovableChart">
+            <MoveableChart/>
+            </div>
+            <div>
+                {/* <Sidebar/> */}
+            </div>
         </div>
 
     )
