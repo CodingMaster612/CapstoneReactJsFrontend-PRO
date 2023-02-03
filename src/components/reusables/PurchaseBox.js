@@ -60,7 +60,7 @@ function PurchaseBox(props) {
                     <div className="text"><h5>Amount:  {props.cart.amount}</h5></div>
                     <div className='text'><h6>Currency: {props.cart.currency}</h6></div>
                     <div><img className='img' src={props.cart.image}></img></div>
-                    <Button id={props.cart.id} className="result-button" onClick={onClicking} text={"Get Product"} />
+                    <Button id={props.cart.id} className="result-button" onClick={onClicking} text={"Get Product user id"} />
                     <Button id={props.cart.id} className="result-button" onClick={onSubmitting} text={`Buy Product: ID: ${props.cart.id}`} />
                     <Button id={props.cart.id} className="result-button-2" onClick={onClicks} text={"Delete Item"} />
                 </div>

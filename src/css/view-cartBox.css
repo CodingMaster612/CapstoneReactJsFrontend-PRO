@@ -62,15 +62,15 @@
   .currency-box{
     position: relative;
     top: 20px;
-    left: 600px;
+    left: 100px;
     
   }
 
   .img {
     border-radius: 50%;
     position: relative;
-    width: 10%;
-    opacity: 0.6;
+    width:20%;
+    opacity: 0.9;
     
   }
 
