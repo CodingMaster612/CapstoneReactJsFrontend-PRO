@@ -1,11 +1,13 @@
 .navbar {
-  background-color: black;
+  background-color: orange;
   height: 80px;
   display: flex;
   justify-content: start;
   align-items: center;
   Width: 6%;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
+  position: relative;
+  top: 15px;
 
   
 }

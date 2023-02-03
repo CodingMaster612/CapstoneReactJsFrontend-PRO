@@ -53,6 +53,15 @@ const Rectangle = (props) => {
         
     }
 
+    const renderGraphContent = () =>{
+        return(
+            <div className="MovableChart">
+            <MoveableChart/>
+            </div>
+        )
+    }
+
+    
     const renderContent = () => {
 
         if (isLoading) {
@@ -61,6 +70,7 @@ const Rectangle = (props) => {
             )
         } else {
             return (
+                
                 cart.map((carts) => {
                     return (
 
@@ -93,9 +103,10 @@ const Rectangle = (props) => {
         <div>
             {renderContent()}
             {renderContentCard()}
-            <div className="MovableChart">
-            <MoveableChart/>
-            </div>
+            {renderGraphContent()}
+            
+            
+            
          
         </div>
 

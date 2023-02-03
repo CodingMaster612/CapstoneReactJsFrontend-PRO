@@ -9,13 +9,13 @@ function AdminInfoBox(props) {
 
 
 
+            <div className="cart-wrapper">
 
-            
                 <div><img className="CoinImage" src={props.cart.image}></img></div>
 
                 <div className="Amount-1"><h1> Amount: {props.cart.amount}</h1></div>
                 <div className="Currency-1"><h2>Currency: {props.cart.currency}</h2></div>
-            
+            </div>
 
         </div>
 
