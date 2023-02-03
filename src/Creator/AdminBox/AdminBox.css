@@ -1,0 +1,30 @@
+.glossy-rectangle {
+    width: 350px;
+    height: 600px;
+    background-color: #fff;
+    position: fixed;
+    top: 300px;
+    left: 350px;
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .glossy-rectangle::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    right: -50px;
+    bottom: -50px;
+    background: linear-gradient(45deg, #ddd, #fff);
+    transform: skew(45deg);
+    z-index: -1;
+  }
+
+  .glossy-rectangle h1{
+    color: black;
+    position: relative;
+    left: 12%;
+    text-decoration: underline black  
+  }

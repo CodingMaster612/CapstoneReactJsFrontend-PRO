@@ -3,6 +3,7 @@ import Sidebar from './SideBar/Side'
 import Image from './AdminImage/Image'
 // import BackgroundImage from '../img/AdminLogo.png'
 import Rectangle from './Rectangle/Rectangle'
+import AdminBox from './AdminBox/AdminBox'
 function CreatorBox() {
   return (
     <header style={HeaderStyle}>
@@ -10,7 +11,7 @@ function CreatorBox() {
     <div>
     <Sidebar/>
     <Rectangle/>
-    
+    <AdminBox/>
     
     
     
