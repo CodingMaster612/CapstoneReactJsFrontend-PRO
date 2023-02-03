@@ -4,12 +4,14 @@ import React, { useState, useEffect } from 'react'
 import LoadingSpinner from '../../components/reusables/Loadingspinner'
 import AdminInfoBox from '../AdminInfo/AdminInfoBox'
 import MoveableChart from '../Graph/MovableChart'
+import  AdminCardInfoBox from '../AdminInfo/AdminCardInfoBox'
 import Sidebar from '../SideBar/Side'
 
 
 const Rectangle = (props) => {
 
     const [cart, setCart] = useState([])
+    const [card, setCard] = useState([])
     const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
@@ -26,6 +28,30 @@ const Rectangle = (props) => {
             })
     }, [])
 
+
+    useEffect(() => {
+        const email = localStorage.getItem('Credentials')
+        axios.get(`http://localhost:8081/card/viewOwnedCredit/${email}`)
+            .then((response) => {
+                setTimeout(() => {
+                    setCard(response.data)
+                    setIsLoading(false)
+                }, 3000)
+            })
+            .catch((e) => {
+                console.log(e)
+            })
+    }, [])
+    const renderContentCard = () =>{
+        return(
+            card.map((cards) => {
+                return(
+                    <AdminCardInfoBox card= {cards}/>
+                )
+            })
+        )
+        
+    }
 
     const renderContent = () => {
 
@@ -45,10 +71,12 @@ const Rectangle = (props) => {
                     )
                     
                     
+                    
                 })
 
                 
             )
+        
             
         }
 
@@ -56,15 +84,19 @@ const Rectangle = (props) => {
     }
 
     return (
-
+        
+        
+        
+        
+        
+        
         <div>
             {renderContent()}
+            {renderContentCard()}
             <div className="MovableChart">
             <MoveableChart/>
             </div>
-            <div>
-                {/* <Sidebar/> */}
-            </div>
+         
         </div>
 
     )
