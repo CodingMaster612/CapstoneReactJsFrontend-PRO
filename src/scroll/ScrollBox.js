@@ -31,9 +31,9 @@ function ScrollBox() {
 
 
 
-                <img src="https://img.freepik.com/free-vector/technology-bitcoin-background-with-holographic-effect_1017-31521.jpg?w=2000" />
-                <div className="img-2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREFXVxICau5sODgKOeemerwGqorkVUGG8ZPe2vTpGzKL4V0Hi0JFdXoqDFOASVsvErT5Y&usqp=CAU" /></div>
-                <div className="img-3"><img src="https://i.iheart.com/v3/re/new_assets/5e7273670266b01cbb1ec735?ops=contain(1480,0)" /></div>
+                <img src="https://cdn11.bigcommerce.com/s-v79u0/images/stencil/1280x1280/products/1133/1939/57046_Obv_ike__93249.1610578085.1280.1280__51957.1661486352.jpg?c=2" />
+                <div className="img-2"><img src="https://media.istockphoto.com/id/951412868/photo/bitcoin-on-white-background.jpg?s=612x612&w=0&k=20&c=h6bSw-lkIDHle3Qz_6RXvluUttHEmsHsblMmwDra9sA=" /></div>
+                <div className="img-3"><img src="https://static.vecteezy.com/system/resources/previews/007/153/309/original/gold-coin-of-chinese-yuan-yen-concept-of-internet-currency-vector.jpg" /></div>
             </div>
             <div ref={services} className="services">
                 <div>
