@@ -6,6 +6,8 @@ import AdminInfoBox from '../AdminInfo/AdminInfoBox'
 import MoveableChart from '../Graph/MovableChart'
 import  AdminCardInfoBox from '../AdminInfo/AdminCardInfoBox'
 import Sidebar from '../SideBar/Side'
+import AdminLogo from '../../img/AdminLogo.png'
+
 
 
 const Rectangle = (props) => {
@@ -104,7 +106,9 @@ const Rectangle = (props) => {
             {renderContent()}
             {renderContentCard()}
             {renderGraphContent()}
-            
+            <div>
+                <img  className=" Admin-image "src={AdminLogo} />
+            </div>
             
             
          

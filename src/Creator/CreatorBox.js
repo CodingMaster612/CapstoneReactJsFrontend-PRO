@@ -1,7 +1,7 @@
 import React from 'react'
 import Sidebar from './SideBar/Side'
 import Image from './AdminImage/Image'
-// import BackgroundImage from '../img/white.png'
+// import BackgroundImage from '../img/AdminLogo.png'
 import Rectangle from './Rectangle/Rectangle'
 function CreatorBox() {
   return (
@@ -10,6 +10,8 @@ function CreatorBox() {
     <div>
     <Sidebar/>
     <Rectangle/>
+    
+    
     
     
     </div>

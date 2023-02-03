@@ -1,32 +1,34 @@
 .Card-Image{
-width: 50px;
-height: 50px;
-border-radius: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    
+
+    
+    
+    }
+    
+    .card-holder h1{
+     color: black;
+     font-size: 12px;
+    
+    }
+    .card-name h2{
+        color: black;
+        font-size: 12px;
+    }
+    .row{
+    
+    }
+    
+    .clm{
+        float: left;
+        width: 10%;
+       
+    }
+    
+    
 
 
-}
-
-.card-holder h1{
- color: black;
- font-size: 12px;
-
-}
-.card-name h2{
-    color: black;
-    font-size: 12px;
-}
-.row{
-
-}
-
-.clm{
-    float: left;
-    width: 10%;
-   
-}
-
-.card-wrapper{
-    position: relative;
-    left: 1200px;
-    top: -150px;
-}
+    
+    

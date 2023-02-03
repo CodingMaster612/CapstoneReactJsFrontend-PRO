@@ -18,13 +18,18 @@
   
   align-items: center;
   justify-content: center;
-  position: relative;
-  top: -500px;
-  left: 250px;
+  position: fixed;
+ top: 275px;
+ left: 1000px;
+  
   
  
   
   
 }
-
+.Admin-image{
+  position: fixed;
+  top: 50px;
+  left: 400px;
+}
 
