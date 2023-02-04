@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import '../../css/signIn.css';
 import { useNavigate } from 'react-router'
+import BackgroundImage from'../../img/blue.png'
 
 // import { useNavigate } from 'react-router'
 
@@ -97,7 +98,7 @@ function AdminLogin() {
 const HeaderStyle = {
    width: "100%",
    height: "100vh",
-   // background: `url(${BackgroundImage})`,
+   background: `url(${BackgroundImage})`,
    backgroundPosition: "center",
    backgroundRepeat: "no-repeat",
    backgroundSize: "cover",

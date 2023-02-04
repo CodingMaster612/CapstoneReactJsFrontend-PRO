@@ -27,8 +27,10 @@
     
     .card-wrapper{
         position: relative;
-        left: 1000px;
-        top: 250px;
+        left: 600px;
+        top: 20px;
+        
+        flex-direction: row;
         
     
     

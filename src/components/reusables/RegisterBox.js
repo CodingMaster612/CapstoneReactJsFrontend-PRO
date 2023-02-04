@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
-import BackgroundImage from '../../img/com.png';
+import BackgroundImage from '../../img/blue.png';
 import '../../css/signUp.css';
 function RegisterBox() {
    const [user, setUser] = useState({
@@ -97,7 +97,7 @@ return (
 const HeaderStyle = {
     width: "100%",
     height: "100vh",
-    // background: `url(${BackgroundImage})`,
+    background: `url(${BackgroundImage})`,
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
