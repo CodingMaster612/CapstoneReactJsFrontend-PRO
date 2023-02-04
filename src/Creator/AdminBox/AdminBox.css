@@ -58,3 +58,22 @@ box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
     top: 10px;
     left: 30px;
   }
+  .Change-User input{
+    color: black;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
+    position: relative;
+    top: 30px;
+    left: 75px;
+
+  }
+
+  .Change button{
+    position: relative;
+    top: 40px;
+    left: 130px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+border-radius: 15%;
+    
+  }

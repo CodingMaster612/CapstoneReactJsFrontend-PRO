@@ -7,11 +7,12 @@ import axios from 'axios'
 function AdminBox() {
     const [admin, setAdmin] = useState({})
     const [currentUser, setCurrentUser] = useState(null);
-
+    const [email, setEmail] = useState('');
+    const [newEmail, setNewEmail] = useState('');
     const confirmAction = () => {
         const response = prompt("Are you sure you want to do that?");
 
-        if (response=="yes") {
+        if (response == "yes") {
             alert("Ok was pressed");
             localStorage.removeItem('Credentials')
         } else {
@@ -25,7 +26,7 @@ function AdminBox() {
         axios.delete(`http://localhost:8081/admin/deleteUserById/${email}`, admin)
             .then((response) => {
                 setAdmin(response.data)
-                
+
                 confirmAction();
             }).catch((e) => {
                 console.log(e)
@@ -33,15 +34,22 @@ function AdminBox() {
 
 
     }
-    const onClicking = () =>{
-        
-            const email = localStorage.getItem('Credentials');
-            setCurrentUser(email);
-            alert(`The Current User That is logged in ${email}`)
-        
+    const onClicking = () => {
+
+        const email = localStorage.getItem('Credentials');
+        setCurrentUser(email);
+        alert(`The Current User That is logged in ${email}`)
+
     }
-    
-    
+
+    const handleEmailChange = (event) => {
+        setNewEmail(event.target.value);
+    };
+
+    const handleSave = () => {
+        localStorage.setItem('Credentials', newEmail);
+        setEmail(newEmail);
+    };
 
 
     return (
@@ -54,8 +62,15 @@ function AdminBox() {
 
                 </div>
                 <div className='currentUser'>
-                <Button className="button-admin" onClick={onClicking} text={"User"} />
+                    <Button className="button-admin" onClick={onClicking} text={"User"} />
                 </div>
+                <div className="Change-User">
+                    <input type="text" value={newEmail} onChange={handleEmailChange} />
+                </div>
+                <div className="Change">
+                    <button onClick={handleSave}>Update User</button>
+                </div>
+
             </div>
 
 
