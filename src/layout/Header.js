@@ -203,6 +203,11 @@ const Header = ({ onSidebarOpen}) => {
                             icon={<CurrencyExchangeIcon/>}
                             text='Crypto'
                         />
+                        <CustomButton 
+                            href='/crypto'
+                            icon={<CurrencyExchangeIcon/>}
+                            text='Convert'
+                        />
                     </Box>
                     <Divider
                         orientation='vertical'

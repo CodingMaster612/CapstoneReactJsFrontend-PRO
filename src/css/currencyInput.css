@@ -1,23 +1,26 @@
 .group{
     background: #335;
-    width: 180px;
+    width: 500px;
+    height: 200px;
     margin: 0 auto 20px;
     display: grid;
     grid-template-columns: 100px 80px;
     border-radius: 15px;
     position: relative;
     top: 250px;
+    border-radius: 25;
 }
 input,select{
     background: none;
     border:0;
     color:#fff;
+    font-size: 20px;
 }
 input{
     padding-left: 10px;
 }
 select{
-    padding: 15px;
+    padding: 10px;
 }
 
 .h1-tag h1{

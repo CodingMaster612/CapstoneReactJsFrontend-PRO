@@ -97,7 +97,6 @@ const App = () => {
                   <Route path="/Creator" element={<CreatorAdmin />} />
                   <Route path="/AdminLogin" element= {<AdminLogin/>}/>
                   <Route path="/cryptos" element={<Crypto/>} />
-                    
                     {/* <Route path="/Home" element={<Home />} />
                     <Route path="/users" element={<UserList />} />
                     <Route path="/user/:userId" element={<User />} />

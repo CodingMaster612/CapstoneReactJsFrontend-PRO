@@ -35,6 +35,7 @@ function Crypto() {
         <option value="BTC">BTC</option>
         <option value="ETH">ETH</option>
         <option value="LTC">LTC</option>
+        <option value="ADA">ADA</option>
       </select>
       <select
         value={toCurrency}
@@ -45,7 +46,11 @@ function Crypto() {
         <option value="GBP">GBP</option>
       </select>
       <h1>{convertedAmount}</h1>
+      <div className="Converter-info"> 
+        <h1>Crypto Currency Converter</h1>
+      </div>
     </div>
+    
   );
 }
 

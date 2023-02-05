@@ -1,15 +1,15 @@
 .crypto-wrapper{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-top: -50px;
-    margin-left: -100px;
+    position: relative;
+    top: 400px;
+    left:500px;
+   
 
 }
 .crypto-wrapper input{
-  color: red;
+  color: black;
   background-color: white;
-  border-radius: 25%;
+  border-radius: 15%;
+  width: 300px;
   
 
 }
@@ -17,5 +17,13 @@
     background-color: white;
     color: black;
     border-radius: 15px;
+    width: 150px;
     
+}
+
+.Converter-info h1{
+  position: relative;
+  top: -200px;
+  color: pink;
+  
 }
