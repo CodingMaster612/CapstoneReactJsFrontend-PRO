@@ -11,7 +11,7 @@ import AdminLogo from '../../img/AdminLogo.png'
 
 
 const Rectangle = (props) => {
-
+    const [AdminLogo, setAdminLogo] = useState('');
     const [cart, setCart] = useState([])
     const [card, setCard] = useState([])
     const [isLoading, setIsLoading] = useState(true)
@@ -44,7 +44,17 @@ const Rectangle = (props) => {
                 console.log(e)
             })
     }, [])
-    const renderContentCard = () =>{
+
+
+    useEffect(() => {
+        const email = localStorage.getItem('Credentials');
+        const imageUrl= localStorage.getItem(email);
+        setAdminLogo(imageUrl);
+      }, []);
+    
+    
+    
+      const renderContentCard = () =>{
         return(
             card.map((cards) => {
                 return(

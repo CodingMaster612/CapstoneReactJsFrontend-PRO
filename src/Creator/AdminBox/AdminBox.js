@@ -1,5 +1,5 @@
 import '../AdminBox/AdminBox.css'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Button from "../../components/reusables/Button"
 
 import axios from 'axios'
@@ -9,6 +9,9 @@ function AdminBox() {
     const [currentUser, setCurrentUser] = useState(null);
     const [email, setEmail] = useState('');
     const [newEmail, setNewEmail] = useState('');
+
+    
+
     const confirmAction = () => {
         const response = prompt("Are you sure you want to do that?");
 
@@ -47,10 +50,16 @@ function AdminBox() {
     };
 
     const handleSave = () => {
+
         localStorage.setItem('Credentials', newEmail);
         setEmail(newEmail);
+       
+        
+        alert("Email  and profile Saved")
     };
-
+    
+   
+    
 
     return (
         <div>
@@ -73,7 +82,7 @@ function AdminBox() {
 
             </div>
 
-
+            
         </div>
 
     )

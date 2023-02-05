@@ -178,3 +178,8 @@
 .social-login__icon:hover {
 	transform: scale(1.5);	
 }
+
+.Last-Login p{
+color: white;
+font-size: 30px
+}

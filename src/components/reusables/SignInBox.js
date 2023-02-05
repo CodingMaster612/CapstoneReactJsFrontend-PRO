@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import '../../css/signIn.css';
 import { useNavigate } from 'react-router'
 import BackgroundImage from "../../img/blue.png"
@@ -28,10 +28,10 @@ function SignInBox() {
 
       axios.post("http://localhost:8081/user/signIn", user)
          .then((response) => {
-            
+
             console.log(response.data)
             localStorage.setItem("Credentials", response.data.email);
-            localStorage.setItem ("imageUrl", response.data.storedUrl);
+            localStorage.setItem("imageUrl", response.data.storedUrl);
             navigator('/')
 
          }).catch((e) => {
@@ -40,6 +40,14 @@ function SignInBox() {
          })
 
    }
+
+
+   useEffect(() => {
+      const currentTime = new Date().toString();
+      localStorage.setItem('lastLogin', currentTime);
+   }, []);
+
+
    return (
       <header style={HeaderStyle}>
          <div className="container">
@@ -83,7 +91,9 @@ function SignInBox() {
 
          </div>
 
-
+         <div className="Last-Login">
+            <p>Welcome back! Your last login was on {localStorage.getItem('lastLogin')}.</p>
+         </div>
 
 
 
