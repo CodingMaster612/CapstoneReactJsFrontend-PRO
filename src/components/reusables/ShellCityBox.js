@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import '../../css/ShellCity.css'
 import { useNavigate } from 'react-router'
+import BackgroundImage from '../../img/blue.png'
 
 // import BackgroundImage from "../../img/color.png"
 
@@ -65,7 +66,7 @@ function ShellCityBox() {
 
                      <button className="button login__submit" onClick={submitHandler}>
 
-                        <span className="button__text">Sign In Now</span>
+                        <span className="button__text">Bank Login</span>
                         <i className="button__icon fas fa-chevron-right"></i>
                      </button>
                   </div>
@@ -87,9 +88,7 @@ function ShellCityBox() {
 
             </div>
 
-            <div class="typewriter">
-               <h1>Hello</h1>
-            </div>
+            
 
          </div>
 
@@ -100,7 +99,7 @@ function ShellCityBox() {
 const HeaderStyle = {
    width: "100%",
    height: "100vh",
-   //  background: `url(${BackgroundImage})`,
+    background: `url(${BackgroundImage})`,
    backgroundPosition: "center",
    backgroundRepeat: "no-repeat",
    backgroundSize: "cover",

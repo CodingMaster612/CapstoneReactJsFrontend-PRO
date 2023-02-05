@@ -192,11 +192,11 @@ const Header = ({ onSidebarOpen}) => {
                             icon={<VpnKeyIcon/>}
                             text='SignUp'
                         />
-                        {/* <CustomButton 
-                            href='/coin'
+                        <CustomButton 
+                            href='/bankLogin'
                             icon={<MonetizationOnIcon/>}
-                            text='Coin'
-                        /> */}
+                            text='Shell'
+                        />
                     </Box>
                     <Divider
                         orientation='vertical'

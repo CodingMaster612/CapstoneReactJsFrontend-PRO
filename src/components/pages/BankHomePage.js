@@ -1,6 +1,6 @@
 import React from 'react'
 import BankHomeBox from '../../components/reusables/BankHomeBox'
-
+import BackgroundImage from '../../img/blue.png'
 import ImageSlider from "../../components/reusables/ImageSlider"
 
 export default function cart() {
@@ -35,7 +35,7 @@ export default function cart() {
 const HeaderStyle = {
     width: "100%",
     height: "100vh",
-    // background: `url(${BackgroundImage})`,
+    background: `url(${BackgroundImage})`,
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
