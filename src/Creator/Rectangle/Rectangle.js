@@ -11,7 +11,6 @@ import AdminLogo from '../../img/AdminLogo.png'
 
 
 const Rectangle = (props) => {
-    const [AdminLogo, setAdminLogo] = useState('');
     const [cart, setCart] = useState([])
     const [card, setCard] = useState([])
     const [isLoading, setIsLoading] = useState(true)
@@ -46,11 +45,7 @@ const Rectangle = (props) => {
     }, [])
 
 
-    useEffect(() => {
-        const email = localStorage.getItem('Credentials');
-        const imageUrl= localStorage.getItem(email);
-        setAdminLogo(imageUrl);
-      }, []);
+    
     
     
     

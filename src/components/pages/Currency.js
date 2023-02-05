@@ -4,7 +4,7 @@
 import CurrencyInput from "../../components/pages/CurrencyInput.js";
 import { useState, useEffect } from "react";
 import axios from "axios";
-
+import BackgroundImage from '../../img/allcurr.png'
 
 function Currency() {
 
@@ -62,7 +62,7 @@ function Currency() {
     <header style={HeaderStyle}>
       
         
-      
+    
 
         <CurrencyInput
           onAmountChange={handleAmount1Change}
@@ -83,9 +83,11 @@ function Currency() {
 const HeaderStyle = {
   width: "100%",
   height: "100vh",
-  backgroundColor: "white",
+  backgroundColor: "orange",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
+  background: `url(${BackgroundImage})`,
+
   backgroundSize: "cover",
 
 }

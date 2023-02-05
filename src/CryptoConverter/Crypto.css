@@ -1,0 +1,21 @@
+.crypto-wrapper{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+
+}
+.crypto-wrapper input{
+  color: red;
+  background-color: white;
+  border-radius: 25%;
+  
+
+}
+.crypto-wrapper select{
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    
+}

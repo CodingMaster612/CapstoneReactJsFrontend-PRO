@@ -32,6 +32,7 @@ import Product from './AdminPages/product/Product';
 import NewProduct from './AdminPages/newProduct/NewProduct';
 import AdminLogin from './components/pages/AdminLoginPage'
 import Home from "./AdminPages/home/Home"
+import Crypto from './CryptoConverter/Crypto.js';
 
 import './App.css';
 
@@ -60,24 +61,7 @@ const App = () => {
       setMode('dark');
     }
   }, []);
-  // const [user, setUser]= useState(null)
-  //   useEffect(() => {
-  //     const Id = localStorage.getItem("Credentials")
-  //     axios.get(`http://localhost:8081/user/getItemsInCart/${Id}`)
-  //         .then((response) => {
 
-  //                 setUser(response.data)
-  //                 if(Id !== null){
-  //                   console.log("Function Successfully rendered")
-  //                 }else{
-  //                   alert("Function in app.js is null, please add a Value")
-  //                 }
-
-  //         })
-  //         .catch((e) => {
-  //             console.log(e)
-  //         })
-  // }, [])
 
   return (
     <HelmetProvider>
@@ -112,7 +96,7 @@ const App = () => {
                   <Route path="/Admin" element={<Admin />} />
                   <Route path="/Creator" element={<CreatorAdmin />} />
                   <Route path="/AdminLogin" element= {<AdminLogin/>}/>
-                  
+                  <Route path="/cryptos" element={<Crypto/>} />
                     
                     {/* <Route path="/Home" element={<Home />} />
                     <Route path="/users" element={<UserList />} />

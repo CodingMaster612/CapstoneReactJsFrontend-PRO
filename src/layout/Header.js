@@ -10,6 +10,7 @@ import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
+import CurrencyExchangeIcon from '@mui/icons-material/CurrencyExchange';
 import ListItemText from '@mui/material/ListItemText';
 import MenuItem from '@mui/material/MenuItem';
 import Popover from '@mui/material/Popover';
@@ -196,6 +197,11 @@ const Header = ({ onSidebarOpen}) => {
                             href='/bankLogin'
                             icon={<MonetizationOnIcon/>}
                             text='Shell'
+                        />
+                          <CustomButton 
+                            href='/cryptos'
+                            icon={<CurrencyExchangeIcon/>}
+                            text='Crypto'
                         />
                     </Box>
                     <Divider

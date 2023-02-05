@@ -10,7 +10,7 @@ function AdminBox() {
     const [email, setEmail] = useState('');
     const [newEmail, setNewEmail] = useState('');
 
-    
+
 
     const confirmAction = () => {
         const response = prompt("Are you sure you want to do that?");
@@ -53,39 +53,45 @@ function AdminBox() {
 
         localStorage.setItem('Credentials', newEmail);
         setEmail(newEmail);
-       
-        
+
+
         alert("Email  and profile Saved")
     };
     
-   
+        const handlePrint = () => {
+            window.print();
+        };
     
 
-    return (
-        <div>
 
-            <div className="glossy-rectangle">
-                <h1>Admin ToolBar</h1>
-                <div className='Admin-Button'>
-                    <Button className="button-admin" onClick={onClicks} text={"Delete User"} />
+        return (
+            <div>
+
+                <div className="glossy-rectangle">
+                    <h1>Admin ToolBar</h1>
+                    <div className='Admin-Button'>
+                        <Button className="button-admin" onClick={onClicks} text={"Delete User"} />
+
+                    </div>
+                    <div className='currentUser'>
+                        <Button className="button-admin" onClick={onClicking} text={"User"} />
+                    </div>
+                    <div className="Change-User">
+                        <input type="text" value={newEmail} onChange={handleEmailChange} />
+                    </div>
+                    <div className="Change">
+                        <button onClick={handleSave}>Update User</button>
+                    </div>
+                    <div className="print">
+                        <button onClick={handlePrint}>Print</button>
+                    </div>
 
                 </div>
-                <div className='currentUser'>
-                    <Button className="button-admin" onClick={onClicking} text={"User"} />
-                </div>
-                <div className="Change-User">
-                    <input type="text" value={newEmail} onChange={handleEmailChange} />
-                </div>
-                <div className="Change">
-                    <button onClick={handleSave}>Update User</button>
-                </div>
+
 
             </div>
 
-            
-        </div>
+        )
+    }
 
-    )
-}
-
-export default AdminBox
+    export default AdminBox
