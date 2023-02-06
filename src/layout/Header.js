@@ -193,11 +193,11 @@ const Header = ({ onSidebarOpen}) => {
                             icon={<VpnKeyIcon/>}
                             text='SignUp'
                         /> */}
-                        {/* <CustomButton 
-                            href='/bankLogin'
+                        <CustomButton 
+                            href='/x'
                             icon={<MonetizationOnIcon/>}
-                            text='Shell'
-                        /> */}
+                            text='Coin'
+                        />
                           <CustomButton 
                             href='/cryptos'
                             icon={<CurrencyExchangeIcon/>}
