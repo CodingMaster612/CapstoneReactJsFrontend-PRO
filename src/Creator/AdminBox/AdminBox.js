@@ -9,6 +9,7 @@ function AdminBox() {
     const [currentUser, setCurrentUser] = useState(null);
     const [email, setEmail] = useState('');
     const [newEmail, setNewEmail] = useState('');
+    const [user, setUser] = useState({})
 
 
 
@@ -37,6 +38,35 @@ function AdminBox() {
 
 
     }
+
+
+    const changeHandler = (event) => {
+        const name = event.target.name
+        const value = event.target.value
+        const tempUser = { ...user }
+        tempUser[name] = value
+        setUser(tempUser)
+     }
+  
+     const submitHandler = () => {
+  
+  
+  
+        axios.post("http://localhost:8081/user/updateSignIn", user)
+           .then((response) => {
+  
+              console.log(response.data)
+              localStorage.setItem("Credentials", response.data.email);
+              localStorage.setItem("imageUrl", response.data.storedUrl);
+              
+  
+           }).catch((e) => {
+              console.log(e.response)
+  
+           })
+  
+     }
+  
     const onClicking = () => {
 
         const email = localStorage.getItem('Credentials');
@@ -45,24 +75,26 @@ function AdminBox() {
 
     }
 
-    const handleEmailChange = (event) => {
-        setNewEmail(event.target.value);
-    };
-
-    const handleSave = () => {
-
-        localStorage.setItem('Credentials', newEmail);
-        setEmail(newEmail);
-
-
-        alert("Email Saved")
-    };
+    // const handleEmailChange = (event) => {
+    //     setNewEmail(event.target.value);
+    // };
     
-        const handlePrint = () => {
+
+    // const handleSave = () => {
+    //     localStorage.setItem('Credentials', newEmail);
+        
+    //     setEmail(newEmail);
+
+
+    //     alert("Email Saved")
+    // };
+    const handlePrint = () => {
             window.print();
         };
     
         const handleLogout= () => {
+            const email = localStorage.getItem('Credentials');
+
             localStorage.removeItem("Credentials")
             localStorage.removeItem("imageUrl")
             alert(`Successfully logged out user ${email}`)
@@ -82,10 +114,13 @@ function AdminBox() {
                         <Button className="button-admin" onClick={onClicking} text={"User"} />
                     </div>
                     <div className="Change-User">
-                        <input type="text" value={newEmail} onChange={handleEmailChange} placeholder="Email Address..." />
+                        <input type="text" onChange={changeHandler} name="email" value={user.email} placeholder="Email Address..."/>
+                    </div>
+                    <div className="Change-User">
+                        <input type="password" onChange={changeHandler} name="password" value={user.password} placeholder="Password..."/>
                     </div>
                     <div className="Change">
-                        <button onClick={handleSave}>Update User</button>
+                        <button onClick={submitHandler} >Update User</button>
                     </div>
                     <div className="print">
                         <button onClick={handlePrint}>Print</button>

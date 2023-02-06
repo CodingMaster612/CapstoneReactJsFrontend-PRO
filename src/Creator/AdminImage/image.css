@@ -5,3 +5,11 @@
     left: -60px;
     width: 150px;
 }
+.input-text-image input{
+    background-color: orange;
+    position: fixed;
+    width:300px;
+    top:50%;
+    left:-10%;
+
+}

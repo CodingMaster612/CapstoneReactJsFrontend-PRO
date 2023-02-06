@@ -9,9 +9,7 @@ import BackgroundImage from "../../img/blue.png"
 function SignInBox() {
    //  const navigator = useNavigate()
    const navigator = useNavigate()
-   const [user, setUser] = useState({
-
-   })
+   const [user, setUser] = useState({})
 
 
    const changeHandler = (event) => {

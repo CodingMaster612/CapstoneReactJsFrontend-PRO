@@ -15,12 +15,18 @@ const ImageWithLocalStorage = () => {
     setImageUrl(e.target.value);
     localStorage.setItem('imageUrl', e.target.value);
   };
+  const handleDeleteGenerate= (e) => {
+    
+  }
 
   return (
     <div>
-      {/* <input type="text" value={imageUrl} onChange={handleImageUrlChange} /> */}
+      {/* <div className="input-text-image">
+      <input type="text" value={imageUrl} onChange={handleImageUrlChange} />
+      </div> */}
       {imageUrl && <img  className="personal-img"src={imageUrl} alt="Stored Image" />}
     </div>
+    
   );
 };
 
