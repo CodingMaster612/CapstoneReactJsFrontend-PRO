@@ -81,12 +81,12 @@ const App = () => {
                   <Route path='/dash' element={<Dashboard />} />
                   <Route path="/register" element={<Register />} />
                   <Route path="/signIn" element={<SignIn />} />
-                  <Route path="/profile" element={<Profile />} />
+                  {/* <Route path="/profile" element={<Profile />} /> */}
                   <Route path="/currency" element={<Currency />} />           <Route path="/crypto" element={<HomeCrypto />} />
                   <Route path="/wallet" element={<Wallet />} />
                   <Route path='/cart' element={<Cart />} />
                   <Route path="/bankLogin" element={<Shell />} />
-                  <Route path='/Bank' element={<Bank />} />
+                  {/* <Route path='/Bank' element={<Bank />} /> */}
                   {/* <Route path="/buy" element={<Buy />} /> */}
                   {/* <Route path="/postData" element={<Post/>} /> */}
                   <Route path="/coin" element={<CoinSummaryPage />} />

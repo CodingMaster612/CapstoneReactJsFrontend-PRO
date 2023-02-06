@@ -179,25 +179,25 @@ const Header = ({ onSidebarOpen}) => {
                             text='signIn'
                         />
                         <CustomButton 
-                            href='/AdminLogin'
+                            href='/Creator'
                             icon={<AdminPanelSettingsIcon/>}
-                            text='Admin'
+                            text='Profile'
                         />
                         <CustomButton 
                             href='/Rates'
                             icon={<SavingsIcon/>}
                             text="Tracker"
                         />
-                         <CustomButton 
+                         {/* <CustomButton 
                             href='/register'
                             icon={<VpnKeyIcon/>}
                             text='SignUp'
-                        />
-                        <CustomButton 
+                        /> */}
+                        {/* <CustomButton 
                             href='/bankLogin'
                             icon={<MonetizationOnIcon/>}
                             text='Shell'
-                        />
+                        /> */}
                           <CustomButton 
                             href='/cryptos'
                             icon={<CurrencyExchangeIcon/>}

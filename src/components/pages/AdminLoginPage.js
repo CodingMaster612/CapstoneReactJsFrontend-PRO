@@ -3,7 +3,7 @@ import AdminLogin from  '../reusables/AdminLogin'
 function AdminLoginPage() {
   return (
     <div>
-        <AdminLogin/>
+        {/* <AdminLogin/> */}
     </div>
   )
 }

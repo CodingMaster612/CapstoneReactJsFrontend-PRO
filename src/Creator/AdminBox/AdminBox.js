@@ -51,15 +51,14 @@ function AdminBox() {
      const submitHandler = () => {
   
   
-  
-        axios.post("http://localhost:8081/user/updateSignIn", user)
+        axios.post(`http://localhost:8081/user/updateSignIn`, user)
            .then((response) => {
   
               console.log(response.data)
               localStorage.setItem("Credentials", response.data.email);
               localStorage.setItem("imageUrl", response.data.storedUrl);
               
-  
+                alert("This is a test")
            }).catch((e) => {
               console.log(e.response)
   
