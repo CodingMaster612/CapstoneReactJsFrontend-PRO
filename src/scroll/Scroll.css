@@ -58,6 +58,10 @@
 
   .blog {
     height: 800px;
+    
+  }
+  .services{
+    height: 800px;
     background-color: white
   }
   .contact {
@@ -66,10 +70,10 @@
   }
   
   .image-1{
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     position: relative;
-    top: 50px;
+    top: 110%;
  
   margin-top: -50px;
   margin-left: -100px;

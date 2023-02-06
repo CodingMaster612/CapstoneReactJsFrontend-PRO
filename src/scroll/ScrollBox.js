@@ -38,11 +38,16 @@ function ScrollBox() {
             <div ref={services} className="services">
                 <div>
                         <SearchBar/>
-                </div>
-                <div ref={blog} className="blog">
+                        <img src={pillow}  className="image-1"/>
 
                 </div>
-                <div ref={contact} className="contact">
+                
+                    
+                
+                <div className="blog">
+                
+                </div>
+                <div className="contact">
 
                 </div>
             </div>
