@@ -46,6 +46,8 @@
 box-shadow: inset 0px -5px 10px rgba(255, 255, 255, 0.6); */
 position: relative;
 left: 100px;
+border-radius: 10px;
+
 
 
 box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
@@ -53,10 +55,13 @@ box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
 
   }
 
-  .currentUser{
+  .currentUser button{
     position: relative;
     top: 10px;
-    left: 30px;
+    left: 95px;
+    width: 45%;
+    border-radius: 10px;
+
   }
   .Change-User input{
     color: black;
@@ -65,16 +70,22 @@ box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
     position: relative;
     top: 30px;
-    left: 75px;
+    left: 35px;
+    border-radius: 10px;
+    width: 75%;
+    border: 1px solid black;
+
 
   }
 
   .Change button{
     position: relative;
     top: 40px;
-    left: 130px;
+    left: 90px;
+    width: 50%;
+    height: 50px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
-border-radius: 15%;
+    border-radius: 10px;
     
   }
   .print button{
@@ -82,6 +93,19 @@ border-radius: 15%;
     top: 70px;
     left: 100px;
     width: 150px;
+    height: 50px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
-border-radius: 15%;
+    border-radius: 10px;
+
+
   }
+
+.logout-button button{
+  position: relative;
+  top: 100px;
+  left: 125px;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+
+}

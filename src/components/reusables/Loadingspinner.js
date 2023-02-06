@@ -3,12 +3,7 @@ import '../../css/loading-spinner.css'
 
 function LoadingSpinner() {
     return (
-        <div className="newtons-cradle">
-            <div className="newtons-cradle__dot"></div>
-            <div className="newtons-cradle__dot"></div>
-            <div className="newtons-cradle__dot"></div>
-            <div className="newtons-cradle__dot"></div>
-        </div>
+        <span className="loader"></span>
     )
 }
 

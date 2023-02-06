@@ -55,14 +55,19 @@ function AdminBox() {
         setEmail(newEmail);
 
 
-        alert("Email  and profile Saved")
+        alert("Email Saved")
     };
     
         const handlePrint = () => {
             window.print();
         };
     
+        const handleLogout= () => {
+            localStorage.removeItem("Credentials")
+            localStorage.removeItem("imageUrl")
+            alert(`Successfully logged out user ${email}`)
 
+        }
 
         return (
             <div>
@@ -77,13 +82,16 @@ function AdminBox() {
                         <Button className="button-admin" onClick={onClicking} text={"User"} />
                     </div>
                     <div className="Change-User">
-                        <input type="text" value={newEmail} onChange={handleEmailChange} />
+                        <input type="text" value={newEmail} onChange={handleEmailChange} placeholder="Email Address..." />
                     </div>
                     <div className="Change">
                         <button onClick={handleSave}>Update User</button>
                     </div>
                     <div className="print">
                         <button onClick={handlePrint}>Print</button>
+                    </div>
+                    <div className="logout-button">
+                        <button onClick={handleLogout}>Logout</button>
                     </div>
 
                 </div>

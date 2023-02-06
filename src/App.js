@@ -93,7 +93,7 @@ const App = () => {
                   <Route path="/coins/:id" element={<CoinDetailPage />} />
                   <Route exact path="/" element={<HomePage />} />
                   <Route path="/Rates" element={<Rates />} />
-                  <Route path="/Admin" element={<Admin />} />
+                  {/* <Route path="/Admin" element={<Admin />} /> */}
                   <Route path="/Creator" element={<CreatorAdmin />} />
                   <Route path="/AdminLogin" element= {<AdminLogin/>}/>
                   <Route path="/cryptos" element={<Crypto/>} />
