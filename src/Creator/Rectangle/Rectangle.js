@@ -111,9 +111,9 @@ const Rectangle = (props) => {
             {renderContent()}
             {renderContentCard()}
             {renderGraphContent()}
-            <div>
+            {/* <div>
                 <img  className=" Admin-image "src={AdminLogo} />
-            </div>
+            </div> */}
             
             
          

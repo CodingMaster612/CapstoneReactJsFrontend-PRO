@@ -146,7 +146,7 @@ const Header = ({ onSidebarOpen}) => {
                                         },
                                     }}
                                 >
-                                Currency  Dashboard
+                                Currency Converter : PILLOW :
                                 </Typography>
                             </IconButton>
                         </Box>

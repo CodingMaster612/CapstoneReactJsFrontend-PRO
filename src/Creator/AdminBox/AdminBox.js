@@ -1,6 +1,7 @@
 import '../AdminBox/AdminBox.css'
 import React, { useState, useEffect } from 'react'
 import Button from "../../components/reusables/Button"
+import AdminLogo from '../../img/AdminLogo.png'
 
 import axios from 'axios'
 
@@ -10,8 +11,14 @@ function AdminBox() {
     const [email, setEmail] = useState('');
     const [newEmail, setNewEmail] = useState('');
     const [user, setUser] = useState({})
+    const [isSignedIn, setIsSignedIn] = useState(false);
 
-
+    useEffect(() => {
+        const email = localStorage.getItem('Credentials');
+        if (email === (`${email}`)) {
+          setIsSignedIn(true);
+        }
+      }, []);
 
     const confirmAction = () => {
         const response = prompt("Are you sure you want to do that?");
@@ -101,10 +108,12 @@ function AdminBox() {
         }
 
         return (
+            
             <div>
+                {isSignedIn ? (
 
                 <div className="glossy-rectangle">
-                    <h1>Admin ToolBar</h1>
+                    <h1> User ToolBar </h1>
                     <div className='Admin-Button'>
                         <Button className="button-admin" onClick={onClicks} text={"Delete User"} />
 
@@ -127,10 +136,15 @@ function AdminBox() {
                     <div className="logout-button">
                         <button onClick={handleLogout}>Logout</button>
                     </div>
+                    <div>
+                <img  className=" Admin-image "src={AdminLogo} />
+            </div>
 
                 </div>
 
-
+):(
+    <h1>Please Sign In To Access Admin bar.</h1>
+)}
             </div>
 
         )

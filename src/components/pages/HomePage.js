@@ -21,7 +21,7 @@ function HomePage(props) {
                  {/* <div>
                 <SearchBar />
                 </div> */}
-                <div>
+                <div className='sign-wrapper'>
                     <SignInButton/>
                     <SignUpButton/>
                 </div>

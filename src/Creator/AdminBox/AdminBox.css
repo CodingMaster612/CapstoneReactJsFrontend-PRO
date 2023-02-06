@@ -25,7 +25,7 @@
   .glossy-rectangle h1{
     color: black;
     position: relative;
-    left: 12%;
+    left: 18%;
     text-decoration: underline black  
   }
 
@@ -108,4 +108,10 @@ box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
   height: 50px;
   border-radius: 10px;
 
+}
+
+.Admin-image{
+  position: fixed;
+  top: 76px;
+  left: 375px;
 }
