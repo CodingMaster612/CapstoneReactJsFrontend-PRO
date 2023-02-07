@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../CryptoConverter/Crypto.css'
+import CryptoGraph from './CryptoGraph'
+import Graph from './CyptoInfoGraph'
 
 function Crypto() {
   const [fromCurrency, setFromCurrency] = useState('BTC');
@@ -59,6 +61,10 @@ function Crypto() {
       <h1>{convertedAmount}</h1>
       <div className="Converter-info"> 
         <h1>Crypto Currency Converter</h1>
+      </div>
+      <div>
+        <CryptoGraph/>
+        <Graph/>
       </div>
     </div>
     
