@@ -28,44 +28,31 @@
   
 } */
 
-.currency-converter {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 50px 0;
-  }
-  
-  .currency-converter form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: white;
-    border-radius: 35px;
-    width: 200px;
-    color: black
-  }
-  
-  .currency-converter label {
-    margin-top: 40px;
-    color: black;
-  }
-  
-  .currency-converter input[type="number"],
-  .currency-converter select {
-    width: 100px;
-    padding: 10px;
-    margin-top: 10px;
-    font-size: 20px;
-    color: black
-  }
-  
-  .currency-converter p {
-    margin-top: 20px;
-    font-size: 100px;
-  }
-  .button-curr{
-    background-color: black;
-    width:50px;
-    height:50px
-  }
+
+.doughnut-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  perspective: 500px;
+}
+
+.doughnut {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 10px solid #f3f3f3;
+  border-top-color: #333;
+  transform-style: preserve-3d;
+}
+
+.inner-doughnut {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #f3f3f3;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transform: rotateX(45deg) rotateY(45deg);
+}
