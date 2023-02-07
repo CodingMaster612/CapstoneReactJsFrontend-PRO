@@ -28,6 +28,31 @@
   
 }
 
+.CoinGecko{
+  position: absolute;
+  top:30px;
+  left: 60px;
+  font-size: 10px;
+}
+.CoinGecko label{
+  color: pink;
+  font-size: 20px;
+}
+#currency{
+  font-size: 20px;
+
+}
+.CoinGecko input{
+  color: white;
+  font-size: 20px;
+}
+.CoinGecko input #amount{
+  color: pink;
+  font-size: 40px;
+}
+
 .Doughnut-wrapper{
-  
+position: relative;
+top: 300px;
+left:150px;
 }

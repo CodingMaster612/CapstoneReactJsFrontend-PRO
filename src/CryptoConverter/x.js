@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import '../CryptoConverter/Crypto.css'
 
 const CoinGecko = () => {
   const [currencyData, setCurrencyData] = useState([]);
@@ -22,7 +23,7 @@ const CoinGecko = () => {
 
   return (
     <div className="CoinGecko">
-      <h2>3D Crypto Currency Converter</h2>
+      <h2>Crypto Currency Converter</h2>
       <form>
         <label htmlFor="amount">Amount:</label>
         <input type="text" id="amount" value={amount} onChange={handleAmountChange} />
