@@ -34,6 +34,7 @@ import NewProduct from './AdminPages/newProduct/NewProduct';
 import AdminLogin from './components/pages/AdminLoginPage'
 import Home from "./AdminPages/home/Home"
 import Crypto from './CryptoConverter/Crypto.js';
+import Info from './components/pages/Info';
 
 import './App.css';
 
@@ -90,6 +91,7 @@ const App = () => {
                   {/* <Route path='/Bank' element={<Bank />} /> */}
                   {/* <Route path="/buy" element={<Buy />} /> */}
                   {/* <Route path="/postData" element={<Post/>} /> */}
+                  <Route path="/CryptoInfo" element={<Info />} />
                   <Route path="/coin" element={<CoinSummaryPage />} />
                   <Route path="/coins/:id" element={<CoinDetailPage />} />
                   <Route exact path="/" element={<HomePage />} />
