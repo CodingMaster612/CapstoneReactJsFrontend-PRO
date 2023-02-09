@@ -110,8 +110,9 @@ function AdminBox() {
         return (
             
             <div>
+                
                 {isSignedIn ? (
-
+                    <header style={HeaderStyle}>
                 <div className="glossy-rectangle">
                     <h1> User Tool Bar </h1>
                     <div className='Admin-Button'>
@@ -141,6 +142,7 @@ function AdminBox() {
             </div>
 
                 </div>
+                </header>
 
 ):(
     <h1>Please Sign In To Access Admin bar.</h1>
@@ -149,5 +151,17 @@ function AdminBox() {
 
         )
     }
+
+    const HeaderStyle = {
+        width: "100%",
+        height: "100vh",
+        backgroundColor: "white",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        // background: `url(${BackgroundImage})`,
+      
+        backgroundSize: "cover",
+      
+      }
 
     export default AdminBox

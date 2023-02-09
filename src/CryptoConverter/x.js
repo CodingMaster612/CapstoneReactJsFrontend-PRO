@@ -6,6 +6,8 @@ const CoinGecko = () => {
   const [currencyData, setCurrencyData] = useState([]);
   const [selectedCurrency, setSelectedCurrency] = useState('USD');
   const [amount, setAmount] = useState(1);
+ 
+
 
   useEffect(() => {
     axios.get(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=${selectedCurrency}&order=market_cap_desc&per_page=100&page=1&sparkline=false`)
