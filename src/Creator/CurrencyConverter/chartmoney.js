@@ -35,7 +35,7 @@ const BarChart = () => {
     <div className="chart-size">
       { data.labels ? <Bar data={data} /> : null }
       <div className="text-position">
-        <h1 >PUT CONTENT HERE</h1>
+        <h1 >USD Vs Other Currency</h1>
       </div>
     </div>
   );

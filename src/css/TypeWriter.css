@@ -1,12 +1,7 @@
 .typewriter {
-    font-size: 24px;
-    overflow: hidden; 
-    white-space: nowrap;
-    animation: typing 1s steps(30, end);
-    font-size: 40px;
-    font-weight: normal;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
-    font-family:'Times New Roman', Times, serif
+    position: fixed;
+    top: 50%;
+    left:50%;
 
 
 

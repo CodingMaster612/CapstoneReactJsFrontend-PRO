@@ -3,7 +3,7 @@ import InfoBox from '../reusables/InfoBox'
 function Info() {
   return (
     <div>
-        {/* <InfoBox/> */}
+        <InfoBox/>
     </div>
   )
 }

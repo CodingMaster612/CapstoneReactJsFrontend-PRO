@@ -110,7 +110,7 @@ const Rectangle = (props) => {
         <div>
             {renderContent()}
             {renderContentCard()}
-            {renderGraphContent()}
+            {/* {renderGraphContent()} */}
             {/* <div>
                 <img  className=" Admin-image "src={AdminLogo} />
             </div> */}

@@ -1,7 +1,7 @@
 import '../AdminBox/AdminBox.css'
 import React, { useState, useEffect } from 'react'
 import Button from "../../components/reusables/Button"
-import AdminLogo from '../../img/AdminLogo.png'
+import AdminLogo from '../../img/userIcon.png'
 
 import axios from 'axios'
 
@@ -113,13 +113,13 @@ function AdminBox() {
                 {isSignedIn ? (
 
                 <div className="glossy-rectangle">
-                    <h1> User ToolBar </h1>
+                    <h1> User Tool Bar </h1>
                     <div className='Admin-Button'>
-                        <Button className="button-admin" onClick={onClicks} text={"Delete User"} />
+                        <Button className="button-admin" onClick={onClicks} text={"Delete Your User"} />
 
                     </div>
                     <div className='currentUser'>
-                        <Button className="button-admin" onClick={onClicking} text={"User"} />
+                        <Button className="button-admin" onClick={onClicking} text={" Get User"} />
                     </div>
                     <div className="Change-User">
                         <input type="text" onChange={changeHandler} name="email" value={user.email} placeholder="Email Address..."/>
@@ -128,13 +128,13 @@ function AdminBox() {
                         <input type="password" onChange={changeHandler} name="password" value={user.password} placeholder="Password..."/>
                     </div>
                     <div className="Change">
-                        <button onClick={submitHandler} >Update User</button>
+                        <button onClick={submitHandler} >UPDATE USER</button>
                     </div>
-                    <div className="print">
+                    {/* <div className="print">
                         <button onClick={handlePrint}>Print</button>
-                    </div>
+                    </div> */}
                     <div className="logout-button">
-                        <button onClick={handleLogout}>Logout</button>
+                        <button onClick={handleLogout}>LOGOUT</button>
                     </div>
                     <div>
                 <img  className=" Admin-image "src={AdminLogo} />

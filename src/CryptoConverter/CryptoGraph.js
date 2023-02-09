@@ -19,7 +19,7 @@ const RealTimeCurrencyGraph = () => {
     labels: Object.keys(data),
     datasets: [
       {
-        label: "Exchange Rate",
+        label: "Currency Market Cap",
         data: Object.values(data),
         backgroundColor: "rgba(75,192,192,0.4)",
         borderColor: "rgba(75,192,192,1)",

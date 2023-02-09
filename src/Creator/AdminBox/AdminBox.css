@@ -1,51 +1,51 @@
 .glossy-rectangle {
-    width: 350px;
-    height: 600px;
-    background-color: #fff;
-    position: fixed;
-    top: 300px;
-    left: 350px;
-    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.75);
-    border-radius: 10px;
-    overflow: hidden;
-  }
+  width: 350px;
+  height: 600px;
+  background-color: #fff;
+  position: fixed;
+  top: 300px;
+  left: 350px;
+  box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.75);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.glossy-rectangle::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  right: -50px;
+  bottom: -50px;
+  background: linear-gradient(45deg, #ddd, #fff);
+  transform: skew(45deg);
+  z-index: -1;
+}
+
+.glossy-rectangle h1{
+  color: purple;
+  position: relative;
+  left: 15%;
+  text-decoration: underline black  
+}
+
+.button-admin{
   
-  .glossy-rectangle::before {
-    content: "";
-    position: absolute;
-    top: -50px;
-    left: -50px;
-    right: -50px;
-    bottom: -50px;
-    background: linear-gradient(45deg, #ddd, #fff);
-    transform: skew(45deg);
-    z-index: -1;
-  }
-
-  .glossy-rectangle h1{
-    color: black;
-    position: relative;
-    left: 18%;
-    text-decoration: underline black  
-  }
-
-  .button-admin{
-    
-    display: inline-block;
-    background-color: black;
-    color: white;
-  padding: 10px 20px;
-  font-size: 15px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 50px;
-  transition: background-color 0.2s ease-in-out;
-  /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  background-color: black;
+  color: white;
+padding: 10px 20px;
+font-size: 15px;
+font-weight: bold;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+border-radius: 50px;
+transition: background-color 0.2s ease-in-out;
+/* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 box-shadow: inset 0px -5px 10px rgba(255, 255, 255, 0.6); */
 position: relative;
-left: 100px;
+left: 75px;
 border-radius: 10px;
 
 
@@ -53,65 +53,70 @@ border-radius: 10px;
 box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
 
 
-  }
+}
 
-  .currentUser button{
-    position: relative;
-    top: 10px;
-    left: 95px;
-    width: 45%;
-    border-radius: 10px;
+.currentUser button{
+  position: relative;
+  top: 10px;
+  left: 95px;
+  width: 45%;
+  border-radius: 10px;
+  color: orange
 
-  }
-  .Change-User input{
-    color: black;
-    background-color: white;
-    border-radius: 50px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
-    position: relative;
-    top: 30px;
-    left: 35px;
-    border-radius: 10px;
-    width: 75%;
-    border: 1px solid black;
-
-
-  }
-
-  .Change button{
-    position: relative;
-    top: 40px;
-    left: 90px;
-    width: 50%;
-    height: 50px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    
-  }
-  .print button{
-    position: relative;
-    top: 70px;
-    left: 100px;
-    width: 150px;
-    height: 50px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
+}
+.Change-User input{
+  color: black;
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
+  position: relative;
+  top: 30px;
+  left: 35px;
+  border-radius: 10px;
+  width: 75%;
+  border: 1px solid black;
 
 
-  }
+}
+
+.Change button {
+  position: relative;
+  top: 40px;
+  left: 90px;
+  width: 50%;
+  height: 50px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: white;
+  
+}
+.print button{
+  position: relative;
+  top: 70px;
+  left: 100px;
+  width: 150px;
+  height: 50px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+
+
+}
 
 .logout-button button{
-  position: relative;
-  top: 100px;
-  left: 125px;
-  width: 100px;
-  height: 50px;
-  border-radius: 10px;
+position: relative;
+top: 50px;
+left: 125px;
+width: 100px;
+height: 50px;
+border-radius: 10px;
+color: orange;
 
 }
 
 .Admin-image{
-  position: fixed;
-  top: 76px;
-  left: 375px;
+position: fixed;
+top: 90px;
+left: 430px;
+height: 200px;
+border-radius: 25%;
 }
