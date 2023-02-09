@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import '../../css/Info.css'
+import axios from "axios";
 const CurrencyConverter = () => {
   const [amount, setAmount] = useState(0);
   const [fromCurrency, setFromCurrency] = useState("USD");
   const [toCurrency, setToCurrency] = useState("EUR");
   const [convertedAmount, setConvertedAmount] = useState(null);
   const [rates, setRates] = useState({});
+  const [cart , setCart] = useState({});
 
   useEffect(() => {
     fetch("https://api.exchangerate-api.com/v4/latest/USD")
@@ -14,6 +16,20 @@ const CurrencyConverter = () => {
         setRates(data.rates);
       });
   }, []);
+
+  const onClicks = () => {
+    const convertedAmount = localStorage.getItem("convertedAmount")
+    axios.post(`http://localhost:8081/cart/addMoneyToCart/${convertedAmount}`, cart)
+        .then((response) => {
+            setCart(response.data)
+
+            alert("converted amount successfully rendered")
+        }).catch((e) => {
+            console.log(e)
+        })
+
+
+}
 
   useEffect(() => {
     if (amount && rates[toCurrency]) {
@@ -57,6 +73,9 @@ const CurrencyConverter = () => {
           {amount} {fromCurrency} is equal to {convertedAmount} {toCurrency}
         </p>
       )}
+      <div className="e">
+        <button onClick={onClicks}>Click me</button>
+      </div>
     </div>
   );
 };
