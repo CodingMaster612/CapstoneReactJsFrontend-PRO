@@ -6,8 +6,8 @@ import ImageComponent from '../components/reusables/ImageComponent'
 import SideBar from '../components/reusables/SideBar'
 import SearchBar from '../components/reusables/SearchBar'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {  } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
+import { } from '@fortawesome/free-solid-svg-icons'
+import { faAmazon, faFacebook, faGithub, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 
 import ScrollToTop from "../scroll/ScrollToTop";
@@ -51,7 +51,9 @@ function ScrollBox() {
             </div>
 
             <div className="blog">
-
+                <img src="https://via.placeholder.com/450x250" alt="Crypto News" />
+                <h2>Latest Crypto News</h2>
+                <p>Stay up to date with the latest cryptocurrency news and trends</p>
             </div>
             <div className="contact">
                 <footer className="footer-1">
@@ -66,47 +68,50 @@ function ScrollBox() {
                         <div className="column-1">
 
                             <a href="/">PlaceHolder</a>
-                            <a href="/">PlaceHolder</a>
-                            <a href="/">PlaceHolder</a>
-                            <a href="/">PlaceHolder</a>
-                            <a href="/">PlaceHolder</a>
-                            <a href="/">PlaceHolder</a>
+                            <a href="/"></a>
+                            <a href="/"></a>
+                            <a href="/"></a>
+                            <a href="/"></a>
+                            <a href="/"></a>
 
                         </div>
-                        
+
 
                     </div>
                     <div>
-                    <div className="helpful-links-wrapper-2">
-                        <div className="column-2">
+                        <div className="helpful-links-wrapper-2">
+                            <div className="column-2">
 
-                            <a href="/">PlaceHolder</a>
-                            <a href="/">PlaceHolder</a>
-                            <a href="/">PlaceHolder</a>
-                            <a href="/">PlaceHolder</a>
-                            <a href="/">PlaceHolder</a>
-                            <a href="/">PlaceHolder</a>
+                                <a href="/">PlaceHolder</a>
+                                <a href="/"></a>
 
+
+                            </div>
                         </div>
-                        </div>
-                        
+
                     </div>
                     <div className="helpful-links-wrapper-3">
                         <div className="column-3">
 
-                        <FontAwesomeIcon icon={faGithub}  className="github-icon"/> 
+                            <FontAwesomeIcon icon={faGithub} className="github-icon" />
                             <a href="https://github.com/CodingMaster612/CapstoneReactJsFrontend-PRO/tree/master">GitHub</a>
-                        <FontAwesomeIcon icon={faLinkedin}  className="linkedin-icon"/>
+                            <FontAwesomeIcon icon={faLinkedin} className="linkedin-icon" />
                             <a href="https://www.linkedin.com/in/timothyliner">Linkedin</a>
-                            
+
 
                         </div>
-                        </div>
+                    </div>
                     <div>
                         <img src={pillowLogo} className="image-2" />
 
                     </div>
                 </footer>
+                <div className="icon-navbar-wrapper">
+                    <FontAwesomeIcon icon={faFacebook} className="Facebook-icon" />
+                    <FontAwesomeIcon icon={faAmazon} className="Amazon-icon" />
+                    <FontAwesomeIcon icon={faInstagram} className="Instagram-icon" />
+                    <FontAwesomeIcon icon={faTwitter} className="Twitter-icon" />
+                </div>
             </div>
 
         </div>

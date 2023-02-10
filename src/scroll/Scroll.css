@@ -59,12 +59,15 @@
 
   .blog {
     height: 800px;
+    background-color: gray;
+    text-align: center;
+ 
     
   }
   .services{
     height: 800px;
-    background-color: teal;
-    opacity: 0.8;
+    background-color: white;
+    
   }
   .contact {
     height: 800px;
@@ -76,7 +79,7 @@
     height: 250px;
     width: 250px;
     position: relative;
-    top: 110%;
+    top: 200px;
  
   margin-top: -50px;
   margin-left: -100px;
@@ -127,22 +130,25 @@
 }
 
 .helpful-links-wrapper{
-  position: relative;
- top: 50px;
+  position: absolute;
+  top: 58%;
+  left: 70%;
+  transform: translate(-50%, -50%);
 
 
 }
 .helpful-links-wrapper-2{
- position: relative;
- top: -250px;
- left: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
 }
 
 .helpful-links-wrapper-3{
-  position: relative;
-  top: -350px;
-  left: -650px;
+  position: absolute;
+  left: 100px;
+  top: 300px;
  
  }
 .column-1  {
@@ -210,4 +216,49 @@
 .linkedin-icon{
   color: black;
   font-size: 50px;
+}
+.Instagram-icon{
+  color: black;
+  font-size: 100px;
+  margin: 70px;
+}
+
+.Amazon-icon{
+  color: black;
+  font-size: 100px;
+  margin: 70px;
+ }
+ .Facebook-icon{
+  color: black;
+  font-size: 100px;
+  margin: 70px;
+ }
+
+ .icon-navbar-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #89CFF0;
+
+ }
+ .Twitter-icon{
+  color: black;
+  font-size: 100px;
+  margin: 70px;
+ }
+.blog img{
+  width: 450px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.blog h2{
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.blog p{
+  font-size: 18px;
+  color: white;
 }
