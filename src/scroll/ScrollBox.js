@@ -30,7 +30,7 @@ function ScrollBox() {
 
                 <div className="text">
 
-                    <h1>:Currency Converter:</h1>
+                    {/* <h1>:Currency Converter:</h1> */}
 
 
                 </div>
@@ -43,16 +43,39 @@ function ScrollBox() {
             </div>
             <div ref={services} className="services">
                 <div>
-                    <SearchBar />
-                    <img src={pillow} className="image-1" />
+                    <div className="images">
+                        <img src="https://cdn.britannica.com/79/82279-050-BDDED0BD/banknote-Japan.jpg" alt="Image 1" />
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdL-W-gfduFKcymK1wTB2OSahWUj8E0dfYZaR5QBXCUF56WQArAzbRcG6L4VmXFax1EQ8&usqp=CAU" alt="Image 2" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/US_one_dollar_bill%2C_obverse%2C_series_2009.jpg/640px-US_one_dollar_bill%2C_obverse%2C_series_2009.jpg" alt="Image 3" />
+                    </div>
+                    <div>
+                        <div className="text-side-by-side">
+                            <div className="text-box">PlaceHolder</div>
+                            <div className="text-box">PlaceHolder</div>
+                            <div className="text-box">PlaceHolder</div>
+                        </div>
+                    </div>
+                    <div className="images">
+                        <img src="https://academy-public.coinmarketcap.com/srd-optimized-uploads/ce3df4b2e6014929adc9c0c99be5c5fc.jpg" alt="Image 1" />
+                        <img src="https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/20190227151811/money-foreigncurrency-cash_SOMN18112_624674912_is_1560x880.jpg" alt="Image 2" />
+                        <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1653709480.jpg" alt="Image 3" />
+                    </div>
+                    <div className="text-side-by-side">
+                            <div className="text-box">PlaceHolder</div>
+                            <div className="text-box">PlaceHolder</div>
+                            <div className="text-box">PlaceHolder</div>
+                        </div>
+
+                    {/* <SearchBar />
+                    <img src={pillow} className="image-1" /> */}
 
                 </div>
 
             </div>
 
-            <div className="blog">
+            {/* <div className="blog">
               
-            </div>
+            </div> */}
             <div className="contact">
                 <footer className="footer-1">
                     <p className="footer-text">
