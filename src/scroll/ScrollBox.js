@@ -1,10 +1,13 @@
 import { useRef } from "react";
 import '../scroll/Scroll.css';
 import pillow from '../img/pillowLogo.png'
-import pillowLogo from '/Users/timliner/Desktop/Capstone-PRO/capstone/src/img/Pillow (1).png'
+import pillowLogo from '/Users/timliner/Desktop/Capstone-PRO/capstone/src/img/PIllow (2).png'
 import ImageComponent from '../components/reusables/ImageComponent'
 import SideBar from '../components/reusables/SideBar'
 import SearchBar from '../components/reusables/SearchBar'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {  } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 
 
 import ScrollToTop from "../scroll/ScrollToTop";
@@ -53,20 +56,52 @@ function ScrollBox() {
             <div className="contact">
                 <footer className="footer-1">
                     <p className="footer-text">
-                        
+
                     </p>
+
+                    <div className="helpful-links-tag">
+                        <h1>Helpful Links_____________________________</h1>
+                    </div>
                     <div className="helpful-links-wrapper">
                         <div className="column-1">
-                           <a href="/">PlaceHolder</a>
-                           <a href="/">PlaceHolder</a>
-                           <a href="/">PlaceHolder</a>
-                           <a href="/">PlaceHolder</a>
-                           <a href="/">PlaceHolder</a>
-                           <a href="/">PlaceHolder</a>
+
+                            <a href="/">PlaceHolder</a>
+                            <a href="/">PlaceHolder</a>
+                            <a href="/">PlaceHolder</a>
+                            <a href="/">PlaceHolder</a>
+                            <a href="/">PlaceHolder</a>
+                            <a href="/">PlaceHolder</a>
 
                         </div>
+                        
 
                     </div>
+                    <div>
+                    <div className="helpful-links-wrapper-2">
+                        <div className="column-2">
+
+                            <a href="/">PlaceHolder</a>
+                            <a href="/">PlaceHolder</a>
+                            <a href="/">PlaceHolder</a>
+                            <a href="/">PlaceHolder</a>
+                            <a href="/">PlaceHolder</a>
+                            <a href="/">PlaceHolder</a>
+
+                        </div>
+                        </div>
+                        
+                    </div>
+                    <div className="helpful-links-wrapper-3">
+                        <div className="column-3">
+
+                        <FontAwesomeIcon icon={faGithub}  className="github-icon"/> 
+                            <a href="https://github.com/CodingMaster612/CapstoneReactJsFrontend-PRO/tree/master">GitHub</a>
+                        <FontAwesomeIcon icon={faLinkedin}  className="linkedin-icon"/>
+                            <a href="https://www.linkedin.com/in/timothyliner">Linkedin</a>
+                            
+
+                        </div>
+                        </div>
                     <div>
                         <img src={pillowLogo} className="image-2" />
 
