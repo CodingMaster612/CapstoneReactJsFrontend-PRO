@@ -51,9 +51,7 @@ function ScrollBox() {
             </div>
 
             <div className="blog">
-                <img src="https://via.placeholder.com/450x250" alt="Crypto News" />
-                <h2>Latest Crypto News</h2>
-                <p>Stay up to date with the latest cryptocurrency news and trends</p>
+              
             </div>
             <div className="contact">
                 <footer className="footer-1">
@@ -67,7 +65,7 @@ function ScrollBox() {
                     <div className="helpful-links-wrapper">
                         <div className="column-1">
 
-                            <a href="/">PlaceHolder</a>
+                            <a href="/"></a>
                             <a href="/"></a>
                             <a href="/"></a>
                             <a href="/"></a>
@@ -82,8 +80,8 @@ function ScrollBox() {
                         <div className="helpful-links-wrapper-2">
                             <div className="column-2">
 
-                                <a href="/">PlaceHolder</a>
-                                <a href="/"></a>
+                                <a href="/news">News</a>
+                                <a href="/Bank"> Bank</a>
 
 
                             </div>

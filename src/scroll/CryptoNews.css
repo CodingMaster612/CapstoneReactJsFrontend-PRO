@@ -1,0 +1,26 @@
+
+
+
+
+
+
+.CryptoNews h2{
+    
+    font-size: 30px;
+    text-shadow: 2px 2px 0px white, -2px -2px 0px #000, 2px -2px 0px #000, -2px 2px 0px #000;
+    
+  }
+.CryptoNews img{
+  
+  width: 1000px;
+  height: 500px;
+  box-shadow: 10px 10px 20px rgba(225, 225, 225, 0.9);
+  position: relative;
+  left: 20%;
+
+}
+
+.CryptoNews p{
+ font-size: 20px;
+ text-shadow: 2px 2px 0px #000, -2px -2px 0px #000, 2px -2px 0px #000, -2px 2px 0px #000;
+}

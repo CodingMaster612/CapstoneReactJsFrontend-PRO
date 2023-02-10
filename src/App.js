@@ -35,7 +35,7 @@ import AdminLogin from './components/pages/AdminLoginPage'
 import Home from "./AdminPages/home/Home"
 import Crypto from './CryptoConverter/Crypto.js';
 import Info from './components/pages/Info';
-
+import CryptoNews from './scroll/CryptoNews';
 import './App.css';
 
 import { theme as customTheme } from './theme';
@@ -88,7 +88,7 @@ const App = () => {
                   <Route path="/wallet" element={<Wallet />} />
                   <Route path='/cart' element={<Cart />} />
                   <Route path="/bankLogin" element={<Shell />} />
-                  {/* <Route path='/Bank' element={<Bank />} /> */}
+                  <Route path='/Bank' element={<Bank />} />
                   {/* <Route path="/buy" element={<Buy />} /> */}
                   {/* <Route path="/postData" element={<Post/>} /> */}
                   <Route path="/CryptoInfo" element={<Info />} />
@@ -101,6 +101,7 @@ const App = () => {
                   <Route path="/Creator" element={<CreatorAdmin />} />
                   <Route path="/AdminLogin" element= {<AdminLogin/>}/>
                   <Route path="/cryptos" element={<Crypto/>} />
+                  <Route path="/news" element={<CryptoNews/>} />
                     {/* <Route path="/Home" element={<Home />} />
                     <Route path="/users" element={<UserList />} />
                     <Route path="/user/:userId" element={<User />} />
