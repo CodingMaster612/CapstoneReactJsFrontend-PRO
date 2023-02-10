@@ -10,7 +10,8 @@ import SignInButton from '../reusables/SignInButton'
 import SignUpButton from '../reusables/SignUpButton'
 import Modal from '../Questionables/Modal'
 import ScrollBox from '../../scroll/ScrollBox'
-function HomePage(props) {
+import '../../css/Homepage.css'
+function HomePage() {
     
     
     
@@ -28,8 +29,9 @@ function HomePage(props) {
                 {/* <div> 
                     <Modal/>
                 </div> */}
-
                 
+
+    
                 
                 
                 

@@ -62,7 +62,8 @@
   }
   .services{
     height: 800px;
-    background-color: white
+    background-color: teal;
+    opacity: 0.8;
   }
   .contact {
     height: 800px;

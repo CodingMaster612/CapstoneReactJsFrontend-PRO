@@ -35,13 +35,13 @@ function ScrollBox() {
                 <div className="img-2"><img src="https://media.istockphoto.com/id/951412868/photo/bitcoin-on-white-background.jpg?s=612x612&w=0&k=20&c=h6bSw-lkIDHle3Qz_6RXvluUttHEmsHsblMmwDra9sA=" /></div>
                 <div className="img-3"><img src="https://static.vecteezy.com/system/resources/previews/007/153/309/original/gold-coin-of-chinese-yuan-yen-concept-of-internet-currency-vector.jpg" /></div>
             </div>
-            {/* <div ref={services} className="services">
+            <div ref={services} className="services">
                 <div>
                         <SearchBar/>
                         <img src={pillow}  className="image-1"/>
 
                 </div>
-                
+                 
                     
                 
                 <div className="blog">
@@ -49,8 +49,8 @@ function ScrollBox() {
                 </div>
                 <div className="contact">
 
-                </div> */}
-            {/* </div> */}
+                </div> 
+            </div>
         </div>
     );
 }

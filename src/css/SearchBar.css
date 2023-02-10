@@ -17,24 +17,27 @@
   .search-input {
     padding: 0.5rem;
     font-size: 1rem;
-    border: 1px solid black;
+    border: 3px solid black;
     border-radius: 5px 0 0 5px;
     width: 30%;
     border-radius: 25px;
     border-width: 2px;
     color: black;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
   }
   
   .search-button {
     padding: 0.5rem 1rem;
     font-size: 1rem;
-    border: 1px solid black;
+    border: 3px solid black;
     border-radius: 0 5px 5px 0;
+    color: black;
     cursor: pointer;
     border-radius: 25px;
     border-width: 2px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
   }
   
   .search-input::placeholder {
