@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import '../scroll/Scroll.css';
 import pillow from '../img/pillowLogo.png'
+import pillowLogo from '/Users/timliner/Desktop/Capstone-PRO/capstone/src/img/Pillow (1).png'
 import ImageComponent from '../components/reusables/ImageComponent'
 import SideBar from '../components/reusables/SideBar'
 import SearchBar from '../components/reusables/SearchBar'
@@ -23,9 +24,11 @@ function ScrollBox() {
     return (
         <div className="App">
             <div className="hero">
+
                 <div className="text">
 
-                    {/* <h1>:Currency Converter:</h1> */}
+                    <h1>:Currency Converter:</h1>
+
 
                 </div>
 
@@ -37,20 +40,40 @@ function ScrollBox() {
             </div>
             <div ref={services} className="services">
                 <div>
-                        <SearchBar/>
-                        <img src={pillow}  className="image-1"/>
+                    <SearchBar />
+                    <img src={pillow} className="image-1" />
 
                 </div>
-                 
-                    
-                
-                <div className="blog">
-                
-                </div>
-                <div className="contact">
 
-                </div> 
             </div>
+
+            <div className="blog">
+
+            </div>
+            <div className="contact">
+                <footer className="footer-1">
+                    <p className="footer-text">
+                        
+                    </p>
+                    <div className="helpful-links-wrapper">
+                        <div className="column-1">
+                           <a href="/">PlaceHolder</a>
+                           <a href="/">PlaceHolder</a>
+                           <a href="/">PlaceHolder</a>
+                           <a href="/">PlaceHolder</a>
+                           <a href="/">PlaceHolder</a>
+                           <a href="/">PlaceHolder</a>
+
+                        </div>
+
+                    </div>
+                    <div>
+                        <img src={pillowLogo} className="image-2" />
+
+                    </div>
+                </footer>
+            </div>
+
         </div>
     );
 }
