@@ -36,6 +36,12 @@ import Home from "./AdminPages/home/Home"
 import Crypto from './CryptoConverter/Crypto.js';
 import Info from './components/pages/Info';
 import CryptoNews from './scroll/CryptoNews';
+import Blog from './scroll/Links/Blog';
+import Contact from './scroll/Links/Contact';
+import Privacy from './scroll/Links/Privacy';
+import Support from './scroll/Links/Support';
+import Terms from './scroll/Links/Terms';
+import FAQ from './scroll/Links/FAQ';
 import './App.css';
 
 import { theme as customTheme } from './theme';
@@ -102,6 +108,12 @@ const App = () => {
                   <Route path="/AdminLogin" element= {<AdminLogin/>}/>
                   <Route path="/cryptos" element={<Crypto/>} />
                   <Route path="/news" element={<CryptoNews/>} />
+                  <Route path="/blog" element={<Blog/>}/>
+                  <Route path="/contact" element={<Contact/>}/>
+                  <Route path="/FAQ" element={<FAQ/>}/>
+                  <Route path="/privacy" element={<Privacy/>}/>
+                  <Route path="/support" element={<Support/>}/>
+                  <Route path="/terms" element={<Terms/>}/>
                     {/* <Route path="/Home" element={<Home />} />
                     <Route path="/users" element={<UserList />} />
                     <Route path="/user/:userId" element={<User />} />
