@@ -1,8 +1,8 @@
 import React from 'react';
-
+import './Privacy.css'
 const CurrencyPrivacyPolicy = () => {
   return (
-    <div>
+    <div className="Privacy">
       <h1>Privacy Policy</h1>
       <p>At [Your Company Name], we take your privacy seriously and are committed to protecting your personal information. This Privacy Policy outlines the information we collect and how we use it.</p>
       <h2>Information We Collect</h2>

@@ -1,0 +1,39 @@
+.Blog{
+    position:absolute;
+    top: 20%;
+    left:2%;
+}
+.Blog li{
+   color: white;
+   
+}
+.Blog h2{
+    color: rosybrown;
+    text-align: center;
+    text-shadow: -1px 1px 10px rgba(0, 0, 0, 0.75);
+
+ }
+ .Blog h1{
+    color: yellow;
+    text-align: center;
+    font-size:100px;
+    text-shadow: -1px 1px 10px rgba(0, 0, 0, 0.75);
+
+ }
+ .Blog p{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+ }
+ .Blog ul{
+    
+    background-color: transparent;
+    font-size: 20px;
+ }
+ .Blog li{
+    
+    color: red;
+    text-shadow: -1px 1px 10px rgba(225, 225, 225, 0.75);
+
+    
+ }

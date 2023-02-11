@@ -1,8 +1,8 @@
 import React from 'react';
-
+import './FAQ.css'
 const CurrencyFAQ = () => {
   return (
-    <div>
+    <div className="FAQ">
       <h1>Currency FAQ</h1>
       <h2>What is a currency?</h2>
       <p>A currency is a medium of exchange for goods and services in an economy. Currencies are used to facilitate transactions and are typically issued by a country's central bank.</p>

@@ -1,0 +1,39 @@
+.FAQ{
+    position:absolute;
+    top: 20%;
+    left:2%;
+}
+.FAQ li{
+   color: white;
+   
+}
+.FAQ h2{
+    color: rosybrown;
+    text-align: center;
+    text-shadow: -1px 1px 10px rgba(0, 0, 0, 0.75);
+
+ }
+ .FAQ h1{
+    color: yellow;
+    text-align: center;
+    font-size:100px;
+    text-shadow: -1px 1px 10px rgba(0, 0, 0, 0.75);
+
+ }
+ .FAQ p{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+ }
+ .FAQ ul{
+    
+    background-color: transparent;
+    font-size: 20px;
+ }
+ .FAQ li{
+    
+    color: red;
+    text-shadow: -1px 1px 10px rgba(225, 225, 225, 0.75);
+
+    
+ }

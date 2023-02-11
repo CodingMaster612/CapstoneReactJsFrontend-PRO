@@ -8,15 +8,16 @@
    
 }
 .Terms-of-Service h2{
-    color: orange;
+    color: rosybrown;
     text-align: center;
-    text-shadow: -1px 1px 10px rgba(225, 225, 225, 0.75);
+   
 
  }
  .Terms-of-Service h1{
-    color: orange;
+    color: yellow;
     text-align: center;
     text-shadow: -1px 1px 10px rgba(225, 225, 225, 0.75);
+    font-size: 100px;
 
  }
  .Terms-of-Service p{

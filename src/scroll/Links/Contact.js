@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import './Contact.css'
 const ContactUs = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -14,7 +14,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div>
+    <div className="Contact-wrapper">
       <h1>Contact Us</h1>
       {submitted ? (
         <p>Thank you for contacting us! We will get back to you as soon as possible.</p>

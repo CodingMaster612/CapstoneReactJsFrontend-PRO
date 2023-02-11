@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './Blog.css'
 const Blog = () => {
   const posts = [
     {
@@ -20,7 +20,7 @@ const Blog = () => {
   ];
 
   return (
-    <div>
+    <div className="Blog">
       <h1>Blog</h1>
       {posts.map(post => (
         <div key={post.title}>
