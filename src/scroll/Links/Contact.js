@@ -14,6 +14,7 @@ const ContactUs = () => {
   };
 
   return (
+    <header style={HeaderStyle}>
     <div className="Contact-wrapper">
       <h1>Contact Us</h1>
       {submitted ? (
@@ -36,7 +37,18 @@ const ContactUs = () => {
         </form>
       )}
     </div>
+    </header>
   );
 };
+const HeaderStyle = {
+  width: "100%",
+  height: "100vh",
+  //  background: `url(${BackgroundImage})`,
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
+  backgroundColor: "#E1D9D1"
 
+
+}
 export default ContactUs;

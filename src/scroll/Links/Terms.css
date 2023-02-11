@@ -4,19 +4,21 @@
     left:2%;
 }
 .Terms-of-Service li{
-   color: white;
+   color: black;
    
 }
 .Terms-of-Service h2{
-    color: rosybrown;
+    color: white;
     text-align: center;
-   
+    font-size: 80px;
+    text-shadow: -1px 1px 10px rgba(225, 225, 225, 0.9);
+
 
  }
  .Terms-of-Service h1{
-    color: yellow;
+    color: white;
     text-align: center;
-    text-shadow: -1px 1px 10px rgba(225, 225, 225, 0.75);
+    text-shadow: -1px 1px 10px rgba(225, 225, 225, 0.9);
     font-size: 100px;
 
  }
@@ -33,7 +35,7 @@
  .Terms-of-Service li{
     
     color: red;
-    text-shadow: -1px 1px 10px rgba(225, 225, 225, 0.75);
+    text-shadow: -1px 1px 10px rgba(225, 225, 225, 0.9);
 
     
  }

@@ -8,6 +8,8 @@ import SearchBar from '../components/reusables/SearchBar'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { } from '@fortawesome/free-solid-svg-icons'
 import { faAmazon, faFacebook, faGithub, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { Link } from 'react-router-dom'
+
 
 
 import ScrollToTop from "../scroll/ScrollToTop";
@@ -25,16 +27,16 @@ function ScrollBox() {
         });
     };
 
-    const handleClick= () => {
+    const handleClick = () => {
         window.location.href = 'https://dogecoin.com';
 
     }
-    const submitClick= () => {
+    const submitClick = () => {
         window.location.href = 'https://bitcoin.org/en/';
 
     }
 
-    const submitClicks= () => {
+    const submitClicks = () => {
         window.location.href = "https://ethereum.org/en/"
     }
 
@@ -58,9 +60,9 @@ function ScrollBox() {
             <div ref={services} className="services">
                 <div>
                     <div className="images">
-                        <img src="https://wallpaperaccess.com/full/1267683.png" alt="Image 1" onClick={submitClicks}/>
+                        <img src="https://wallpaperaccess.com/full/1267683.png" alt="Image 1" onClick={submitClicks} />
                         <img src="https://static.vecteezy.com/system/resources/previews/002/774/878/original/bitcoin-logo-button-free-vector.jpg" alt="Image 2" onClick={submitClick} />
-                        <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1653709480.jpg"  onClick={handleClick}  alt="Image 3" />
+                        <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1653709480.jpg" onClick={handleClick} alt="Image 3" />
                     </div>
                     <div>
                         <div className="text-side-by-side">
@@ -97,7 +99,7 @@ function ScrollBox() {
                     </p>
 
                     <div className="helpful-links-tag">
-                        <h1>Helpful Links_____________________________</h1>
+                        <h1>Helpful Links_______________________</h1>
                     </div>
                     <div className="helpful-links-wrapper">
                         <div className="column-1">
@@ -118,7 +120,7 @@ function ScrollBox() {
                                 <a href="/Bank"> Bank</a>
                                 <a href="/blog"> Blog</a>
                                 <a href="/contact"> Contact</a>
-                                
+
 
 
                             </div>
@@ -142,10 +144,18 @@ function ScrollBox() {
                     </div>
                 </footer>
                 <div className="icon-navbar-wrapper">
-                    <FontAwesomeIcon icon={faFacebook} className="Facebook-icon" />
-                    <FontAwesomeIcon icon={faAmazon} className="Amazon-icon" />
-                    <FontAwesomeIcon icon={faInstagram} className="Instagram-icon" />
-                    <FontAwesomeIcon icon={faTwitter} className="Twitter-icon" />
+                    
+                       <a href="https://www.facebook.com/" className="t"> <FontAwesomeIcon icon={faFacebook} className="Facebook-icon"  /></a>
+                   
+                    
+                        <a href="https://www.amazon.com/" className="t"> <FontAwesomeIcon icon={faAmazon} className="Amazon-icon" /></a>
+                    
+                    
+                        <a href="https://www.instagram.com/" className="t"><FontAwesomeIcon icon={faInstagram} className="Instagram-icon" /></a>
+                    
+                    
+                        <a href="https://twitter.com/?lang=en" className="t"><FontAwesomeIcon icon={faTwitter} className="Twitter-icon" /></a>
+                    
                 </div>
             </div>
 

@@ -2,6 +2,7 @@ import React from 'react';
 import './FAQ.css'
 const CurrencyFAQ = () => {
   return (
+    <header style={HeaderStyle}>
     <div className="FAQ">
       <h1>Currency FAQ</h1>
       <h2>What is a currency?</h2>
@@ -13,7 +14,18 @@ const CurrencyFAQ = () => {
       <h2>What is a currency conversion fee?</h2>
       <p>A currency conversion fee is a charge assessed by a financial institution for converting one currency into another currency. The fee is usually a percentage of the amount being converted and varies depending on the financial institution.</p>
     </div>
+    </header>
   );
 };
+const HeaderStyle = {
+  width: "100%",
+  height: "100vh",
+  //  background: `url(${BackgroundImage})`,
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
+  backgroundColor: "#E1D9D1"
 
+
+}
 export default CurrencyFAQ;

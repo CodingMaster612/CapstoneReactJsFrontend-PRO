@@ -2,7 +2,9 @@ import React from 'react';
 import './Terms.css'
 const TermsOfService = () => {
   return (
+    <header style={HeaderStyle}>
     <div className="Terms-of-Service">
+
       <h1>Terms of Service</h1>
       <p>
         These Terms of Service ("Terms") govern your access to and use of our website, services, and products (collectively, "Services"). Please read these Terms carefully, and contact us if you have any questions. By accessing or using our Services, you agree to be bound by these Terms and our Privacy Policy.
@@ -44,6 +46,18 @@ const TermsOfService = () => {
         These Terms shall be governed and construed in accordance with the laws of the state
         </p>
         </div>
+        </header>
   )
+}
+const HeaderStyle = {
+  width: "100%",
+  height: "100vh",
+  //  background: `url(${BackgroundImage})`,
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
+  // backgroundColor: "#E1D9D1"
+
+
 }
 export default TermsOfService;
