@@ -13,6 +13,7 @@ import { faAmazon, faFacebook, faGithub, faInstagram, faLinkedin, faTwitter } fr
 import ScrollToTop from "../scroll/ScrollToTop";
 
 function ScrollBox() {
+
     const services = useRef(null);
     const blog = useRef(null);
     const contact = useRef(null);
@@ -23,6 +24,19 @@ function ScrollBox() {
             behavior: "smooth",
         });
     };
+
+    const handleClick= () => {
+        window.location.href = 'https://dogecoin.com';
+
+    }
+    const submitClick= () => {
+        window.location.href = 'https://bitcoin.org/en/';
+
+    }
+
+    const submitClicks= () => {
+        window.location.href = "https://ethereum.org/en/"
+    }
 
     return (
         <div className="App">
@@ -44,26 +58,26 @@ function ScrollBox() {
             <div ref={services} className="services">
                 <div>
                     <div className="images">
-                        <img src="https://cdn.britannica.com/79/82279-050-BDDED0BD/banknote-Japan.jpg" alt="Image 1" />
-                        <img src="" alt="Image 2" />
-                        <img src="" alt="Image 3" />
+                        <img src="https://wallpaperaccess.com/full/1267683.png" alt="Image 1" onClick={submitClicks}/>
+                        <img src="https://static.vecteezy.com/system/resources/previews/002/774/878/original/bitcoin-logo-button-free-vector.jpg" alt="Image 2" onClick={submitClick} />
+                        <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1653709480.jpg"  onClick={handleClick}  alt="Image 3" />
                     </div>
                     <div>
                         <div className="text-side-by-side">
-                            <div className="text-box">PlaceHolder</div>
-                            <div className="text-box">PlaceHolder</div>
-                            <div className="text-box">PlaceHolder</div>
+                            <div className="text-box">Ethereum Website</div>
+                            <div className="text-box">Bitcoin Website</div>
+                            <div className="text-box">Elon Musk Doge Coin</div>
                         </div>
                     </div>
                     <div className="images">
-                        <img src="" alt="Image 1" />
+                        {/* <img src="" alt="Image 1" />
                         <img src="" alt="Image 2" />
-                        <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1653709480.jpg" alt="Image 3" />
+                        <img src="" /> */}
                     </div>
                     <div className="text-side-by-side">
-                        <div className="text-box">PlaceHolder</div>
-                        <div className="text-box">PlaceHolder</div>
-                        <div className="text-box">PlaceHolder</div>
+                        {/* <div className="text-box">PlaceHolder</div>
+                        <div className="text-box">PlaceHolder</div> */}
+                        {/* <div className="text-box">Elon Musk Doge Coin</div> */}
                     </div>
 
                     {/* <SearchBar />
