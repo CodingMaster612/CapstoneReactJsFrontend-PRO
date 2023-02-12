@@ -6,7 +6,7 @@ import ImageComponent from '../components/reusables/ImageComponent'
 import SideBar from '../components/reusables/SideBar'
 import SearchBar from '../components/reusables/SearchBar'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faClock, faNewspaper, faBank, faBlog, faAddressBook , faQuestion,  faBell} from '@fortawesome/free-solid-svg-icons'
+import { faClock, faNewspaper, faBank, faBlog, faAddressBook, faQuestion, faBell, faLock, faCoins, faNoteSticky, faRadio } from '@fortawesome/free-solid-svg-icons'
 import { faAmazon, faFacebook, faGithub, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { Link } from 'react-router-dom'
 import Clock from "./Links/Clock";
@@ -75,12 +75,12 @@ function ScrollBox() {
                     <div className="images">
                         <img src="" alt="Image 1" />
                         <img src="" alt="Image 2" />
-                        <img src="" alt="Image 3"/>
+                        <img src="" alt="Image 3" />
                     </div>
                     <div className="text-side-by-side">
                         <div className="text-box">PlaceHolder</div>
-                        <div className="text-box">PlaceHolder</div> 
-                         <div className="text-box">PlaceHolder</div>
+                        <div className="text-box">PlaceHolder</div>
+                        <div className="text-box">PlaceHolder</div>
                     </div>
 
                     {/* <SearchBar />
@@ -88,16 +88,16 @@ function ScrollBox() {
 
                 </div>
                 <div className="images">
-                        <img src="" alt="Image 1" />
-                        <img src="" alt="Image 2" />
-                        <img src="" alt="Image 3"/>
-                    </div>
+                    <img src="" alt="Image 1" />
+                    <img src="" alt="Image 2" />
+                    <img src="" alt="Image 3" />
+                </div>
 
             </div>
 
-            {/* <div className="blog">
+            <div className="blog">
               
-            </div> */}
+            </div>
             <div className="contact">
                 <footer className="footer-1">
                     <p className="footer-text">
@@ -109,18 +109,26 @@ function ScrollBox() {
                     </div>
                     <div className="helpful-links-wrapper">
                         <div className="column-1">
-                        <FontAwesomeIcon icon={faQuestion} className="FAQ-icon"/>
+                            <p>
+                                <FontAwesomeIcon icon={faQuestion} className="FAQ-icon" />
 
-                            <a href="/FAQ"> FAQ</a>
-                            <FontAwesomeIcon className="Newspaper-icon"/>
+                                <a href="/FAQ"> FAQ</a>
+                            </p>
+                            <p>
+                                <FontAwesomeIcon icon={faLock} className="Lock-icon" />
 
-                            <a href="/privacy"> Privacy</a>
-                            <FontAwesomeIcon icon={faAddressBook} className="Newspaper-icon"/>
+                                <a href="/privacy"> Privacy</a>
+                            </p>
+                            <p>
+                                <FontAwesomeIcon icon={faAddressBook} className="Newspaper-icon" />
 
-                            <a href="/terms"> Terms of Service</a>
-                            <FontAwesomeIcon icon={faBell} className="Newspaper-icon"/>
+                                <a href="/terms"> Terms of Service</a>
+                            </p>
+                            <p>
+                                <FontAwesomeIcon icon={faBell} className="Newspaper-icon" />
 
-                            <a href="/Alerts"> Alerts</a>
+                                <a href="/Alerts"> Alerts</a>
+                            </p>
                             {/* <a href="/Clock"> Clock</a> */}
 
 
@@ -131,18 +139,27 @@ function ScrollBox() {
                     <div>
                         <div className="helpful-links-wrapper-2">
                             <div className="column-2">
-                            <FontAwesomeIcon icon={faNewspaper} className="Newspaper-icon"/>
-                                <a href="/news"> Crypto News</a> 
-                                <FontAwesomeIcon icon={faBank} className="Bank-icon"/>
+                                <p>
+                                    <FontAwesomeIcon icon={faNewspaper} className="Newspaper-icon" />
+                                    <a href="/news"> Crypto News</a>
+                                </p>
+                                <p>
+                                    <FontAwesomeIcon icon={faBank} className="Bank-icon" />
 
-                                <a href="/Bank"> Bank</a>
-                                <FontAwesomeIcon icon={faBlog} className="Blog-icon"/>
 
-                                <a href="/blog"> Blog</a>
-                                <FontAwesomeIcon icon={faAddressBook} className="Contact-icon"/>
+                                    <a href="/Bank"> Bank</a>
+                                </p>
+                                <p>
+                                    <FontAwesomeIcon icon={faBlog} className="Blog-icon" />
 
-                                <a href="/contact"> Contact</a>
+                                    <a href="/blog"> Blog</a>
+                                </p>
+                                <p>
+                                    <FontAwesomeIcon icon={faAddressBook} className="Contact-icon" />
 
+
+                                    <a href="/contact"> Contact</a>
+                                </p>
 
 
 
@@ -152,9 +169,18 @@ function ScrollBox() {
                     <div>
                         <div className="helpful-links-wrapper-4">
                             <div className="column-4">
-                                <a href="/Compare"> Compare Currency</a>
-                                <a href="/CurrencyNews"> Currency News</a>
-                                <a href="/Notes"> Note Pad</a>
+                                <p>
+                                    <FontAwesomeIcon icon={faCoins} className="Coins-icon" />
+                                    <a href="/Compare"> Compare Currency</a>
+                                </p>
+                                <p>
+                                    <FontAwesomeIcon icon={faRadio} className="Radio-icon" />
+                                    <a href="/CurrencyNews"> Currency News</a>
+                                </p>
+                                <p>
+                                    <FontAwesomeIcon icon={faNoteSticky} className="Notes-icon" />
+                                    <a href="/Notes"> Note Pad</a>
+                                </p>
                                 {/* <a href="/Notify"> Notifications</a> */}
 
 
@@ -194,8 +220,8 @@ function ScrollBox() {
 
                 </div>
                 <div className="Clock-Style">
-                    <Clock/>
-                    <FontAwesomeIcon icon={faClock}  className="Clock"/>
+                    <Clock />
+                    <FontAwesomeIcon icon={faClock} className="Clock" />
                 </div>
             </div>
 

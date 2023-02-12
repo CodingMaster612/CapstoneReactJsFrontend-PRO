@@ -334,42 +334,100 @@
 }
 .Newspaper-icon{
   color: black;
-  width: 45px;
-  height: 45px;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  
 }
 .Contact-icon{
   color: black;
-  width: 45px;
-  height: 45px;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
 }
 .Blog-icon{
   color: black;
-  width: 45px;
-  height: 45px;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
 }
 .Bank-icon{
   color: black;
-  width: 45px;
-  height: 45px;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
 }
 
 .FAQ-icon{
   color: black;
-  width: 45px;
-  height: 45px;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
 }
 .Privacy-icon{
   color: black;
-  width: 45px;
-  height: 45px;
+  width: 25px;
+  height: 25px;;
+  margin-right: 10px;
 }
 .Terms-icon{
   color: black;
-  width: 45px;
-  height: 45px;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
 }
 .Alerts-icon{
   color: black;
-  width: 45px;
-  height: 45px;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.Lock-icon{
+  color: black;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+
+.FAQ-icon{
+  color: black;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+
+
+.column-1 p{
+  display: flex;
+  align-items: center;
+}
+.column-4 p{
+  display: flex;
+  align-items: center;
+}
+.Coins-icon{
+  color: black;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.Notes-icon{
+  color: black;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.Radio-icon{
+  color: black;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.column-2 p{
+  display: flex;
+  align-items: center;
 }
