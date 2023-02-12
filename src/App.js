@@ -42,6 +42,13 @@ import Privacy from './scroll/Links/Privacy';
 import Support from './scroll/Links/Support';
 import Terms from './scroll/Links/Terms';
 import FAQ from './scroll/Links/FAQ';
+import Alerts from'./scroll/Links/Alerts';
+import Clock from './scroll/Links/Clock';
+import Compare from './scroll/Links/Compare';
+import CurrencyNews from './scroll/Links/CurrencyNews';
+import Notes from './scroll/Links/Notes';
+import Notify from './scroll/Links/Notify';
+
 import './App.css';
 
 import { theme as customTheme } from './theme';
@@ -114,6 +121,13 @@ const App = () => {
                   <Route path="/privacy" element={<Privacy/>}/>
                   <Route path="/support" element={<Support/>}/>
                   <Route path="/terms" element={<Terms/>}/>
+                  <Route path="/Alerts" element={<Alerts/>}/>
+                  <Route path="/Clock" element={<Clock/>}/>
+                  <Route path="/Compare" element={<Compare/>}/>
+                  <Route path="/CurrencyNews" element={<CurrencyNews/>}/>
+                  <Route path="/Notes" element={<Notes/>}/>
+                  <Route path="/Notify" element={<Notify/>}/>
+
                     {/* <Route path="/Home" element={<Home />} />
                     <Route path="/users" element={<UserList />} />
                     <Route path="/user/:userId" element={<User />} />

@@ -99,7 +99,7 @@ function ScrollBox() {
                     </p>
 
                     <div className="helpful-links-tag">
-                        <h1>Helpful Links_______________________</h1>
+                        <h1>Helpful Links_______________________________________</h1>
                     </div>
                     <div className="helpful-links-wrapper">
                         <div className="column-1">
@@ -107,6 +107,9 @@ function ScrollBox() {
                             <a href="/FAQ"> FAQ</a>
                             <a href="/privacy"> Privacy</a>
                             <a href="/terms"> Terms of Service</a>
+                            <a href="/Alerts"> Alerts</a>
+                            <a href="/Clock"> Clock</a>
+
 
                         </div>
 
@@ -120,6 +123,20 @@ function ScrollBox() {
                                 <a href="/Bank"> Bank</a>
                                 <a href="/blog"> Blog</a>
                                 <a href="/contact"> Contact</a>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="helpful-links-wrapper-4">
+                            <div className="column-4">
+                                <a href="/Compare"> Compare Currency</a>
+                                <a href="/CurrencyNews"> Currency News</a>
+                                <a href="/Notes"> Note Pad</a>
+                                <a href="/Notify"> Notifications</a>
 
 
 
@@ -144,18 +161,18 @@ function ScrollBox() {
                     </div>
                 </footer>
                 <div className="icon-navbar-wrapper">
-                    
-                       <a href="https://www.facebook.com/" className="t"> <FontAwesomeIcon icon={faFacebook} className="Facebook-icon"  /></a>
-                   
-                    
-                        <a href="https://www.amazon.com/" className="t"> <FontAwesomeIcon icon={faAmazon} className="Amazon-icon" /></a>
-                    
-                    
-                        <a href="https://www.instagram.com/" className="t"><FontAwesomeIcon icon={faInstagram} className="Instagram-icon" /></a>
-                    
-                    
-                        <a href="https://twitter.com/?lang=en" className="t"><FontAwesomeIcon icon={faTwitter} className="Twitter-icon" /></a>
-                    
+
+                    <a href="https://www.facebook.com/" className="t"> <FontAwesomeIcon icon={faFacebook} className="Facebook-icon" /></a>
+
+
+                    <a href="https://www.amazon.com/" className="t"> <FontAwesomeIcon icon={faAmazon} className="Amazon-icon" /></a>
+
+
+                    <a href="https://www.instagram.com/" className="t"><FontAwesomeIcon icon={faInstagram} className="Instagram-icon" /></a>
+
+
+                    <a href="https://twitter.com/?lang=en" className="t"><FontAwesomeIcon icon={faTwitter} className="Twitter-icon" /></a>
+
                 </div>
             </div>
 

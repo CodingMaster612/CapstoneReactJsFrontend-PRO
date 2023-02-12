@@ -40,6 +40,11 @@
    color: black;
    
 }
+.Contact-wrapper p{
+  color: black;
+  font-size: 30px;
+  
+}
 .Contact-wrapper button{
 border-radius: 15%;
 width: 100px;
