@@ -58,6 +58,7 @@ function ScrollBox() {
                 <div className="img-2"><img src="https://media.istockphoto.com/id/951412868/photo/bitcoin-on-white-background.jpg?s=612x612&w=0&k=20&c=h6bSw-lkIDHle3Qz_6RXvluUttHEmsHsblMmwDra9sA=" /></div>
                 <div className="img-3"><img src="https://static.vecteezy.com/system/resources/previews/007/153/309/original/gold-coin-of-chinese-yuan-yen-concept-of-internet-currency-vector.jpg" /></div>
             </div>
+            
             <div ref={services} className="services">
                 <div>
                     <div className="images">
@@ -72,32 +73,32 @@ function ScrollBox() {
                             <div className="text-box">Elon Musk Doge Coin</div>
                         </div>
                     </div>
-                    <div className="images">
-                        <img src="" alt="Image 1" />
-                        <img src="" alt="Image 2" />
-                        <img src="" alt="Image 3" />
-                    </div>
-                    <div className="text-side-by-side">
+                    {/* <div className="images">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/US_one_dollar_bill%2C_obverse%2C_series_2009.jpg/640px-US_one_dollar_bill%2C_obverse%2C_series_2009.jpg" alt="Image 1" />
+                        <img src="https://www.leftovercurrency.com/app/uploads/1970/01/50-indian-rupees-banknote-with-date-obverse.jpg" alt="Image 2" />
+                        <img src="https://s.abcnews.com/images/Technology/CrytpoMain_A_v01_DP_1671045847375_hpMain_16x9_1600.jpg" alt="Image 3" />
+                    </div> */}
+                    {/* <div className="text-side-by-side">
                         <div className="text-box">PlaceHolder</div>
                         <div className="text-box">PlaceHolder</div>
                         <div className="text-box">PlaceHolder</div>
-                    </div>
+                    </div> */}
 
                     {/* <SearchBar />
                     <img src={pillow} className="image-1" /> */}
 
                 </div>
-                <div className="images">
-                    <img src="" alt="Image 1" />
-                    <img src="" alt="Image 2" />
-                    <img src="" alt="Image 3" />
-                </div>
+                {/* <div className="images">
+                    <img src="https://static.ffx.io/images/$zoom_0.788%2C$multiply_0.7725%2C$ratio_1.5%2C$width_756%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/49c3843d7d1abab72b60ccbaab743871ca6a74a8" alt="Image 1" />
+                    <img src="https://img.republicworld.com/republic-prod/stories/promolarge/xhdpi/vddmtoxacaynp2rr_1629214003.jpeg" alt="Image 2" />
+                    <img src="https://images.ctfassets.net/q33z48p65a6w/2fi3pKDcUs07RnA0XXwh8S/53809dd161bbf81fdbb7bdd9200ae9b4/2204_Crypto-Educational-Email-4-1920x1080-EN.png?w=1200&h=645&fit=thumb" alt="Image 3" />
+                </div> */}
 
-            </div>
+            
 
-            <div className="blog">
+             <div className="blog">
               
-            </div>
+            </div> 
             <div className="contact">
                 <footer className="footer-1">
                     <p className="footer-text">
@@ -225,6 +226,7 @@ function ScrollBox() {
                 </div>
             </div>
 
+        </div>
         </div>
     );
 }
