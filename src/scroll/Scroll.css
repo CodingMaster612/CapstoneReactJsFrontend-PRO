@@ -316,3 +316,60 @@
   background-color: transparent;
   border-color: transparent
 }
+.Clock-Style{
+  color: black;
+  position: relative;
+  top: 5px;
+  
+}
+.Clock{
+  color: black;
+  position: relative;
+  top: -52px;
+  left: -160px;
+  width: 45px;
+  height: 45px;
+
+
+}
+.Newspaper-icon{
+  color: black;
+  width: 45px;
+  height: 45px;
+}
+.Contact-icon{
+  color: black;
+  width: 45px;
+  height: 45px;
+}
+.Blog-icon{
+  color: black;
+  width: 45px;
+  height: 45px;
+}
+.Bank-icon{
+  color: black;
+  width: 45px;
+  height: 45px;
+}
+
+.FAQ-icon{
+  color: black;
+  width: 45px;
+  height: 45px;
+}
+.Privacy-icon{
+  color: black;
+  width: 45px;
+  height: 45px;
+}
+.Terms-icon{
+  color: black;
+  width: 45px;
+  height: 45px;
+}
+.Alerts-icon{
+  color: black;
+  width: 45px;
+  height: 45px;
+}
