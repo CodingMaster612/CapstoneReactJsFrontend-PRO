@@ -1,0 +1,39 @@
+.Alert-wrapper{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+.Alert-wrapper h1{
+    color: whitesmoke;
+    font-size: 70px;
+}
+.Alert-wrapper input{
+   background-color: white;
+   border: 1px solid;
+   border-radius: 25px;
+   color: black;
+}
+.Alert-wrapper h2{
+    font-size: 50px;
+    
+    border-radius: 25px;
+    color: orange;
+ }
+ .Alert-wrapper button{
+    font-size: 20px;
+    
+    border-radius: 25px;
+    
+ }
+ .Alert-wrapper label{
+    font-size: 20px;
+    
+    border-radius: 25px;
+    
+ }
+ .Alert-wrapper select{
+    font-size:30px;
+    
+    border-radius: 25px;
+    
+ }

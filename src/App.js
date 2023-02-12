@@ -48,6 +48,7 @@ import Compare from './scroll/Links/Compare';
 import CurrencyNews from './scroll/Links/CurrencyNews';
 import Notes from './scroll/Links/Notes';
 import Notify from './scroll/Links/Notify';
+import CurrencyAlerts from './scroll/Links/CurrencyAlerts';
 
 import './App.css';
 
@@ -127,7 +128,7 @@ const App = () => {
                   <Route path="/CurrencyNews" element={<CurrencyNews/>}/>
                   <Route path="/Notes" element={<Notes/>}/>
                   <Route path="/Notify" element={<Notify/>}/>
-
+                  <Route path="/CurrencyAlerts" element={<CurrencyAlerts/>}/>
                     {/* <Route path="/Home" element={<Home />} />
                     <Route path="/users" element={<UserList />} />
                     <Route path="/user/:userId" element={<User />} />

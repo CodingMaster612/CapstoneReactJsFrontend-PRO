@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import './Alerts.css'
-const Alerts = () => {
+
+const CurrencyAlerts = () => {
   const [currencies, setCurrencies] = useState([]);
   const [selectedCurrency, setSelectedCurrency] = useState('');
   const [priceThreshold, setPriceThreshold] = useState(0);
@@ -28,19 +28,14 @@ const Alerts = () => {
         const currency = currencies.find(c => c.id === alert.currency);
         if (currency && currency.current_price >= alert.threshold) {
           console.log(`Price of ${currency.name} (${currency.symbol}) has reached or exceeded $${alert.threshold}.`);
-          
         }
       });
     }, 1000);
-  
     return () => clearInterval(intervalId);
-    
   }, [alerts, currencies]);
-  
 
   return (
-    <header style={HeaderStyle}>
-    <div className="Alert-wrapper">
+    <div>
       <h1>Currency Alerts</h1>
       <form onSubmit={handleSubmit}>
         <label>
@@ -74,18 +69,7 @@ const Alerts = () => {
         })}
       </ul>
     </div>
-    </header>
   );
 };
-const HeaderStyle = {
-  width: "100%",
-  height: "100vh",
-  //  background: `url(${BackgroundImage})`,
-  backgroundPosition: "center",
-  backgroundRepeat: "no-repeat",
-  backgroundSize: "cover",
-  backgroundColor: "navyblue"
 
-
-}
-export default Alerts;
+export default CurrencyAlerts;

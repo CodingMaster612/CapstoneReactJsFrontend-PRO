@@ -10,22 +10,22 @@
 .Terms-of-Service h2{
     color: white;
     text-align: center;
-    font-size: 80px;
-    text-shadow: -1px 1px 10px rgba(225, 225, 225, 0.9);
+    font-size: 60px;
+    
 
 
  }
  .Terms-of-Service h1{
     color: white;
     text-align: center;
-    text-shadow: -1px 1px 10px rgba(225, 225, 225, 0.9);
-    font-size: 100px;
+    
+    font-size: 80px;
 
  }
  .Terms-of-Service p{
     color: white;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
  }
  .Terms-of-Service ul{
     
@@ -34,8 +34,8 @@
  }
  .Terms-of-Service li{
     
-    color: red;
-    text-shadow: -1px 1px 10px rgba(225, 225, 225, 0.9);
+    color: lightgoldenrodyellow;
+    
 
     
  }
