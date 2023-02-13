@@ -3,7 +3,7 @@
   }
   
   .hero{
-    height: 950px;
+    height: 875px;
     background-color: white;
     background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20201101/pngtree-3d-rendering-for-display-product-banner-on-website-image_453005.jpg');
     background-repeat: no-repeat;
@@ -58,8 +58,8 @@
   }
 
   .blog {
-    height: 200px;
-    background-color: #89CFF0;
+    height: 400px;
+    background-color: white;
     text-align: center;
  
     
@@ -153,7 +153,7 @@
  }
  .helpful-links-wrapper-4{
   position: absolute;
-  left: 1600px;
+  left: 1400px;
   top: 180px;
  
  }

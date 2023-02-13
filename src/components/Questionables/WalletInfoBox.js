@@ -83,9 +83,9 @@ function WalletInfoBox(props) {
                         <div className="highlight"></div>
                     </div>
                 </div>
-                <Button id={props.cards.id} className="result-button" onClick={onClicky} text={"Get Card Id"} />
-                <Button id={props.cards.id} className="result-button" onClick={submitHandler} text={"Add Card"} />
-                <Button id={props.cards.id} className="result-button" onClick={handleClick} text={"Transaction"} />
+                <Button id={props.cards.id} className="result-button-1" onClick={onClicky} text={"Get Card Id"} />
+                <Button id={props.cards.id} className="result-button-1" onClick={submitHandler} text={"Add Card"} />
+                <Button id={props.cards.id} className="result-button-1" onClick={handleClick} text={"Transaction"} />
 
             </div>
             <div>
