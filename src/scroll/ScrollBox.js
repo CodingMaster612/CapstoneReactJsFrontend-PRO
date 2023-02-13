@@ -67,12 +67,17 @@ function ScrollBox() {
                         <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1653709480.jpg" onClick={handleClick} alt="Image 3" />
                     </div>
                     <div>
-                        <div className="text-side-by-side">
+                        {/* <div className="text-side-by-side">
                             <div className="text-box">Ethereum Website</div>
                             <div className="text-box">Bitcoin Website</div>
                             <div className="text-box">Elon Musk Doge Coin</div>
-                        </div>
+                        </div> */}
                     </div>
+                    {/* <div className="title-pillow">
+                        <h3>Welcome to PILLOW</h3>
+                        <SearchBar />
+                    <img src={pillow} className="image-1" />
+                    </div> */}
                     {/* <div className="images">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/US_one_dollar_bill%2C_obverse%2C_series_2009.jpg/640px-US_one_dollar_bill%2C_obverse%2C_series_2009.jpg" alt="Image 1" />
                         <img src="https://www.leftovercurrency.com/app/uploads/1970/01/50-indian-rupees-banknote-with-date-obverse.jpg" alt="Image 2" />

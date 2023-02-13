@@ -76,10 +76,12 @@
   }
   
   .image-1{
-    height: 250px;
-    width: 250px;
+    height: 400px;
+    width: 400px;
     position: relative;
-    top: 200px;
+    top: 50px;
+    
+
  
   margin-top: -50px;
   margin-left: -100px;
@@ -294,6 +296,8 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
   margin: 10px;
+  
+  border-radius: 50px;
 }
 
 .images img:hover {
@@ -433,4 +437,13 @@
 .column-2 p{
   display: flex;
   align-items: center;
+}
+.title-pillow h3{
+  color: black;
+  top: 400px;
+  left: -45px;
+  position: relative;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 27px;
 }
